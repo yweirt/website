@@ -1,0 +1,5 @@
+- name: Estimation of the insolation of buildings
+  description: 3D city models can be used to extract the orientation of the roof surfaces of a building and to estimate the solar insolation. For instance, this information is useful to assess the feasibility of installing solar panels.
+  domains: Energy estimations, thermal comfort, house price models
+  software: Solar3Dcity
+  software-link: https://github.com/tudelft3d/Solar3Dcity
