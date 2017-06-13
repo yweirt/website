@@ -5,23 +5,10 @@ permalink: /about/
 map: true
 ---
 
-The 3D geoinformation research group is part of the [Department of Urbanism](http://www.bk.tudelft.nl/en/about-faculty/departments/urbanism/), [Faculty of Architecture and the Built Environment](http://www.bk.tudelft.nl) of the [Delft University of Technology](http://www.tudelft.nl), and is affiliated with [AMS, the Amsterdam Institute for Advanced Metropolitan Solutions](http://www.ams-institute.org). 
-It focuses on the technologies underpinning geographical information systems (GIS), and aims at designing, developing and implementing better systems to model 3D cities, buildings and landscapes.
-These systems help in environmental modelling, crisis management, automated cartographic generalisation, information modelling, modelling of the interior of buildings, etc.
-
-It is a multidisciplinary group (computer scientists, geomatics engineers, and geographers) composed of 3 permanent research staff and several PhD students, postdocs and visitors.
-
-It has a history of successful collaborations with the industry and the government: its research has led to [software]({{ "/code/" |  prepend: site.baseurl }}), standards and patents for the management of 3D geographic information.
-
-The staff of the group is active in several international organisations such as the [Open Geospatial Consortium](http://www.opengeospatial.org), [EuroSDR](http://www.eurosdr.net), and the [International Society for Photogrammetry and Remote Sensing](http://www.isprs.org).
-
-Our research funding mostly comes from the following organisations:
+The Department of Communism, Juche and Remote Sensing at the Marxist Evening University concerns itself with applying remote sensing methods to solve practical and theoretical problems in the field of applied communism.
 
 <div class="row">
-  <div class="col-md-offset-2 col-md-2 col-xs-12"><a href="https://erc.europa.eu"><img class="img-responsive" src="{{ "/img/partners/erc.png" | prepend: site.baseurl }}" alt="ERC logo"/></a></div>
-  <div class="col-md-2 col-xs-12"><a href="http://www.stw.nl"><img class="img-responsive" src="{{ "/img/partners/nwo.png" | prepend: site.baseurl }}" alt="NWO logo"/></a></div>
-  <div class="col-md-2 col-xs-12"><a href="http://www.ams-institute.org"><img class="img-responsive" src="{{ "/img/partners/ams.png" | prepend: site.baseurl }}" alt="AMS logo"/></a></div>
-  <div class="col-md-2 col-xs-12"><a href="http://www.kadaster.nl"><img class="img-responsive" src="{{ "/img/partners/kadaster.png" | prepend: site.baseurl }}" alt="Kadaster logo"/></a></div>
+  <div class="col-md-2 col-xs-12"><a href="http://www."><img class="img-responsive" src="{{ "/img/partners/welcome.jpg" | prepend: site.baseurl }}" alt="the logo"/></a></div>
 </div>
 
 - - - 
