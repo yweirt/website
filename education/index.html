@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="3D geoinformation research group at TU Delft">
+  <meta name="keywords" content="3D GIS, GIS, 3D geoinformation, TU Delft, CityGML">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"/>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="msapplication-TileColor" content="#2b5797"/>
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+  <meta name="theme-color" content="#ffffff"/>
+
+  <title>Education</title>
+
+
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/syntax.css" rel="stylesheet" />
+  <link href="/assets/css/mine.css" rel="stylesheet" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59614264-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+  
+  <body>
+  
+  <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-xs hidden-sm" href="http://www.tudelft.nl/en/">
+        <img class="tud" src="/img/logos/tudwhite.png" onmouseover="this.src='/img/logos/tudblue.png'" onmouseout="this.src='/img/logos/tudwhite.png'" />
+      </a>
+      <a class="navbar-brand hidden-xs" href="/">
+        <img class="logo" src="/img/logos/navbar-white.png" onmouseover="this.src='/img/logos/navbar-blue.png'" onmouseout="this.src='/img/logos/navbar-white.png'" />
+      </a>
+      <a class="navbar-brand visible-xs-block" href="/">
+        <img class="logo"  src="/img/logos/navbar-short-white.png" onmouseover="this.src='/img/logos/navbar-short-blue.png'" onmouseout="this.src='/img/logos/navbar-short-white.png'" />
+      </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">about <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/about/">the group</a></li>
+            <li><a href="/about/#people">our staff</a></li>
+            <li><a href="/about/#where">our location</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">research <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/projects">projects</a></li>
+            <li><a href="/pubs">publications</a></li>
+            <li><a href="/3dtalks">3D talks</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/education" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">education <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- <li><a href="/education/">education</a></li> -->
+            <li><a href="/education/#courses">MSc Geomatics</a></li>
+            <li><a href="/education/#theses">MSc theses</a></li>
+            <li><a href="/education/msctopics">potential thesis topics</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="/download" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">download <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/code">open-source software</a></li>
+            <li><a href="/opendata">open data</a></li>
+          </ul>
+        </li>-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">etc <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/news">news</a></li>
+            <li><a href="/events">events</a></li>
+            <li><a href="/jobs">jobs</a></li>
+            <li><a href="/journals">GIS journals</a></li>
+            <li><a href="/conferences">GIS conferences</a></li>
+            <li><a href="/open-gis-software">GIS software</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+  <div class="container content">
+
+  <h1>Education</h1>
+  
+  <section id="courses"></section>
+<h2><a href="http://www.geomatics.tudelft.nl">MSc Geomatics</a> courses we are teaching in</h2>
+
+<ul>
+  <li><a href="http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38465">GEO1002</a>: Geographical information systems &amp; cartography</li>
+  <li><a href="http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38430">GEO1004</a>: 3D Modelling of the Built Environment</li>
+  <li><a href="http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38431">GEO1005</a>: Spatial Decision Support for Planning and Crisis Management</li>
+  <li><a href="http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38469">GEO1008</a>: Geo Datasets and Quality
+  <!-- * [GEO2001](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=30706): Synthesis Project --></li>
+  <li><a href="http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38743">GEO2010</a>: Graduation thesis preparation</li>
+  <li><a href="http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38742">GEO2020</a>: Graduation thesis</li>
+</ul>
+
+<hr />
+
+<section id="theses"></section>
+<h2>Looking for a MSc thesis topic?</h2>
+
+<p>We have a <a href="msctopics">list of potential topics</a>.</p>
+
+<hr />
+
+<h2 id="msc-thesis-projects----ongoing">MSc thesis projects – Ongoing</h2>
+
+<div class="row">
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="/img/msc/balazsd.png" />
+      <div class="caption">
+        <h3>Balázs Dukai</h3>
+        <p>Automatic identification of LOD in 3D city models</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="/img/msc/kang.png" />
+      <div class="caption">
+        <h3>Yuxuan Kang</h3>
+        <p>Straightening and simplifying a multi-view stereo mesh of a city</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="/img/msc/martijn.png" />
+      <div class="caption">
+        <h3>Martijn Koopman</h3>
+        <p>3D indoor navigation : one algorithm for walking, driving and flying actors </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="/img/msc/lessieoc.png" />
+      <div class="caption">
+        <h3>Lessie M. Ortega-Córdova</h3>
+        <p>Framework for Urban Vegetation 3D Modelling</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="/img/msc/bart.png" />
+      <div class="caption">
+        <h3>Bart Staats</h3>
+        <p>Automatic selection of indoor navigable space in complex buildings</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="/img/msc/tryfona.png" />
+      <div class="caption">
+        <h3>Maya Tryfona</h3>
+        <p>Linking and birectional enrichment of a multi-view stereo mesh and a CityGML model</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="/img/msc/jtkate.png" />
+      <div class="caption">
+        <h3>Jan ten Kate</h3>
+        <p>3D noise modeling for outdoor music events in the built environment</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<hr />
+
+<h2 id="msc-thesis-projects----completed">MSc thesis projects – Completed</h2>
+
+<h3> 2016 </h3>
+
+<div class="row">
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:7a64a9f7-2fef-46b1-9e48-5e0b0d736056"><img src="/img/msc/broersen.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Tom  Broersen
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:7a64a9f7-2fef-46b1-9e48-5e0b0d736056"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Automatic identification of water courses from AHN3 in flat and engineered landscapes</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:b4c13508-dbcc-4a32-a7b7-9cb22230e0a7"><img src="/img/msc/Florian.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Florian W.  Fichtner
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:b4c13508-dbcc-4a32-a7b7-9cb22230e0a7"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Semantic enrichment of a point cloud based on an octree for multi-storey pathfinding</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:bb4a1667-1d6f-41ac-b12e-fb70c0013881"><img src="/img/msc/heeres.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Erik  Heeres
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:bb4a1667-1d6f-41ac-b12e-fb70c0013881"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Exploring the 3D BAG: How to define it and to what extent can it automatically be created using open data</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:b1d1c50d-24bf-4a12-b0e5-3c2479907d66/"><img src="/img/msc/jonker.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Kees  Jonker
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:b1d1c50d-24bf-4a12-b0e5-3c2479907d66/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Automatic generation of raster-based height data for the Netherlands based on the AHN2 data set</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:2452566b-058a-4fde-aa0e-e300421bb8b2/"><img src="/img/msc/lam.jpg" /></a>
+      <div class="caption">
+        <h3>
+        
+          Marco  Lam
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:2452566b-058a-4fde-aa0e-e300421bb8b2/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Creating the medial axis transform for billions of lidar points using a memory efficient method</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:b9e42100-1bad-43de-bd1f-87f47779460a"><img src="/img/msc/Tim.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Tim  Nagelkerke
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:b9e42100-1bad-43de-bd1f-87f47779460a"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Navigation to a human in motion by using points of interest</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:fa1444c0-b957-43a3-9a9e-a0a7664bb6c8"><img src="/img/msc/Olivier.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Olivier  Rodenberg
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:fa1444c0-b957-43a3-9a9e-a0a7664bb6c8"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>The effect of A* pathfinding characteristics on the path length and performance in an octree representation of an indoor point cloud</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:61236178-3b72-4923-8d72-1d44446783df"><img src="/img/msc/mrook.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Merwin  Rook
+        
+          <br />
+          <small>(2016)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:61236178-3b72-4923-8d72-1d44446783df"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+          <small><a href="http://doi.org/10.5194/isprs-annals-IV-2-W1-23-2016"><i class="fa fa-file-text" title="paper"></i></a></small>
+        
+        
+        </h3>
+        <p>Automatic thematic and semantic labelling of 3D city models</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h3> 2015 </h3>
+
+<div class="row">
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:29fc70b1-c262-4f3d-837f-5ecddb56d6f0/"><img src="/img/msc/rosann.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Rosann  Aarsen
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:29fc70b1-c262-4f3d-837f-5ecddb56d6f0/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Using sensor-data collected by a "meet rollator" for deriving outdoor accessibility information concerning mobility impaired people</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:662fad08-51a9-4f8d-acb1-4caf78d602bb/"><img src="/img/msc/carl.jpg" /></a>
+      <div class="caption">
+        <h3>
+        
+          Carl  Chen
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:662fad08-51a9-4f8d-acb1-4caf78d602bb/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Edge-aware simplification of roof and facade point clouds into a uniformly dense point cloud</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="https://3d.bk.tudelft.nl/pdfs/NikkiedenDekker_thesis.pdf"><img src="/img/msc/nikkie.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Nikkie den Dekker
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="https://3d.bk.tudelft.nl/pdfs/NikkiedenDekker_thesis.pdf"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Smart cities, sensors &amp; 3D GIS</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:31da4059-5dac-4e60-93d7-36cad2d8ab46/"><img src="/img/msc/martijn.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Martijn van der Ham
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:31da4059-5dac-4e60-93d7-36cad2d8ab46/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+          <small><a href="http://doi.org/10.5194/isprs-annals-IV-4-W1-105-2016"><i class="fa fa-file-text" title="paper"></i></a></small>
+        
+        
+        </h3>
+        <p>Real time analyses of asset tracking in hospitals using indoor positioning technology</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:7cec6091-5c62-4645-b2b2-c74c149e92a6/"><img src="/img/msc/milo.jpg" /></a>
+      <div class="caption">
+        <h3>
+        
+          Milo  Janssen
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:7cec6091-5c62-4645-b2b2-c74c149e92a6/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>A 3D subsurface GIS - Adopting vector/voxel data to provide insights regarding climate adaptation and water related issues</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:8ef4459d-b940-4007-bc3c-d87349015129/"><img src="/img/msc/damien.jpg" /></a>
+      <div class="caption">
+        <h3>
+        
+          Damien  Mulder
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:8ef4459d-b940-4007-bc3c-d87349015129/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+          <small><a href="https://github.com/dtmulder/VoxelRepair"><i class="fa fa-github" title="github"></i></a></small> 
+        
+        </h3>
+        <p>Automatic repair of 3D city building models using a voxel-based repair method</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:da6b7329-f45b-4560-8374-bb522e78121f/"><img src="/img/msc/maarten.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Maarten  Pronk
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:da6b7329-f45b-4560-8374-bb522e78121f/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+          <small><a href="https://github.com/evetion/multistar"><i class="fa fa-github" title="github"></i></a></small> 
+        
+        </h3>
+        <p>Storing massive TINs in a DBMS - A comparison and a prototype implementation of the multistar approach</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="https://3d.bk.tudelft.nl/pdfs/Rouwelaar_thesis.pdf"><img src="/img/msc/rouwelaar.jpg" /></a>
+      <div class="caption">
+        <h3>
+        
+          Patricia ten Rouwelaar
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="https://3d.bk.tudelft.nl/pdfs/Rouwelaar_thesis.pdf"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Uniformity of topographical key registrations: The derivation of data specifications in order to automatically generalize the BGT into a uniform BGT product and into a midscale data product</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:26a4c6b8-8ea0-4246-b30e-5c83a28cccb4/"><img src="/img/msc/wu.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Wu Haoxiang
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:26a4c6b8-8ea0-4246-b30e-5c83a28cccb4/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>3D semantic model generation from 2D floor plans</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:8f548788-1e42-475b-adbf-93f9dbcd04a1/"><img src="/img/msc/zhou.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Zhou Kaixuan
+        
+          <br />
+          <small>(2015)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:8f548788-1e42-475b-adbf-93f9dbcd04a1/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Exploring Regularities for Improving Quality of Facade Reconstruction from Point Cloud</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h3> 2014 </h3>
+
+<div class="row">
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="https://3d.bk.tudelft.nl/pdfs/VincentvanAltena_thesis.pdf"><img src="/img/msc/vincent.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Vincent van Altena
+        
+          <br />
+          <small>(2014)</small>
+        
+          <small><a href="https://3d.bk.tudelft.nl/pdfs/VincentvanAltena_thesis.pdf"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Improvement of automatic generalisation of manmade water networks for topographic maps by context-dependent pruning</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:c2a9a308-5cdc-4df2-bf30-9eea5ea176c5/"><img src="/img/msc/marija.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Marija  Krūminaitė
+        
+          <br />
+          <small>(2014)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:c2a9a308-5cdc-4df2-bf30-9eea5ea176c5/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Space subdivision for indoor navigation</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:eec252e0-1a6b-4a3a-a167-45aaadc2bb7f/"><img src="/img/msc/karl.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Karl van Winden
+        
+          <br />
+          <small>(2014)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:eec252e0-1a6b-4a3a-a167-45aaadc2bb7f/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+          <small><a href="http://doi.org/10.1111/tgis.12186"><i class="fa fa-file-text" title="paper"></i></a></small>
+        
+        
+        </h3>
+        <p>Automatically deriving and updating attribute road data from movement trajectories</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:8fd6a9ef-3dfb-4bd1-b54e-44d5b2cca973/"><img src="/img/msc/xu.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Xu Weilin
+        
+          <br />
+          <small>(2014)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:8fd6a9ef-3dfb-4bd1-b54e-44d5b2cca973/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Spatial model-aided indoor tracking</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h3> 2013 </h3>
+
+<div class="row">
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://repository.tudelft.nl/view/ir/uuid:b22a2b93-4a0a-4aa7-8e3b-6e08e0027634"><img src="/img/msc/roeland.jpg" /></a>
+      <div class="caption">
+        <h3>
+        
+          Roeland  Boeters
+        
+          <br />
+          <small>(2013)</small>
+        
+          <small><a href="http://repository.tudelft.nl/view/ir/uuid:b22a2b93-4a0a-4aa7-8e3b-6e08e0027634"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+          <small><a href="http://doi.org/10.1080/13658816.2015.1072201"><i class="fa fa-file-text" title="paper"></i></a></small>
+        
+        
+          <small><a href="https://github.com/tudelft3d/lod2plus"><i class="fa fa-github" title="github"></i></a></small> 
+        
+        </h3>
+        <p>Automatic enhancement of CityGML LoD2 models with interiors and its usability for net internal area determination</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d/"><img src="/img/msc/sjors.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Sjors  Donkers
+        
+          <br />
+          <small>(2013)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+          <small><a href="http://doi.org/10.1111/tgis.12162"><i class="fa fa-file-text" title="paper"></i></a></small>
+        
+        
+          <small><a href="https://github.com/tudelft3d/ifc2citygml"><i class="fa fa-github" title="github"></i></a></small> 
+        
+        </h3>
+        <p>Automatic generation of CityGML LoD3 building models from IFC models</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="https://3d.bk.tudelft.nl/pdfs/FilippoMortari_thesis.pdf"><img src="/img/msc/fillipo.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Filippo  Mortari
+        
+          <br />
+          <small>(2013)</small>
+        
+          <small><a href="https://3d.bk.tudelft.nl/pdfs/FilippoMortari_thesis.pdf"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+          <small><a href="http://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/II-4/45/2014/isprsannals-II-4-45-2014.html"><i class="fa fa-file-text" title="paper"></i></a></small>
+        
+        
+        </h3>
+        <p>Automatic extraction of improved geometrical network model from CityGML for indoor navigation</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="https://3d.bk.tudelft.nl/pdfs/DavideRusso_thesis.pdf"><img src="/img/msc/davide.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Davide  Russo
+        
+          <br />
+          <small>(2013)</small>
+        
+          <small><a href="https://3d.bk.tudelft.nl/pdfs/DavideRusso_thesis.pdf"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>Route Directions using Visible Landmarks for an Indoor Navigation System based on Android device IndoorNav</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <a href="http://resolver.tudelft.nl/uuid:88b6c2fc-b182-4fb2-98c8-25b6a24292ce/"><img src="/img/msc/lars.png" /></a>
+      <div class="caption">
+        <h3>
+        
+          Lars de Vries
+        
+          <br />
+          <small>(2013)</small>
+        
+          <small><a href="http://resolver.tudelft.nl/uuid:88b6c2fc-b182-4fb2-98c8-25b6a24292ce/"><i class="fa fa-book" title="thesis"></i></a></small>
+        
+        
+        
+        </h3>
+        <p>A research towards completing the asset information life cycle -- An analysis of the relationships between data exchange, BIM and the asset life cycle and the solutions to overcome existing issues at Amsterdam Airport Schiphol.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>
+
+
+  <hr>
+
+<footer>
+	<!-- <a href="/feed.xml"><i class="fa fa-rss"></i></a> -->
+	<a href="https://twitter.com/tudelft3d"><i class="fa fa-twitter"></i></a> 
+  <a href="https://github.com/tudelft3d"><i class="fa fa-github"></i></a>
+	<a href="/about/#where"><i class="fa fa-map-marker"></i></a>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+<!-- <script src="/assets/js/holder.js"></script> -->
+<script src="/assets/js/jquery.eqheight.js"></script>
+<script src="/assets/js/jquery.mark.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $(".row").eqHeight(".column");
+
+
+  });
+</script>
+  </body>
+</html>

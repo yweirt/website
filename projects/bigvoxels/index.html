@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="3D geoinformation research group at TU Delft">
+  <meta name="keywords" content="3D GIS, GIS, 3D geoinformation, TU Delft, CityGML">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"/>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="msapplication-TileColor" content="#2b5797"/>
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+  <meta name="theme-color" content="#ffffff"/>
+
+  <title>Big Data Analytics in the Geospatial Domain</title>
+
+
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/syntax.css" rel="stylesheet" />
+  <link href="/assets/css/mine.css" rel="stylesheet" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59614264-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+  
+  <body>
+  
+  <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-xs hidden-sm" href="http://www.tudelft.nl/en/">
+        <img class="tud" src="/img/logos/tudwhite.png" onmouseover="this.src='/img/logos/tudblue.png'" onmouseout="this.src='/img/logos/tudwhite.png'" />
+      </a>
+      <a class="navbar-brand hidden-xs" href="/">
+        <img class="logo" src="/img/logos/navbar-white.png" onmouseover="this.src='/img/logos/navbar-blue.png'" onmouseout="this.src='/img/logos/navbar-white.png'" />
+      </a>
+      <a class="navbar-brand visible-xs-block" href="/">
+        <img class="logo"  src="/img/logos/navbar-short-white.png" onmouseover="this.src='/img/logos/navbar-short-blue.png'" onmouseout="this.src='/img/logos/navbar-short-white.png'" />
+      </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">about <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/about/">the group</a></li>
+            <li><a href="/about/#people">our staff</a></li>
+            <li><a href="/about/#where">our location</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">research <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/projects">projects</a></li>
+            <li><a href="/pubs">publications</a></li>
+            <li><a href="/3dtalks">3D talks</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/education" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">education <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- <li><a href="/education/">education</a></li> -->
+            <li><a href="/education/#courses">MSc Geomatics</a></li>
+            <li><a href="/education/#theses">MSc theses</a></li>
+            <li><a href="/education/msctopics">potential thesis topics</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="/download" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">download <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/code">open-source software</a></li>
+            <li><a href="/opendata">open data</a></li>
+          </ul>
+        </li>-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">etc <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/news">news</a></li>
+            <li><a href="/events">events</a></li>
+            <li><a href="/jobs">jobs</a></li>
+            <li><a href="/journals">GIS journals</a></li>
+            <li><a href="/conferences">GIS conferences</a></li>
+            <li><a href="/open-gis-software">GIS software</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+  <div class="container content">
+
+  <h1>Big Data Analytics in the Geospatial Domain</h1>
+  
+  <div class="row">
+	<div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="/projects/bigvoxels/img/8.png" /></div>
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="/projects/bigvoxels/img/7.png" /></div>
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="/projects/bigvoxels/img/3.png" /></div>
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="/projects/bigvoxels/img/1.png" /></div>
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="/projects/bigvoxels/img/4.png" /></div>
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="/projects/bigvoxels/img/2.jpg" /></div>
+</div>
+
+<hr />
+
+<h2 id="introduction">Introduction</h2>
+
+<p>3D urban environments consist of large collections of complex objects, which have rich semantic properties and attributes such as materials, colors, etc. Modeling and storing these properties indicating the relationships between them is best handled in a relational database. A single spatial DBMS that offers functionality for geo-spatial modelling and management of geometric, semantic and appearance properties in one place, thus avoiding the need for multiple software tools associated with high volume data transfer and format transformations. Such an infrastructure can facilitate big data analytics in urban modeling. Urban 3D models can be used in visual, thermal or acoustic simulations to various kinds of navigation models for humans, ground vehicles and drones.</p>
+
+<h2 id="goal">Goal</h2>
+
+<p>The aim of this project is to develop voxel and point cloud data types and further mature the existing spatial features of the column-store open-source <a href="https://www.monetdb.org/">MonetDB relational database</a>. The expected project outcome is as follows:</p>
+
+<ol>
+  <li>database extension for storage and indexing of 3D point clouds with properties, that are suitable for and take advantage of column-oriented internal data organization;</li>
+  <li>database extension for storage and indexing of voxels with properties, that are suitable for and take advantage of column-storage;</li>
+  <li>the extensions will be evaluated with data and processing requirements of the use case of port of Rotterdam;</li>
+</ol>
+
+<p>The project is carried out in cooperation with the <a href="https://www.esciencecenter.nl">netherlands eScience Center</a>, the <a href="http://www.vu.nl">VU Amsterdam</a> and <a href="http://www.geodan.nl">Geodan IT B.V.</a>.</p>
+
+<h2 id="voxels">Voxels</h2>
+
+<p>The role of our research group is investigating and implementing algorithms for voxelisation of point clouds and vector models (GIS and BIM) and spatial operations on voxels. Voxels are the volumetric pixels or volume elements, often shown as cubes in 3D space. Collecting a number of voxels together creates a 3D raster. Representing 3D urban scenes as voxels brings a number of advantages. Voxel models facilitate a number of operations due to their discrete nature while having an easily adjustable resolution. For example calculating volumes is a matter of counting the number of voxels that constitute an object given an arbitrarily fine quantum of volume, 3D bisections become simple selection operations, and storing volumetric spaces such as air, water and underground is possible. Operations that are almost always done using voxel models include extraction of iso-surfaces (3D layers in fields) and 3D morphological operations.  An additional benefit of voxel storage is the atomicity of the of the data type: every object is represented by only one primitive (3D cube) instead of e.g. set of multiple geometric primitives currently used in other spatial RDBMS.</p>
+
+<hr />
+
+<div class="row">
+  <div class="col-lg-offset-3 col-lg-3">
+      <img class="img-circle img-responsive" src="/img/staff/pirouz.png" />
+      <h3>Pirouz Nourian <br /><small>PhD candidate</small></h3>
+  </div>
+  <div class=" col-lg-3">
+      <a href="http://3dgeoinfo.bk.tudelft.nl/szlatanova/"><img class="img-circle img-responsive" src="/img/staff/sisi.jpg" /></a>
+      <h3>Sisi Zlatanova <br /><small>Project leader</small></h3>
+  </div>
+</div>
+
+
+</div>
+
+
+  <hr>
+
+<footer>
+	<!-- <a href="/feed.xml"><i class="fa fa-rss"></i></a> -->
+	<a href="https://twitter.com/tudelft3d"><i class="fa fa-twitter"></i></a> 
+  <a href="https://github.com/tudelft3d"><i class="fa fa-github"></i></a>
+	<a href="/about/#where"><i class="fa fa-map-marker"></i></a>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+<!-- <script src="/assets/js/holder.js"></script> -->
+<script src="/assets/js/jquery.eqheight.js"></script>
+<script src="/assets/js/jquery.mark.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $(".row").eqHeight(".column");
+
+
+  });
+</script>
+  </body>
+</html>

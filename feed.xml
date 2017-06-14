@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D geomisinformation</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>https://3d.bk.tudelft.nl/</link>
+    <atom:link href="https://3d.bk.tudelft.nl/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 14 Jun 2017 22:21:05 +0200</pubDate>
+    <lastBuildDate>Wed, 14 Jun 2017 22:21:05 +0200</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Journal paper on the first 3D cadastral registration in the Netherlands</title>
+        <description>&lt;p&gt;We published a new paper:&lt;/p&gt;
+
+&lt;div class=&quot;filteredelement&quot;&gt;&lt;strong&gt;Registration of Multi-Level Property Rights in 3D in The Netherlands: Two Cases and Next Steps in Further Implementation&lt;/strong&gt;. Jantien Stoter, Hendrik Ploeger, Ruben Roes, Els van der Riet, Filip Biljecki, Hugo Ledoux, Dirco Kok, and Sangmin Kim. &lt;em&gt;ISPRS International Journal of Geo-Information&lt;/em&gt;, 6(6): 158, 2017. &lt;br /&gt; &lt;a href=&quot;http://www.mdpi.com/2220-9964/6/6/158/pdf&quot;&gt;&lt;i class=&quot;fa fa-file-pdf-o&quot;&gt;&lt;/i&gt; PDF&lt;/a&gt; &lt;a href=&quot;http://dx.doi.org/10.3390/ijgi6060158&quot;&gt;&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt; DOI&lt;/a&gt; &lt;a href=&quot;#bibStoter17a&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i class=&quot;fa fa-caret-square-o-down&quot;&gt;&lt;/i&gt; BibTeX&lt;/a&gt;&lt;div id=&quot;bibStoter17a&quot; class=&quot;collapse&quot; tabindex=&quot;-1&quot;&gt;&lt;pre class=&quot;bibtex&quot;&gt;@article{Stoter17a,
+Author = {Stoter, Jantien and Ploeger, Hendrik and Roes, Ruben and van der Riet, Els and Biljecki, Filip and Ledoux, Hugo and Kok, Dirco and Kim, Sangmin},
+Title = {Registration of Multi-Level Property Rights in 3D in The Netherlands: Two Cases and Next Steps in Further Implementation},
+Doi = {10.3390/ijgi6060158},
+Journal = {ISPRS International Journal of Geo-Information},
+Number = {6},
+Pages = {158},
+Pdf = {http://www.mdpi.com/2220-9964/6/6/158/pdf},
+Volume = {6},
+Year = {2017}
+	}&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This article reports on the first 3D cadastral registration in The Netherlands, accomplished in March 2016. The solution was sought within the current cadastral, organisational, and technical frameworks to obtain a deeper knowledge on the optimal way of implementing 3D registration, while avoiding discussions between experts from different domains. The article presents the developed methodology to represent legal volumes in an interactive 3D visualisation that can be registered in the land registers. The source data is the 3D Building Information Model (BIM). The methodology is applied to two cases: (1) the case of the railway station in Delft, resulting in the actual 3D registration in 2016; and (2) a building complex in Amsterdam, improving the Delft-case and providing the possibility to describe a general workflow from design data to a legal document. An evaluation provides insights for an improved cadastral registration of multi-level property rights. The main conclusion is that in specific situations, a 3D approach has important advantages for cadastral registration over a 2D approach. Further study is needed to implement the solution in a standardised and uniform way, from registration to querying and updating in the future, and to develop a formal registration process accordingly.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The paper is freely available at the &lt;a href=&quot;http://dx.doi.org/10.3390/ijgi6060158&quot;&gt;journal&lt;/a&gt; (open access).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/ijgi-3dcadastre.png&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 May 2017 15:10:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/05/31/ijgi-paper.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/05/31/ijgi-paper.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Congratulations Dr Biljecki!</title>
+        <description>&lt;p&gt;On Monday 1 May 2017, &lt;a href=&quot;https://3d.bk.tudelft.nl/biljecki/&quot;&gt;Filip Biljecki&lt;/a&gt; successfully defended his PhD thesis at TU Delft.
+Because both his work in the last 4.5 years and his thesis were judged “exceptional”, he also graduated &lt;em&gt;cum laude&lt;/em&gt;, which is awarded to less than 5% of PhD theses in the Netherlands.&lt;/p&gt;
+
+&lt;p&gt;Filip’s PhD thesis is entitled &lt;em&gt;Level of detail in 3D city models&lt;/em&gt; (&lt;a href=&quot;http://doi.org/b463&quot;&gt;PDF freely available&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Congratulations Dr Biljecki 🎉&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/fbiljecki_2017-May-02.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/img/2017/fbiljecki_2017-May-02-1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/img/2017/fbiljecki_2017-May-02-2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/img/2017/fbiljecki_2017-May-02-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 May 2017 14:01:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/05/02/dr-biljecki.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/05/02/dr-biljecki.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>PhD defence invitation</title>
+        <description>&lt;p&gt;On 1 May 2017 our PhD candidate Filip Biljecki will be defending his dissertation &lt;a href=&quot;http://doi.org/b463&quot;&gt;Level of detail in 3D city models&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The thesis is published as a book, and its PDF is available publicly at the &lt;a href=&quot;http://doi.org/b463&quot;&gt;TU Delft repository&lt;/a&gt;. The propositions are available as well.&lt;/p&gt;
+
+&lt;p&gt;Where and when: Monday 1 May 2017 at 9:30 in the Senaatszaal of the TU Delft Aula Congrescentrum (Mekelweg 5, 2628CC Delft).&lt;/p&gt;
+
+&lt;p&gt;The programme starts at 9:30 with a presentation of the research (&lt;i&gt;lekenpraatje&lt;/i&gt;), and the formal defence is scheduled at 10:00. After the 
+one-hour defence, the committee will retire for a brief deliberation. Provided a positive outcome, the degree will be awarded and the reception with drinks will follow at around 11:30.&lt;/p&gt;
+
+&lt;p&gt;Please contact &lt;a href=&quot;mailto:f.biljecki@tudelft.nl&quot;&gt;Filip&lt;/a&gt; if you wish to attend or if you are interested in the research.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/Thesis_FilipFrontCover.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2017 15:50:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/04/23/PhD-defence-invitation.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/04/23/PhD-defence-invitation.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>PhD symposium with TU München</title>
+        <description>&lt;p&gt;On the 23rd and 24th March we have organised a PhD seminar with the members of the &lt;a href=&quot;https://www.gis.bgu.tum.de/en/home/&quot;&gt;Chair of Geoinformatics of the Technical University of Munich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The aim of the PhD symposium was knowledge exchange between PhD candidates and postdocs in GIS of the two universities, and exploring potential matches in order to join forces on common challenges. In total 25 presentation were given, and a special focus has been put on presenting the software developed at each group.&lt;/p&gt;
+
+&lt;p&gt;The event resulted in fruitful discussions based on which multiple research visits between the two universities will be  conducted. We also had an opportunity to test our knowlege in a pub quiz focused on CityGML.&lt;/p&gt;
+
+&lt;p&gt;During their stay in Delft, the members of the GIS group from TUM also visited the City of Rotterdam where they had been acquainted with the 3D developments.&lt;/p&gt;
+
+&lt;p&gt;We are pleased that all members of the Chair of Geoinformatics from Munich visited us in Delft, and we are looking forward to mutual visits in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/TUM-visit-0.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-2.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-3.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-4.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-5.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-6.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-7.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-8.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/TUM-visit-9.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Apr 2017 08:31:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/04/10/TU-Munchen-PhD-symposium.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/04/10/TU-Munchen-PhD-symposium.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Successful OGC event in Delft</title>
+        <description>&lt;p&gt;In the week of 20-24 March 2017, together with &lt;a href=&quot;http://www.geonovum.nl&quot;&gt;Geonovum&lt;/a&gt;, we have hosted the &lt;a href=&quot;http://www.opengeospatial.org/event/1703tc&quot;&gt;Technical and Planning Committee Meeting&lt;/a&gt; of the &lt;a href=&quot;http://www.opengeospatial.org&quot;&gt;Open Geospatial Consortium (OGC)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The TPC meetings are quarterly conferences in which &lt;a href=&quot;http://www.opengeospatial.org/ogc/members&quot;&gt;OGC members&lt;/a&gt;, which are organised in several working and domain groups, convene to discuss the development of standards and other topics of interest.&lt;/p&gt;
+
+&lt;p&gt;The TPC meeting in Delft was very well attended with more than 200 attendees visiting dozens of &lt;a href=&quot;http://www.opengeospatial.org/events/1703tcagenda&quot;&gt;sessions&lt;/a&gt;. Besides hosting the event, our group was involved in giving presentations in different working and domain groups, such as the &lt;a href=&quot;http://www.opengeospatial.org/projects/groups/citygmlswg&quot;&gt;CityGML SWG&lt;/a&gt; and &lt;a href=&quot;http://www.opengeospatial.org/projects/groups/3dimdwg&quot;&gt;3DIM DWG&lt;/a&gt;, and our associate professor &lt;a href=&quot;https://3d.bk.tudelft.nl/hledoux/&quot;&gt;Dr Hugo Ledoux&lt;/a&gt; was the &lt;a href=&quot;https://speakerdeck.com/hugoledoux/how-useful-are-current-3d-city-models&quot;&gt;keynote speaker of the opening plenary&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The conference was also accompanied by social events. In the traditional Monday’s Ice Breaker event, the conference attendees were welcomed in the historic Delft City Hall by &lt;a href=&quot;https://en.wikipedia.org/wiki/Marja_van_Bijsterveldt&quot;&gt;Mrs Marja van Bijsterveldt&lt;/a&gt;, the mayor of the City of Delft and former Minister of Education, Culture and Science in the Dutch Government.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/OGC-TC-0.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-2.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-3.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-4.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-5.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-6.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-7.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-8.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-9.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-10.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-11.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/OGC-TC-12.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Apr 2017 08:30:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/04/10/OGC-TC-Delft.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/04/10/OGC-TC-Delft.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>3D GIS featured in the Urbanism MOOC</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;http://www.urbanism.tudelft.nl&quot;&gt;TU Delft Department of Urbanism&lt;/a&gt; is organising an edX course &lt;a href=&quot;https://www.edx.org/course/urban-design-public-good-dutch-urbanism-delftx-urbanismx&quot;&gt;Urban Design for the Public Good: Dutch Urbanism&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We are pleased that we have contributed to one modules of the course, which is focused on Modelling in Urbanism. 
+Besides preparing the assignments, our postdoc &lt;a href=&quot;https://3d.bk.tudelft.nl/adiakite/&quot;&gt;Abdoulaye Diakité&lt;/a&gt; made an excellent job with a nice introductory video to 3D GIS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/Abdou-MOOC.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Feel free to watch the &lt;a href=&quot;https://www.youtube.com/watch?v=C40DA7sCGxw&quot;&gt;video&lt;/a&gt;:&lt;br /&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/C40DA7sCGxw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;
+You can follow the course (and the rest of the module) by &lt;a href=&quot;https://www.edx.org/course/urban-design-public-good-dutch-urbanism-delftx-urbanismx&quot;&gt;free enrollment&lt;/a&gt;.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Apr 2017 08:02:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/04/10/MOOC.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/04/10/MOOC.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Workshop at AMS on 3D geoinformation for smart urban applications</title>
+        <description>&lt;p&gt;On 15 March 2017 we have organised &lt;a href=&quot;http://www.ams-institute.org/events/event/workshop-3d-geo-information-for-smart-urban-applications/&quot;&gt;a workshop on 3D geoinformation for smart urban applications&lt;/a&gt; at the &lt;a href=&quot;http://www.ams-institute.org/&quot;&gt;Amsterdam Institute for Advanced Metropolitan Solutions (AMS)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The aim of the workshop was to bring experts on 3D data for urban applications together and explore potential collaborations. The workshop was organised in relation to the &lt;a href=&quot;http://www.bk.tudelft.nl/en/about-faculty/visiting-professors/thomas-h-kolbe/&quot;&gt;visiting professorship of Prof. Thomas H. Kolbe at TU Delft&lt;/a&gt;, and it involved presentations from academia, industry, and government.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ams-institute.org/institute/&quot;&gt;AMS&lt;/a&gt; is an Amsterdam based public-private institute where talent is educated and engineers, designers, digital engineers and natural/social scientists jointly develop and valorise interdisciplinary metropolitan solutions.
+TU Delft, together with Wageningen UR and MIT, is a core partner of AMS. Further partners are TNO, Amsterdam Smart City, The Waag Society, City of Boston, KPN, Accenture, Alliander, Cisco, ESA, IBM, Shell, Waternet and La Fabrique de la Cité.
+Our &lt;a href=&quot;https://3d.bk.tudelft.nl&quot;&gt;group&lt;/a&gt; is involved in AMS projects and our professor Jantien Stoter is a &lt;a href=&quot;http://www.ams-institute.org/category/pi/&quot;&gt;principal investigator at AMS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/ams-seminar-0.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/ams-seminar-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/ams-seminar-2.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Apr 2017 08:00:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/04/03/ams-seminar.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/04/03/ams-seminar.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>New PhD position available in manipulation of 3D textured meshes of a city</title>
+        <description>&lt;p&gt;We are looking for a new PhD student to join our group. 
+The project is in collaboration with the Dutch company &lt;a href=&quot;http://www.cyclomedia.com&quot;&gt;CycloMedia&lt;/a&gt; and different partners around the world.&lt;/p&gt;
+
+&lt;p&gt;Deadline to apply is 2017-05-15, and &lt;a href=&quot;/jobs/phdcmt2017/&quot;&gt;all details are available on that page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/146221307?color=ff9933&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/146221307&quot;&gt;3D - Amsterdam&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/cyclomedia&quot;&gt;CycloMedia&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Mar 2017 08:57:00 +0200</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/03/30/phd-position.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/03/30/phd-position.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Bijeenkomst 3D omgeving voor Gemeenten</title>
+        <description>&lt;p&gt;Op woensdag 8 maart was er een inloop in De Observant in Amersfoort over het gebruik van 3D geo-informatie bij gemeenten. Hier kwamen zowel het projectteam Nederland 3D, ook wel de ‘Coalition of the daring’ genoemd, en experts van 9 gemeenten samen.&lt;/p&gt;
+
+&lt;p&gt;Na een korte introductie door Ben Bruns en Steven Mekking van het Kadaster was er de presentatie van het project. Deze werd gegeven door Bert-Jan Zwerver, Tom Commandeur, Martin te Dorsthorst en Niels van der Vaart waarna er een goede open discussie ontstond over 3D data en het gebruik. Tijdens deze discussie is onder andere ter tafel gekomen of er dakvormen en dus LOD2 geleverd kan worden en wat de kwaliteit hiervan zal zijn. De minimale eis welke herhaaldelijk is benoemd en welke de rode draad vormde door de verdere gesprekken is een LOD2 model met realistische texturen voor visualisatie doeleinden. Ook nadat Tom Commandeur en Mark Post duidelijk maakten dat volledig automatisch genereren van dakvormen niet mogelijk is en dat daarbij een maximum van 25-30% haalbaar is veranderd de eis niet. Een gemeente geeft aan dat er in het verleden intern onderzoek is gedaan voor het inwinnen van alle BOR informatie in 3D en welke vorm van gebruik hieraan gekoppeld kan worden. De conclusie van dat onderzoek: LOD1 is onbruikbaar, LOD1 opgesplitst in verschillende hoogtes (LOD1+) heeft ook geen toegevoegde waarde. Een liefst met panorama’s getextureerd LOD2 model is minimaal. Tom Commandeur legt uit dat er weinig simulatie software bestaat dat met echte 3D data kan werken en vraagt wat de toegevoegde waarde is van een LOD2 ten opzichte van een LOD1 model welke evenveel informatie leveren voor simulaties.&lt;/p&gt;
+
+&lt;p&gt;Na de koffiepauze geven alle gemeenten geven een pitch over een project in 2017 waarbij goed gebruikt gemaakt kan worden van een 3D basis dataset zoals deze door het projectteam is gepresenteerd. Vanuit de omgevingswet is voor gemeenten de burgerparticipatie van groot belang. Het beschikbaar zijn van correcte, betrouwbare en gedetailleerde 3D informatie kan hierbij helpen. Dit omdat de mensen ‘verwend’ zijn door mooie 3D visualisaties als die van Google. Er wordt door een van de gemeenten als optie genoemd om een BAG-daklijnen dataset te maken welke een beschrijving geeft van alle daklijnen in een gebouw. Door deze data zou het genereren van een LOD2 model gemakkelijker kunnen zijn. Dit zal meegenomen worden in de pilot en meerdere gemeenten geven aan dat deze dataset te willen en kunnen aanleveren als dit een beter LOD2 model kan opleveren.&lt;/p&gt;
+
+&lt;p&gt;De conclusie is dat gemeenten een 3D basis dataset veelal zien als intern communicatiemiddel en als middel voor burgerparticipatie en niet zozeer bezig zijn met eenduidige en herbruikbare 3D data voor simulaties.  Het is erg interessant om te merken dat alle discussies over de 3D basis dataset ging om gebouwen en dakvormen en dat er maar een persoon zijdelings sprak over het beschikbaar hebben van het terrein in 3D. Het projectteam is erg tevreden met de uitkomst van de bijeenkomst en gaat aan de slag met een plan van aanpak voor een pilot.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.arcgis.com/apps/Cascade/index.html?appid=9485ce327e864acfb34c4d9409f9bf85&quot;&gt;&lt;img src=&quot;/img/2017/nederland3d.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Mar 2017 10:00:00 +0100</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/03/13/3d-pilot-gemeenten.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/03/13/3d-pilot-gemeenten.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>EduServ15 seminar at TU Delft</title>
+        <description>&lt;p&gt;This week we had the pleasure of hosting the pre-course seminar of the &lt;a href=&quot;http://www.eurosdr.net/education/current&quot;&gt;2017 series of e-learning courses from EuroSDR&lt;/a&gt;. 
+During the seminar, 4 lecturers presented on the topics of 3D city modelling (Jantien Stoter &amp;amp; Ravi Peters from our group), oblique photogrammetry (Fabio Remondino), synthetic aperture radar (Olaf Hellwich) and terrestial point clouds for forest modelling (Liang Xinlian).&lt;/p&gt;
+
+&lt;p&gt;People from throughout Europe travelled to Delft to attend the lectures. The audience was a mix of academics and people from industry and mapping agencies.&lt;/p&gt;
+
+&lt;p&gt;We are very satisfied with how this turned out, and we hope the participants also enjoyed their stay with us.&lt;/p&gt;
+
+&lt;p&gt;Starting from next week the e-learning part of the courses will take place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/Delft-eduserv15-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/Delft-eduserv15-2.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/Delft-eduserv15-3.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/Delft-eduserv15-4.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/Delft-eduserv15-5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Mar 2017 12:00:00 +0100</pubDate>
+        <link>https://3d.bk.tudelft.nl/news/2017/03/08/eduserv15.html</link>
+        <guid isPermaLink="true">https://3d.bk.tudelft.nl/news/2017/03/08/eduserv15.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+  </channel>
+</rss>

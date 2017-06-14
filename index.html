@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="3D geoinformation research group at TU Delft">
+  <meta name="keywords" content="3D GIS, GIS, 3D geoinformation, TU Delft, CityGML">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"/>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="msapplication-TileColor" content="#2b5797"/>
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+  <meta name="theme-color" content="#ffffff"/>
+
+  <title>5D geoinformation at ABC Def</title>
+
+
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/css/syntax.css" rel="stylesheet">
+  <link href="/assets/css/mine.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="canonical" href="https://3d.bk.tudelft.nl/"> -->
+
+  <script type="text/javascript">
+      var coverLinks = ["https://www.citygml.org","https://3d.bk.tudelft.nl/projects/umnd/","http://www.sims3d.net/","http://www.ams-institute.org/solution/hidden-amsterdam/","http://spyunderground.nl/","http://www.dig-it.tudelft.nl/#project/14","http://geovalidation.bk.tudelft.nl/val3dity","/projects/bigvoxels/","http://www.3d4em.nl","/projects/geo5d/","/projects/3dsm/","/projects/navigation/","/projects/indoor/","/projects/geobim/","https://github.com/tudelft3d/azul","https://github.com/tudelft3d/CityGML2OBJs","https://github.com/tudelft3d/Random3Dcity","https://github.com/tudelft3d/prepair","https://github.com/tudelft3d/pprepair","https://github.com/tudelft3d/3dfier"];
+      var coverImages = ["/img/cover/citygml-logo.png","/img/cover/umnd.jpg","/img/cover/SIMs3D.jpg","/img/cover/haf.png","/img/cover/spyunder.jpg","/img/cover/cartoon.png","/img/cover/val3dity.png","/img/cover/bigvoxels.png","/img/cover/3d4em.jpg","/img/cover/geo5d.png","/img/cover/3dsm.jpg","/img/cover/navigation.png","/img/cover/INSM.jpg","/img/cover/geobim.jpg","/img/cover/azul.png","/img/cover/citygml2objs-small.png","/img/cover/random3dcity.png","/img/cover/prepair.png","/img/cover/pprepair.png","/img/cover/3dfier.jpg"];
+  </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59614264-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+
+  <body>
+
+    <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-xs hidden-sm" href="http://www.tudelft.nl/en/">
+        <img class="tud" src="/img/logos/tudwhite.png" onmouseover="this.src='/img/logos/tudblue.png'" onmouseout="this.src='/img/logos/tudwhite.png'" />
+      </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">about <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/about/">the group</a></li>
+            <li><a href="/about/#people">our staff</a></li>
+            <li><a href="/about/#where">our location</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">research <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/projects">projects</a></li>
+            <li><a href="/pubs">publications</a></li>
+            <li><a href="/3dtalks">3D talks</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/education" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">education <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- <li><a href="/education/">education</a></li> -->
+            <li><a href="/education/#courses">MSc Geomatics</a></li>
+            <li><a href="/education/#theses">MSc theses</a></li>
+            <li><a href="/education/msctopics">potential thesis topics</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="/download" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">download <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/code">open-source software</a></li>
+            <li><a href="/opendata">open data</a></li>
+          </ul>
+        </li>  -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">etc <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/news">news</a></li>
+            <li><a href="/events">events</a></li>
+            <li><a href="/jobs">jobs</a></li>
+            <li><a href="/journals">GIS journals</a></li>
+            <li><a href="/conferences">GIS conferences</a></li>
+            <li><a href="/open-gis-software">GIS software</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+    <div class="jumbotron">
+  <div class="container" style="max-width: 750px;">
+    <img src="/img/logos/full-info-white.png" />
+  </div>
+</div>
+
+<!-- alerts for new job position or others -->
+<div class="container">
+  <div class="row">
+	  <div class="col-md-10 col-md-offset-1">
+		  
+	  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Latest news <a href="/feed.xml"><i class="fa fa-rss"></i></a></h4>
+        </div>
+        <div class="panel-body">
+          <div class="firstpost">
+            <a href="/news/2017/05/31/ijgi-paper.html">Journal paper on the first 3D cadastral registration in the Netherlands</a>
+            <br><span>31 May 2017</span>
+            <br />We published a new paper:
+
+
+            <br /><a href="/news/2017/05/31/ijgi-paper.html">read more</a>
+            <hr />
+          </div>
+          <ul class="posts">
+            
+              <li><span>02 May 2017</span> <a class="post-link" href="/news/2017/05/02/dr-biljecki.html">Congratulations Dr Biljecki!</a></li>
+            
+              <li><span>23 Apr 2017</span> <a class="post-link" href="/news/2017/04/23/PhD-defence-invitation.html">PhD defence invitation</a></li>
+            
+              <li><span>10 Apr 2017</span> <a class="post-link" href="/news/2017/04/10/TU-Munchen-PhD-symposium.html">PhD symposium with TU München</a></li>
+            
+              <li><span>10 Apr 2017</span> <a class="post-link" href="/news/2017/04/10/OGC-TC-Delft.html">Successful OGC event in Delft</a></li>
+            
+              <li><span>10 Apr 2017</span> <a class="post-link" href="/news/2017/04/10/MOOC.html">3D GIS featured in the Urbanism MOOC</a></li>
+            
+          </ul>
+          <a href="/news">All news</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div id="frontimggrid" class="row">
+        <!-- <img class="img-responsive" src="/img/2016/merryxmas.jpg"/> -->
+
+        <script type="text/javascript">
+          var randomIndexUsed = [];
+          var counter = 0;
+          var numberOfImages = 9;
+          while (counter < numberOfImages) {
+            var randomIndex;
+            var coverLink;
+            var coverImage;
+
+            randomIndex = Math.floor(Math.random() * coverLinks.length);
+
+            if (randomIndexUsed.indexOf(randomIndex) == "-1") {
+              coverLink = coverLinks[randomIndex];
+              coverImage = coverImages[randomIndex];
+              document.write('<div class="col-xs-12 col-md-4">');
+              document.write('<a href="' + coverLink + '"><img class="img-responsive" style="padding-top: 15px; padding-bottom: 15px;" src="' + coverImage + '"></a>');
+              document.write('</div>');
+              randomIndexUsed.push(randomIndex);
+              counter++;
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+  <br>  
+  <div class="row">     
+    <div class="col-md-12">
+    <div class="panel panel-default">
+    <div class="panel-body">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-2 col-xs-12"><a href="https://erc.europa.eu"><img class="img-responsive" src="/img/partners/erc.png" alt="ERC logo"/></a></div>
+      <div class="col-md-2 col-xs-12"><a href="http://www.stw.nl"><img class="img-responsive" src="/img/partners/nwo.png" alt="NWO logo"/></a></div>
+      <div class="col-md-2 col-xs-12"><a href="http://www.ams-institute.org"><img class="img-responsive" src="/img/partners/ams.png" alt="AMS logo"/></a></div>
+      <div class="col-md-2 col-xs-12"><a href="http://www.kadaster.nl"><img class="img-responsive" src="/img/partners/kadaster.png" alt="Kadaster logo"/></a></div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+    <hr>
+
+<footer>
+	<!-- <a href="/feed.xml"><i class="fa fa-rss"></i></a> -->
+	<a href="https://twitter.com/tudelft3d"><i class="fa fa-twitter"></i></a> 
+  <a href="https://github.com/tudelft3d"><i class="fa fa-github"></i></a>
+	<a href="/about/#where"><i class="fa fa-map-marker"></i></a>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+<!-- <script src="/assets/js/holder.js"></script> -->
+<script src="/assets/js/jquery.eqheight.js"></script>
+<script src="/assets/js/jquery.mark.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $(".row").eqHeight(".column");
+
+
+  });
+</script>
+
+  </body>
+
+</html>
