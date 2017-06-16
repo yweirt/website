@@ -25,7 +25,7 @@
   <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
   <meta name="theme-color" content="#ffffff"/>
 
-  <title>3D geomisinformation</title>
+  <title>3D geospatial vision</title>
 
 
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
