@@ -66,7 +66,7 @@
         <img class="logo" src="/img/logos/navbar-LSGI.png" onmouseover="this.src='/img/logos/navbar-LSGI.png'" onmouseout="this.src='/img/logos/navbar-LSGI.png'" />
       </a>
       <a class="navbar-brand visible-xs-block" href="/">
-        <img class="logo"  src="/img/logos/navbar-short-white.png" onmouseover="this.src='/img/logos/navbar-short-blue.png'" onmouseout="this.src='/img/logos/navbar-short-white.png'" />
+        <img class="logo"  src="/img/logos/navbar-LSGI-short.png" onmouseover="this.src='/img/logos/navbar-LSGI-short.png'" onmouseout="this.src='/img/logos/navbar-LSGI-short.png'" />
       </a>
     </div>
     <div class="navbar-collapse collapse navbar-right" id="navbar">
