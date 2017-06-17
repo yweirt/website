@@ -25,7 +25,7 @@
   <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
   <meta name="theme-color" content="#ffffff"/>
 
-  <title>Indoor Semantic Modeling to Support Path-Finding</title>
+  <title>A list of GIS software and libraries</title>
 
 
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -121,101 +121,74 @@
 
   <div class="container content">
 
-  <h1>Indoor Semantic Modeling to Support Path-Finding</h1>
+  <h1>A list of GIS software and libraries</h1>
   
-  <h2 id="indoor-navigation">Indoor navigation</h2>
+  <p>Various open source software libraries and utilities that can be useful for GIS applications.</p>
 
-<p>Navigation and location-based services is one of the fast developing applications in Geographic information System (GIS) field. Presently, a considerable attention has been paid to indoor navigation or seamless indoor-outdoor navigation. Because people spend most of their time indoors, which boosts the number of user-required services similar to outdoor navigator especially when they explore complex and large indoor environments.</p>
+<p>The ones that we use and recommend are marked with a <i class="fa fa-star"></i>.</p>
 
-<div class="row">
-  <div class="col-sm-6 col-xs-6">
-    <img class="img-responsive" src="/projects/indoor/img/BK_City.jpg" />
-  </div>
-  <div class="col-sm-6 col-xs-6">
-    <img class="img-responsive" src="/projects/indoor/img/indoor2.jpg" />
-  </div>
-</div>
+<hr />
 
-<h2 id="problems">Problems</h2>
+<h2 id="databases">Databases</h2>
 
-<p>Difficulties commonly exist in indoor data acquisition, indoor modelling and user-dependent path planning. There are diverse 3D geometric building models and semantics designed for different purposes (e.g. CityGML, BIM) but they fail short of sufficient information for indoor navigation to the large diversity of potential users. Moreover, sometimes outdoor path planning may not completely apply to the indoor environments due to their different navigation networks and various navigation semantics architecture.</p>
+<p><a href="http://postgis.refractions.net/">PostGIS</a>  <i class="fa fa-star"></i> <br /> Spatial extensions for PostgreSQL </p>
 
-<h2 id="this-research---indoor-semantic-modelling">This research—Indoor Semantic Modelling</h2>
+<h2 id="geometry">Geometry</h2>
 
-<p>This research investigates the contribution of semantic modeling for indoor navigation, especially in complex indoor environments. A semantic modeling method named Indoor Navigation Space Model (INSM) has been proposed, which is related to any assigned type of subdivision of buildings. It not only conceptualizes all the necessary building elements for navigation purposes, but also attach to geometric parts of buildings (e.g. rooms, doors, stairs, etc.).</p>
+<p><a href="https://github.com/boostorg/geometry">Boost.geometry</a>  <i class="fa fa-star"></i> <br /> Various geometric datatypes and algorithms </p>
 
-<p>One of the advantages of <em>INSM</em> is that it can be employed to almost all kinds of geometric models.  Basic semantics of <em>INSM</em> include <em>Navigable Space Cell</em> (e.g. any Room or Space), <em>NSC</em> for short, <em>Opening</em> (e.g. Doors or Windows) and <em>Obstacles</em> (e.g. desks, columns or other furniture). The pivotal notions of <em>NSC</em> are: 1) <em>Horizontal Unit</em> for horizontal movements, including <em>Horizontal Connector</em> (e.g. corridors) and <em>End</em> (only connects one other room); 2) <em>Vertical Unit</em> for “up-or-down” movements, e.g. stairs or elevators; 3) <em>Vertical Connector</em>, a type of special <em>Horizontal Unit</em> which articulates the other <em>Horizontal Unit</em> and <em>Vertical Unit</em>. Given the <em>INSM</em> semantics, we could readily extract path pattern, and leverage the pattern for path finding.</p>
+<p><a href="http://www.cgal.org/">CGAL (Computational Geometry Algorithms Library)</a>  <i class="fa fa-star"></i> <br /> Robust geometric operations, including many packages for convex hulls, meshes, triangulations, polygon and polyhedron operations, etc. </p>
 
-<div class="row">
-  <div class="col-lg-2"></div>
-	<div class="col-lg-8 col-sm-12">
-    <img class="img-responsive" alt="Indoor Navigation Space Model" src="/projects/indoor/img/INSM.jpg" />
-	</div>
-  <div class="col-lg-2"></div>
-</div>
+<p><a href="http://trac.osgeo.org/geos/">GEOS (Geometry Engine - Open Source)</a>  <i class="fa fa-star"></i> <br /> Spatial operations, including validation and topology functions </p>
 
-<p>We also provide a transformation means from some semantics data formats (e.g. CityGML LoD4 or BIM IFC). The <em>INSM</em> semantics is not the intrinsic feature of many existing data formats. For example, we regard two other types of semantic data as input and enrich the data with <em>INSM</em> semantics. i.e. CityGML LoD4 (indoor) and <em>BIM IFC</em>. This transformation also works on digital floor plans with necessary category information (e.g. notifying <em>Stair</em> and <em>Elevator</em>).</p>
+<p><a href="http://gts.sourceforge.net/index.html">GTS (GNU Triangulated Surface Library)</a> <br /> Triangulations and surface operations </p>
 
-<p>Connectivity Graph derived from CityGML and data:</p>
+<p><a href="http://www.netlib.org/voronoi/hull.html">Hull</a> <br /> Convex hulls and triangulations </p>
 
-<div class="row">
-  <div class="col-sm-6 col-xs-12">
-    <img class="img-responsive" alt="Generating Logical Model" src="/projects/indoor/img/FromCityGML.jpg" />
-  </div>
-  <div class="col-sm-6 col-xs-12">
-    <img class="img-responsive" alt="Examples of Floor Plans" src="/projects/indoor/img/FromFloorPlans.jpg" />
-  </div>
-</div>
+<p><a href="http://www.cse.ohio-state.edu/~tamaldey/normfet.html">NormFet</a> <br /> Normals and feature sizes in point clouds </p>
 
-<p>Connectivity Graph derived from an IFC Model:</p>
+<p><a href="http://pointclouds.org">PCL (Point Cloud Library)</a>  <i class="fa fa-star"></i> <br /> 2D/3D image and point cloud processing </p>
 
-<div class="row">
-  <div class="col-sm-4 col-xs-12">
-    <img class="img-responsive" alt="IFC Model" src="/projects/indoor/img/Ifc1.png" />
-  </div>
-  <div class="col-sm-4 col-xs-12">
-    <img class="img-responsive" alt="IFC Model with Connectivity Graph" src="/projects/indoor/img/ifc2.png" />
-  </div>
-  <div class="col-sm-4 col-xs-12">
-    <img class="img-responsive" alt="Connectivity Graph" src="/projects/indoor/img/ifc3.png" />
-  </div>
-</div>
+<p><a href="http://www.qhull.org/">Qhull</a> <br /> n-D approximate convex hulls and triangulations </p>
 
-<h2 id="this-research--two-level-approach-for-navigation">This research – Two level approach for navigation</h2>
-<p>Based on <em>INSM</em> a two-level indoor routing strategy has been developed for indoor path planning. On the coarse level, meaningful logical paths are generated in the connectivity graph derived from <em>INSM</em>; on the detailed level, we can compute detailed geometric paths which are free of obstacles insides rooms. By combining indoor semantic modeling and two-level strategy we also could conduct user-dependent indoor routing. User profiles and preferences are important criteria on the selection of multiple paths.</p>
+<p><a href="http://wias-berlin.de/software/tetgen/">TetGen</a>  <i class="fa fa-star"></i> <br /> Tetrahedral meshes </p>
 
-<p>Path on the coarse level:</p>
+<p><a href="http://www.cs.cmu.edu/~quake/triangle.html">Triangle</a>  <i class="fa fa-star"></i> <br /> Very fast 2D (constrained) Delaunay triangulations </p>
 
-<div class="row">
-  <div class="col-sm-6 col-xs-12">
-    <img class="img-responsive" alt="Coarse Level" src="/projects/indoor/img/1stLevel.png" />
-  </div>
-  <div class="col-sm-6 col-xs-12">
-    <img class="img-responsive" alt="Coarse Level Path" src="/projects/indoor/img/1stlevelPath.png" />
-  </div>
-</div>
+<h2 id="graphs">Graphs</h2>
 
-<p>Path on the detailed level:</p>
+<h2 id="input-and-output">Input and Output</h2>
 
-<div class="row">
-  <div class="col-sm-6  col-xs-12">
-    <img class="img-responsive" alt="Detailed Level Path" src="/projects/indoor/img/2ndLevelPath.png" />
-  </div>
-  <iframe class="col-sm-6  col-xs-12" height="281" src="//player.vimeo.com/video/117085974" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-</div>
+<p><a href="http://www.assimp.org">Assimp</a>  <i class="fa fa-star"></i> <br /> Import various 3D model formats, such as OBJ and COLLADA. C++ and Python. </p>
 
-<hr class="featurette-divider" />
+<p><a href="https://github.com/Toblerity/Fiona">Fiona</a>  <i class="fa fa-star"></i> <br /> OGR Python bindings </p>
 
-<div class="row">
-  <div class="col-lg-offset-3 col-lg-3">
-      <img class="img-circle img-responsive" src="/img/staff/liu.jpg" />
-      <h3>Liu Liu <br /><small>PhD candidate</small></h3>
-  </div>
-  <div class=" col-lg-3">
-      <a href="http://3dgeoinfo.bk.tudelft.nl/szlatanova/"><img class="img-circle img-responsive" src="/img/staff/sisi.jpg" /></a>
-      <h3>Sisi Zlatanova <br /><small>Project leader</small></h3>
-  </div>
-</div>
+<p><a href="http://trac.osgeo.org/geotiff/">GeoTIFF</a>  <i class="fa fa-star"></i> <br /> GeoTIFF format </p>
+
+<p><a href="https://github.com/grantbrown/laspy">laspy</a> <br /> Read/write LAS with Python </p>
+
+<p><a href="http://www.cs.unc.edu/~isenburg/lastools/">LAStools/LASlib</a>  <i class="fa fa-star"></i> <br /> Point cloud I/O and processing </p>
+
+<p><a href="https://github.com/mapbox/rasterio">Rasterio</a>  <i class="fa fa-star"></i> <br /> GDAL Python bindings </p>
+
+<h2 id="spatial-indexing">Spatial indexing</h2>
+
+<h2 id="visualisation">Visualisation</h2>
+
+<p><a href="http://www.cloudcompare.org">CloudCompare</a> <br /> 3D point cloud and mesh processing software </p>
+
+<p><a href="http://grass.osgeo.org/">GRASS</a> <br /> GIS package </p>
+
+<p><a href="http://keckcaves.org/software/lidarviewer">LidarViewer</a>  <i class="fa fa-star"></i> <br /> Interactive visualisation of massive point clouds </p>
+
+<p><a href="http://meshlab.sourceforge.net/">MeshLab</a>  <i class="fa fa-star"></i> <br /> Process and view triangular meshes and point clouds </p>
+
+<p><a href="https://github.com/verma/plasio">plasio</a> <br /> Web-based LAS/LAZ point cloud viewer </p>
+
+<p><a href="http://potree.org">Potree</a> <br /> Web-based viewer for massive point clouds </p>
+
+<p><a href="http://www.qgis.org/">QGIS (Quantum GIS)</a>  <i class="fa fa-star"></i> <br /> GIS package </p>
+
 
 
 </div>

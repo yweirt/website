@@ -111,7 +111,7 @@
             <li><a href="/jobs">jobs</a></li>
             <li><a href="/journals">journals</a></li>
             <li><a href="/conferences">conferences</a></li>
-            <!--<li><a href="/open-gis-software">GIS software</a></li> -->
+            <li><a href="/open-gis-software">software</a></li>
           </ul>
         </li>
       </ul>
