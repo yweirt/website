@@ -1,34 +1,4 @@
 
-## BIM/IFC and its integration with CityGML & 3D GIS
-
-![](img/ifcitygml.png){:width="600px"}
-
-An MSc Geomatics student recently completed his thesis work on the automatic conversion of IFC buildings to CityGML LOD3 models ([MSc thesis here](http://repository.tudelft.nl/view/ir/uuid%3A31380219-f8e8-4c66-a2dc-548c3680bb8d/); and also published as a [paper in Transactions in GIS](http://doi.org/10.1111/tgis.12162)). 
-Several issues are still open, and an MSc project could investigate these. 
-For instance: creation of interior rooms at different LODs (interior used to be LOD4, but CityGML v3.0 will have different interior LODs), integration with the terrain, and the conversion applied to other city objects (tunnels and bridges).
-
-*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) and [Jantien Stoter](http://3d.bk.tudelft.nl/jstoter)
-
-- - -
-
-## Automatic repair of 3D buildings
-
-![](img/repair.png){:width="650px"}
-
-To be used as input in most simulation and modelling software, 3D city models should be geometrically and topologically valid.
-Unfortunately, the vast majority of 3D city models (eg in CityGML) available are of very poor quality: they contain geometric errors such part of roofs missing, a bridge not connected to the shore, self-intersections of surfaces, two buildings overlapping, wrong orientation of surfaces, etc.
-The aim of this project is to build a workflow so that the new [generic CGAL repair operators](http://doc.cgal.org/latest/Polygon_mesh_processing/) can be used to repair automatically 3D buildings.
-Other modules of CGAL could also be used, eg the [Nef Polyhedra](http://doc.cgal.org/latest/Nef_3/index.html).
-
-I have already experience in repairing 3D buildings, but these new operators would make the software simpler, robuster, and easier to maintain.
-Moreover, a Geomatics student graduated 2 years ago on a similar topic: [voxel-based methods were then investigated](http://repository.tudelft.nl/islandora/object/uuid:8ef4459d-b940-4007-bc3c-d87349015129/?collection=research).
-
-CGAL is in C++, thus the knowledge of C++---or a strong desire to learn it---is necessary.
-I am patient if you want to take this opportunity to learn, and many staff of my group could help.
-
-*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux)
-
-
 ## Extraction of 3D roof segments from aerial imagery 
 
 ![](img/readaar.jpg){:width="350px"}
@@ -49,6 +19,7 @@ The student will have to develop and test a large number of algorithms and appro
 
 *Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) 
 
+- - -
 
 ## "Straightening" and improvements of meshes of 3D city models obtained from image matching
 
@@ -66,19 +37,6 @@ We have a large area of Amsterdam already (in COLLADA format: textured triangles
 Notice that it's possible to do this project with a mix of software (FME, CloudCompare) and Python.
 
 *Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) and [Abdoulaye Diakité](mailto:a.a.diakite@tudelft.nl)
-
-- - -
-
-## Automatic guesstimation of the level of detail of a 3D city model
-
-![](img/CityGML-LOD.png){:width="800px"}
-
-Every 3D city model has a level of detail, a measure that indicates its grade, usability and value. The LOD of a 3D city model is usually stored in the metadata, but it can also be evident from a quick inspection.
-
-However, this is not always the case, and the number of non-homogeneous datasets with variable LOD is increasing. The goal of this project is to build and implement a method that is able to automatically deduce the level of detail of a 3D GIS dataset.
-
-
-*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) and [Filip Biljecki](http://tudelft.nl/biljecki)
 
 - - -
 
@@ -125,24 +83,6 @@ The goal of this thesis is to develop a reasoning system that would automaticall
 The solution might involve pattern recognition techniques to aid the classification, hence it can be conducted in collaboration with the [Pattern Recognition Laboratory](http://prlab.tudelft.nl) at TU Delft.
 
 *Contact:* [Filip Biljecki](http://3d.bk.tudelft.nl/biljecki), [David Tax](http://prlab.tudelft.nl/users/david-tax),  and [Hugo Ledoux](http://tudelft.nl/hledoux)
-
-- - -
-
-
-## Automatic construction of the 3D BAG datasets
-
-![](img/3dbag.png){:width="800px"}
-
-The aim is to develop a methodology to automatically construct the 3D BAG, using the BAG ([*Basisregistraties Adressen en Gebouwen*](https://bagviewer.kadaster.nl)), the BGT ([*Basisregistratie Grootschalige Topografie*](https://www.pdok.nl/nl/producten/pdok-downloads/download-basisregistratie-grootschalige-topografie)), and the AHN2 ([*Actueel Hoogtebestand Nederland*](http://www.ahn.nl/index.html)).
-This dataset would contain---as shown in the figure above---the units within buildings (these are inferred from the BAG and the height of the building).
-
-The project would be made in collaboration with the City of Den Haag, who have developed a prototype.
-The student will have to improve their methodology, ensure that it is robust, and scale it for the whole country, if possible (or at least other municipalities).
-
-The project requires programming in Python, the use of FME, and a desire to fight with a great amount of data.
-
-
-*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) and [Jantien Stoter](http://3d.bk.tudelft.nl/jstoter)
 
 - - -
 
