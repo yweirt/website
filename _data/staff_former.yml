@@ -1,55 +1,18 @@
 
-- surname: Du
-  name: Xin
-  title: PhD candidate
-  photo: duxin.jpg
-  # description: "Topic: Quality control of 3D city models"
-  period: 2015-2016
-  swapnames: true
-
-- surname: Li
-  name: Fangyu
-  title: Visiting scholar
-  photo: lfy.jpg
-  period: 2015-2016
-  # email: f.li-3@tudelft.nl
-  swapnames: true
-
-- surname: Wei
-  name: Shuangfeng
-  title: Visiting scholar
-  photo: shuangfeng.jpg
-  period: 2015-2016
-  # email: s.wei-1@tudelft.nl
-  swapnames: true
-
-- surname: Demir Özbek
-  name: Elif
+- surname: Joidy
+  name: Jordan
   title: Visiting PhD
   photo: elif.jpg
   # email: e.demirozbek@tudelft.nl
   period: 2014-2015
 
-- surname: Ates
-  name: Serpil
-  title: Visiting PhD
+- surname: Alex
+  name: Sword
+  title: Visiting Fellow
   photo: serpil.jpg
   period: 2014-2015
   # email: s.ates@tudelft.nl
   
-- surname: Wang
-  name: Zhiyong
-  period: 2011-2015
-  photo: zhiyong.png
-  title: PhD candidate
-  homepage: 3d.bk.tudelft.nl/zhiyong
-
-- surname: Nourian
-  name: Pirouz
-  period: 2014-2015
-  title: research-assistant
-  email: p.nourian@tudelft.nl
-  photo: pirouz.png
 
 
 

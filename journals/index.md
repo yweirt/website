@@ -1,10 +1,10 @@
 ---
 layout: page
-title: A list of relevant GIS journals
+title: A list of relevant geomatic journals
 permalink: /journals/
 ---
 
-We are curating a list of journals that we consider when submitting a GIS manuscript. Some of the journals listed below are not squarely GIS journals, but they have been known to publish relevant GIS papers in the past, and to provide a peer-review of high quality.
+We are creating a list of journals that we consider when submitting a  manuscript. Some of the journals listed below are not squarely RS journals, but they have been known to publish relevant papers in the past, and to provide a peer-review of high quality.
 
 For 18 journals <a href="http://filipbiljecki.com/blog/index.php/2015/09/06/publication-delay-in-gis/">an analysis has been carried out to compute their publication speed</a>, and to get a general idea what are the average waiting times from submission to acceptance and publication.
 

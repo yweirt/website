@@ -11,47 +11,6 @@ permalink: /education/msctopics/
 
 - - -
 
-## Automatic conversion of 3D GIS datasets to IFC 
-
-![](img/ifccontext.jpg){:width="600px"}
-
-While our group is currently busy with the [conversion of BIM/IFC datasets to CityGML]({{ "/projects/geobim/" | prepend: site.baseurl }}), the inverse conversion is also interesting.
-Being able to convert automatically a CityGML dataset to an IFC dataset (or Revit) could give context to designers, directly in their software.
-That would allow them to quickly visualise the shadow that their new building casts on neighbouring buildings, to assess quickly whether the gardens of neighbours is visible, etc.
-There are several technical issues to solve: what geometries to convert/use? how to deal with the different coordinate reference systems? what IFC classes should be used? etc.
-
-Besides the details of the methodology to convert the datasets, we envision that that student could also build a web application where a user can select an area in the Netherlands, then the CityGML dataset is automatically created from our software [3dfier](https://github.com/tudelft3d/3dfier), and finally sent back to the user as an IFC file.
-
-Python programming is sufficient of this project, and ideally the candidate should have a background in architecture and experience with Revit or other 3D design software (eg Revit).
-
-*Contact:* [Ken Arroyo Ohori](http://tudelft.nl/kenohori) and [Hugo Ledoux](http://tudelft.nl/hledoux)
-
-- - -
-
-
-## Automatic Derivation and Storage of Metadata for 3D City Models.
-
-![](img/metadata.png){:width="350px"}
-
-The size of 3D City Models makes it temporally and computationally expensive to quickly parse a dataset to understand if it is suitable for a specific application. Furthermore, datasets are created and modified by different users, this makes it difficult to know what level of processing it has experienced and to track its lineage to understand changes over time. Metadata is crucial for establishing data confidence, estimating fitness-for-purpose, maintaining dataset lineage and credit recognition amongst many other benefits. The problem is that it sounds boring and can be laborious to produce and maintain.
-
-The aim of this project is to: 
-
-* Develop a methodology that parses a 3D City Model and automatically derives metadata, e.g. spatial extent, the presence of semantic information, level of detail, etc. 
-
-* Discover a method of storing metadata that a) ensures it is still coupled with its parent dataset and b) is easily queried. 
-
-* Examine the limitations of 2D metadata standards and make recommendations about how to extend standards to include 3D data.
-
-If there is interest the student may wish to examine a Resource Description Framework as the metadata data model. 
-
-For this position we ask for programming skills, preferably in Python. SQL is an asset but you can easily learn it over the course of the project. 
-
-*Contact:* [Anna Labetski](http://3d.bk.tudelft.nl/alabetski) and [Hugo Ledoux](http://tudelft.nl/hledoux)
-
-
-- - -
-
 ## Smart weather data filtering using a 3D city model
 
 <div class="row"><div class="col-sm-12">
@@ -64,20 +23,113 @@ The aim of the project is to *improve the dataset by using the 3D model of The H
 
 For this project, the student should be able to program well enough to read a CityGML model and to do analyses with geometric operations (such as casting shadows). C++ programming would be ideal but any other language should be good enough.
 
-*Contact:* [Ken Arroyo Ohori](http://tudelft.nl/kenohori) or Alexander Wandl
+*Contact:* [KeAr](http://tudel) or Alexander Wandl
 
 - - -
 
-## 3D visualization of massive TINs
 
-![](img/3dtop10.jpg){:width="350px"}
+## Extraction of 3D roof segments from aerial imagery 
 
-![](img/terrains.png){:width="350px"}
+![](img/readaar.jpg){:width="350px"}
 
-Visualization is an important and complex issue in the context of 3D city models. The enormous amount of data to be fetched, the heterogeneity of data sources, and the complexity of rendering are only a few parts of this challenge. The project aims at investigating 3D tiling schemes for efficiently visualizing massive TINs using [Cesium](https://cesiumjs.org) 3D webglobe.
-The knowledge of programming in C++ is required.
+This project is done in cooperation with [Readaar](http://www.readaar.com).
+Readaar already developed a method to efficiently determine 3D roof segments from LiDAR data. 
+Their current method is extremely fast (less than 2 days to process the entire Netherlands on a normal workstation) and gives a coarse estimation (~1m planar accuracy) of all roof segments in the Netherlands. 
+They want to upgrade their current method to combine LiDAR with aerial imagery to profit from the much higher resolution of imagery w.r.t. LiDAR. 
+There are multiple ways to achieve this, which could be focused more on traditional point cloud processing methods or more on object detection/machine learning approaches.
+Both stereo imagery and LiDAR data are available for the entire Netherlands. 
 
-*Contact:* [Kavisha](http://3d.bk.tudelft.nl/kavisha) and [Hugo Ledoux](http://tudelft.nl/hledoux)
+The student will be helped by a remote sensing specialist (ir. Sven Briels) and a machine learning expert (Jean-Michel Renders, PhD) from [Readaar](http://www.readaar.com), and supervisors from TU Delft.
+
+For this position we ask for programming skills, preferably in Matlab. 
+The student will have to develop and test a large number of algorithms and approaches to get information from the raw data.
+
+[More information is found there.](http://jobs.readaar.com/blog/internship-remote-sensing-machine-learning)
+
+*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) 
+
+- - -
+
+## "Straightening" and improvements of meshes of 3D city models obtained from image matching
+
+<iframe src="https://player.vimeo.com/video/146221307?color=ff9933" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/146221307">3D - Amsterdam</a> from <a href="https://vimeo.com/cyclomedia">CycloMedia</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+![](img/cmt3dams.png){:width="500px"}
+
+The video above of a part of Amsterdam was created automatically by [Cyclomedia](http://www.cyclomedia.com) from matching images taken from car driving around and of aerial photos.
+From far away, the model looks admittedly great, but if you zoom in it is very "noisy", eg surfaces are not straight, and there are a lot of artefacts.
+Different methods have been tried (eg [this one](https://hal.inria.fr/hal-00759261)), and here the goal is to see how methods you learned in the 3D modelling course (eg [RANSAC](https://en.wikipedia.org/wiki/RANSAC)) can be used.
+
+We have a large area of Amsterdam already (in COLLADA format: textured triangles), so the project can start right away!
+
+Notice that it's possible to do this project with a mix of software (FME, CloudCompare) and Python.
+
+*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) and [Abdoulaye Diakité](mailto:a.a.diakite@tudelft.nl)
+
+- - -
+
+## Generalisation of semantic 3D city models
+
+Generalisation from a higher to a lower level of detail of a dataset is one of the key research topics in cartography (maps/scale) and computer graphics (3D models/simplification). 
+In semantically enriched 3D city models, such as CityGML, the topic is not extensively researched because of some additional concepts, and due to differences such as selective generalisation (retaining the complexity of a part of a building such as the footprint while generalising only the roof). 
+This research will investigate the generalisation of 3D city models, which will, beside the simplification of geometry, include generalisation of semantics and texture, and aggregation of city objects. Further, the student is expected to create a web interface which returns an generalised version of the uploaded CityGML dataset. 
+The generalisation will be done according to the [new paradigm of levels of detail](http://3d.bk.tudelft.nl/biljecki/Random3Dcity.html) developed in our group.
+
+*Contacts:* [Filip Biljecki](http://3d.bk.tudelft.nl/biljecki) and [Hugo Ledoux](http://tudelft.nl/hledoux)
+
+- - - 
+
+## Edge-matching with a constrained triangulation
+
+![](img/em.png)
+
+While the edge-matching problem is usually tackled by snapping geometries within a certain threshold, in our [previous work](http://homepage.tudelft.nl/23t4p/pdfs/_11ostrava.pdf) we have shown that this solution is often not satisfactory and can be "dangerous". 
+We have developed a novel edge-matching algorithm for polygons where vertices are not moved, instead gaps and overlaps between polygons are corrected by using a constrained triangulation as a supporting structure and assigning values to triangles. 
+The aim of this MSc project is to extend that work to polylines, ie how can polygons and lines be snapped together robustly by using a triangulation as a base structure. 
+The project involves first a literature review of the specifications for the edge-matching of features across countries (INSPIRE document), a translation of these into specific rules in a triangulation and a prototype implementation. 
+The existing prototype (called [pprepair](https://github.com/tudelft3d/pprepair) that needs to be extended has been developed in C++, thus the knowledge of C++ or a strong desire to learn is necessary.
+
+*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux)
+
+
+- - - 
+
+## Automatic thematic and semantic labelling of 3D city models
+
+![](img/semanticenrichment1.png)
+
+Many 3D city models are available as a soup of triangles, i.e. their geometry is not structured as in CityGML. This means that they do not contain semantics, i.e. the geometry of a building is not differentiated from a geometry of a road (above example), and the geometry within the same object (e.g. roof, windows and walls) have the same problem (see the image below, left with the desired result on the right). While such models may still be valuable in visualisation, their use for GIS purposes is hindered by the lack of semantics.
+
+![](img/semanticenrichment2.png)
+
+The goal of this thesis is to develop a reasoning system that would automatically infer the theme (semantics) of each geometric primitive, on two levels:
+
+* City level (is it a tree, a building, or a road?)
+* City object level (is the geometry a roof, a window, or a wall)?
+
+The solution might involve pattern recognition techniques to aid the classification, hence it can be conducted in collaboration with the [Pattern Recognition Laboratory](http://prlab.tudelft.nl) at TU Delft.
+
+*Contact:* [Filip Biljecki](http://3d.bk.tudelft.nl/biljecki), [David Tax](http://prlab.tudelft.nl/users/david-tax),  and [Hugo Ledoux](http://tudelft.nl/hledoux)
+
+- - -
+
+## Automatic construction of the 3D map of Amsterdam
+
+<div class="row">
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="{{ "img/haf2.png" | prepend: site.baseurl }}"></div>
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="{{ "img/haf.png" | prepend: site.baseurl }}"></div>
+  <div class="col-sm-4 hidden-xs nopadding"><img class="img-responsive" src="{{ "img/haf1.png" | prepend: site.baseurl }}"></div>
+</div>
+
+The aim is to develop a methodology to automatically construct the 3D map of (parts of) Amsterdam so that it can be used by architects and others to "discover" hidden parts of the city.
+The project would be in collaboration with people involved in the [Hidden Amsterdam Festival](http://stimuleringsfonds.nl/nl/actueel/toekenningen/hidden_amsterdam_festival/) and the [AMS institute](http://ams-amsterdam.com), and if successful would be used for the festival during the summer 2016.
+
+Right now these 3D models are made manually, and the main objective of the project would be to investigate if these can be constructed automatically, and if yes with which datasets at what is the quality/accuracy of the 3D models?
+The exterior of the buildings could be reconstructed with already available datasets (AHN, BAG, BGT, etc.), but the interior is also of interest.
+Therefore, this topic is potentially suitable for 2-3 students working on different aspects.
+
+*Contact:* [Hugo Ledoux](http://tudelft.nl/hledoux) or [Jantien Stoter](http://3d.bk.tudelft.nl/jstoter) or [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova)
 
 - - -
 
@@ -89,7 +141,7 @@ For large parts of the world, the available 3D geoinformation is limited, outdat
 
 The key in this research is to devise semantic model representations and search algorithms that explore the search space and find instances of the semantic feature model that best match the available sensor data. The project will focus on encoding and using object relations (e.g. between a building and adjacent street) in semantic feature models to improve the correctness of the matches. The project is carried out in co-operation with [TNO in The Hague](https://www.tno.nl/nl/), where these techniques are applied in the field of gaming and simulation.
 
-*Contact:* [Jantien Stoter](http://3d.bk.tudelft.nl/jstoter)
+*Contact:* [JS](http://3d.)
 
 - - -
 
@@ -101,54 +153,9 @@ Although laser point clouds have become a common data resource for world modelli
 
 This research will aim at finding improved filtering and interpolation techniques to resolve the difficulties in DTM filtering for photogrammetrically derived DSM’s. The project is carried out in co-operation with [TNO in The Hague](https://www.tno.nl/nl/), where these techniques are applied in the field of gaming and simulation.
 
-*Contact:* [Jantien Stoter](http://3d.bk.tudelft.nl/jstoter)
+*Contact:* [Jr](http://3d.b)
 
 - - -
-
-## Automatic generalisation of depth contours
-
-![](img/bathycontours.png){:width="500px"}
-
-For some years, we have been working on a novel method to automatically generate "good" depth-contours for hydrographic charts. 
-Our latest results, based on the [MSc thesis of Ravi Peters](http://repository.tudelft.nl/view/ir/uuid%3A5977a99b-0875-44b4-abe1-09288bf2aed1/) and published in that [paper](https://3d.bk.tudelft.nl/hledoux/pdfs/14_marinegeo.pdf), have been picked up by major companies who are implementing it.
-
-The aim of the proposed project is to improve the results.
-That is, we can at this moment generate smooth contours for most seabed types, but the generation is applied for the whole dataset and a human must decide when the results are okay.
-The student would have to focus on automatically applying the algorithms only where they are needed and design methods to assess when sufficiently good results have been achieved.
-
-The [code of the project](https://github.com/Ylannl/Surfonoi) is in C++, but probably possible to make do with Python.
-
-*Contacts:* [Hugo Ledoux](http://tudelft.nl/hledoux) and [Ravi Peters](http://tudelft.nl/rypeters) 
-
-
-- - -
-
-## GeoOBJ: developing a spatial extension to OBJ
-
-3D formats found in 3D computer graphics are in many ways superior to GIS formats such as CityGML: they have wide software support and great visualisation capabilities. However, they fall short with spatial analyses, because of various limitations, such as lack of geo-referencing, and lack of semantic structuring. The goal of this project is to bridge the two worlds, by developing a spatial extension to a computer graphics format such as OBJ. This thesis is suitable for MSc Geomatics students, and it may be adapted to any other format.
-
-*Contacts:* [Filip Biljecki](https://3d.bk.tudelft.nl/biljecki) and [Hugo Ledoux](http://tudelft.nl/hledoux)
-
-
-- - -
-
-## Snap rounding in a triangulation 
-
-![](img/triangulation.png){:width="500px"}
-
-The most common way to do edge-matching or to clean small inconsistencies within and between datasets is to apply snapping (point-to-point or point-to-line). 
-However, simple snapping creates many problems, including topological changes and inconsistencies. 
-Snap rounding extends this method in order to give robustness guarantees, but current implementations, such as [the one in CGAL](http://doc.cgal.org/latest/Snap_rounding_2/index.html), are *extremely* slow. 
-Related to this, in the project [pprepair](https://github.com/tudelft3d/pprepair), we have previously used a constrained triangulation as a robust method to repair polygons and planar partitions. 
-Using this approach topological errors are automatically fixed.
-We therefore believe that using a triangulation as a base structure is an intuitive and efficient way to optimize snap rounding, since we can perform simple snapping and recover from topological errors afterwards.
-
-The existing prototype ([pprepair](https://github.com/tudelft3d/pprepair) that needs to be extended has been developed in C++, thus the knowledge of C++---or a strong desire to learn it---is necessary.
-
-*Contact:* [Ken Arroyo Ohori](http://tudelft.nl/kenohori)
-
-- - -
-
 
 ## Estimating the cooling demand with 3D city models
 
@@ -165,18 +172,7 @@ It involves:
 For more information, please read [here](https://lsecities.net/publications/reports/cities-and-energy-urban-morphology-and-heat-energy-demand/
 ) about a project that EIFER led with the LSE for studying the relation between urban morphology and cooling demand.
 
-*Contact:* [Filip Biljecki](http://tudelft.nl/biljecki)
-
-- - -
-
-## Line of sight (visibility) and raytracing analyses on a 3D dataset
-
-Calculating the visibility between two points using 3D city models provides valuable input to many application domains, such as solar analyses (shadowing) and finding the optimal place to install a surveillance camera or a billboard. This list is growing, e.g. a potential application could be to estimate the visibility of an urban canyon from a satellite.
-
-This MSc thesis will investigate visibility algorithms and potential applications.
-
-*Contacts:* [Ravi Peters](http://tudelft.nl/rypeters), [Filip Biljecki](http://tudelft.nl/biljecki) and [Hugo Ledoux](http://tudelft.nl/hledoux)
-
+*Contact:* [F Bi](ht)
 
 - - -
 
@@ -186,75 +182,11 @@ This MSc thesis will investigate visibility algorithms and potential application
 
 This topic is analogous with data matching in cartography.
 
-*Contact:* [Filip Biljecki](http://3d.bk.tudelft.nl/biljecki)
+*Contact:* [FiBili](http://3d.bk)
+
 
 - - -
 
-## Procedural modelling in CityGML
-
-Procedural modelling deals with automatic model generation by means of a procedure. It is common in computer graphics, but less so in 3D city modelling. This aim of this thesis is to design a procedural modelling engine focused on 3D GIS and CityGML in multiple levels of detail (LOD). There are two possibilities: generating 3D models from real-world (2D) data supplementing synthetic content (e.g. height of a building, windows), or generating completely synthetic 3D data.
-
-*Contact:* [Filip Biljecki](http://3d.bk.tudelft.nl/biljecki)
-
-- - - 
-
-## Extension of the ISO standard 19157 for 3D data
-
-The standard ISO 19157:2013 Geographic information---Data quality is the principal standard for describing the quality of geodata. For instance, the positional and thematic errors. However, the standard falls short when it comes to 3D data. For instance, it is not possible to describe invalid 3D geometry such as solids, and that the dataset has been acquired in an insufficient level of detail. The aim of this thesis is to investigate how is it possible to extend the standard for quality concepts found in 3D.
-
-Upon successful completion of this topic, the student will become proficient with this important standard, and potentially give valuable recommendations for the new version of the standard to the developers. 
-
-*Contact:* [Filip Biljecki](http://3d.bk.tudelft.nl/biljecki)
-
-- - -
-
-## Shape grammar to subdivide spaces
-
-![](img/shape_grammar.png)
-
-Indoor environment in public buildings consist of very large spaces and usually it is difficult to give instructions how to get to a specific part of the such space. Therefore for indoor localisation and navigation, spaces are subdivided into functional areas. There several approaches to subdivide spaces. 
-
-This research will concentrate on space subdivision using shape grammar. A shape grammar consists of number of shape rules and a generation process that selects and processes rules. In general, shape rule specifies the transformations on  existing (part of a) shape. This research is part of [SIMs3D](www.sims3d.net) project.
-
-*Contact:* [Abdoulaye Diakité](http://3d.bk.tudelft.nl/adiakite)
-
-- - -
-
-## Octree – Indoor/Outdoor navigation
-
-![](img/octree_nav.png)
-
-3D raster representation is increasingly gaining the interest of the researchers. They are simple structures but usually result in large data sets. Therefore in previous research we have investigated Octree data structure and its use for indoor path computation.
-
-This research topic will continue and extend previous work by considering rasterization of outdoor space. The goal is to investigate what kind of Octree would be needed for seamless indoor/outdoor navigation. 
-
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova) 
-
-- - -
-
-## Indoor modelling with the Google Tango tablet
-
-![](img/tango.png)
-
-The Google Tango tablet is a very intuitive, interactive and interesting tool for indoor scanning. The device contains suitable sensors to rapidly produce 3D models. But the few apps available for this task are very limited, and only provides either an already processed mesh or point cloud samples. 
-
-The goal of this research is to evaluate to which extent the tablet can be used for indoor modelling. It is about fully exploiting the skills of the tablet to extract proper point clouds and perform semantically rich surface reconstruction, by relying on other information such as the scanning trajectories, the coloured pictures of the environment, etc. 
-
-*Contact:* [Abdoulaye Diakité](http://3d.bk.tudelft.nl/adiakite)
-
-- - -
-
-## Dynamic changes of the 3D indoor spaces
-
-In order to perform fine-grained indoor navigation, one needs to consider the entire 3D free and non-free space. The non-free space is often characterized by furniture elements and people activities (crowd, queue, etc).  The free space that is available for navigation cannot be evaluated without considering the obstacles. This problem is even more complex because the obstacles can move in the indoor space.
-
-![](img/dynamic_indoor.png)
-
-The goal of this research is to investigate the best way to consider the moving objects in an indoor environment to optimally evaluate the real free space available for navigation. This research is part of [SIMs3D](www.sims3d.net) project.
- 
-*Contact:* [Abdoulaye Diakité](http://3d.bk.tudelft.nl/adiakite)
-
-- - -
 
 ## FaciliDat: 3D Indoor model and a database schema for facility management  
 
@@ -266,7 +198,7 @@ Currently two international standards for 3D indoor modelling are available IFC 
 * First option: Is it possible to establish a 3D indoor model that can serve facility management purposes? This research will evaluate the suitability of the two standards (and available database implementations such as 3DCityDB) and propose a solution: extend/adapt one of them or design a new model combining best characteristics of the two. The proposed approach should be realised as a data model in DBMS and validated against a predefined set of user requirements. A simple web application allowing access and view to the database would be recommendable.  (Required skills: UML, SQL, basic programming)
 * Second option: What kind of algorithms are needed to convert automatically IFC to CityGML LOD4 taking care of valid geometry and semantics. It is expected that recommendations for design of a building model will be derived, which will facilitate a fully automatic conversion. This might also result in more strict rules for representing indoor objects in CityGML. (Required skills: computational geometry, programming)
 
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova) (in cooperation with More For You, Charim) 
+*Contact*: [S Z](http://3d.b) (in cooperation with More ) 
 
 
 - - - 
@@ -279,7 +211,7 @@ Many indoor navigation apps are currently available but they are focussed on spe
 
 This research will investigate what kind of 3D indoor model which can provide sufficient information to navigate different users through changing indoor environments. Are different LOD/layers needed? How to maintain connectivity of spaces? Can the network be derived on the fly or should be stored with the geometry model? Fundamental concepts of IndoorGML such as dual graph and Multi-Layered Space Model will be the starting point of the research. Generic user profiles and parameters reflecting changing indoor environmental need to be identified. A final app should demonstrate the flexibility of the model and the proposed strategy for path navigation (Required skills: UML, SQL, programming)
 
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova) (in cooperation with CGI) 
+*Contact*: [SZ](http://3d.) (in cooperation with ) 
 
 
 - - - 
@@ -313,7 +245,7 @@ This research should investigate conditions for indoor navigation, corresponding
 
 This research will concentrated on several technologies for collection point clouds ZEB1, Tango, terrestrial scanner, and optical video/images. A comparative study will be completed on the basis of a set of parameters, including time for collecting and processing data to a uniform point cloud. The 4 technologies will be tested on the same building under the same conditions. The most prominent technology should be identified for quick update of parts of 3D models. A test bed for testing and evaluation should be set up.  (Required skills interest on scanning technology, processing of point clouds).      
 
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova) (related to M4C project SIMs3D)
+*Contact*: [SZ](http://3) 
 
 - - - 
 
@@ -327,22 +259,9 @@ This research will concentrated on several technologies for collection point clo
 
 ## 3D reconstruction of doors and windows from point clouds
 
-Doors and windows are of critical importance for indoor navigation and localisation, but very difficult to identify from point clouds: doors and windows can be closed or open during the scanning, windows can be covered with curtains or sun shutters.  This research will concentrate investigated which outdoor approach could be appropriate for indoor environments. Recently completed research of [Kaixuan Zhou](http://repository.tudelft.nl/view/ir/uuid%3A8f548788-1e42-475b-adbf-93f9dbcd04a1/) could be used as starting point. Different approaches can lead to different MSc topics: use of floor plans, semi-automatics, feature detection, etc. (Required skills: interest in processing point clouds, programming or alternatively using existing software)
+Doors and windows are of critical importance for indoor navigation and localisation, but very difficult to identify from point clouds: doors and windows can be closed or open during the scanning, windows can be covered with curtains or sun shutters.  This research will concentrate investigated which outdoor approach could be appropriate for indoor environments. Recently completed research of [Kau](http://repository.1/) could be used as starting point. Different approaches can lead to different MSc topics: use of floor plans, semi-automatics, feature detection, etc. (Required skills: interest in processing point clouds, programming or alternatively using existing software)
 
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova), Ben Gorte (related to M4C project SIMs3D)
-
-- - - 
-
-## System architecture for flexible indoor path computation making use of IndoorGML
-
-IndoorGML is recently accepted standard for exchange of indoor information needed mostly for navigation. The standard suggests three options for encoding geometry and network information that is needed for navigation:  1) the geometry is provided by IFC, KML or CityGML file and the IndoorGML contains only the path/network for navigation, 2) simple geometry&semantics is stored in the IndoorGML file, and finally 3) no geometry is provided
-
-![](img/indoorgml.png)
-
-The three different options have their pros and cons for different types of server-client applications. Sever-based or client-based computations? How much information to be sent to the client: only the navigation path or the navigation path and the building model? Provide the whole path or wait for requests from the user? An android application should be developed that demonstrates the different approaches 
-(Required skills: web technology, app development)
-
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova) (related to OGC pilot project)
+*Contact*: [Sva](http://3d.bk.), Ben Gorte (related to M4C project SIMs3D)
 
 - - - 
 
@@ -350,7 +269,7 @@ The three different options have their pros and cons for different types of serv
 
 Scanning indoor environments with ZEB1 is quick and accurate method for obtaining indoor point clouds. However,  the point clouds don’t have colour. This research will investigate an approach for integrating images with the ZEB1 point clouds to obtain coloured points. The research will be in collaboration with CSIRO, GeoSlam and university of Picardie. (Required skills: interest in processing point clouds, programming)
 
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova) (in cooperation with LEAP3D)
+*Contact*: [Sva](http://3d.bk.t) (in cooperation with LE)
 
 - - - 
 
@@ -358,7 +277,7 @@ Scanning indoor environments with ZEB1 is quick and accurate method for obtainin
 
 Connecting and visualizing real-time sensors with point cloud. Used for analysis of data and influencing the environment (smart city concept). Details to be provided later. 
 
-*Contact*: [Sisi Zlatanova](http://3d.bk.tudelft.nl/szlatanova) and Ester de Bruin (LEAP3D) 
+*Contact*: [SiZl](http://3d.bk.tu) and Ester de Bruin (LE) 
 
 
 

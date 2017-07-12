@@ -1,17 +1,4 @@
 
-- name: azul
-  webpage: https://itunes.apple.com/app/azul/id1173239678?mt=12
-  description: A CityGML viewer for macOS 10.12
-  category: Visualisation
-  starred: true
-
-
-- name: GDAL (Geospatial Data Abstraction Library)
-  webpage: http://www.gdal.org/
-  description: Various raster formats
-  category: Input and Output
-  starred: true
-
 - name: Assimp
   webpage: http://www.assimp.org
   description: Import various 3D model formats, such as OBJ and COLLADA. C++ and Python.
@@ -30,17 +17,17 @@
   category: Input and Output
   starred: true
 
-- name: OGR
-  webpage: http://www.gdal.org/ogr/
-  description: Various vector formats
-  category: Input and Output
-  starred: true
+#- name: OGR
+#  webpage: http://www.gdal.org/ogr/
+#  description: Various vector formats
+#  category: Input and Output
+#  starred: true
 
-- name: PDAL
-  webpage: http://www.pdal.io/
-  description: Point cloud I/O
-  category: Input and Output
-  starred: false
+#- name: PDAL
+#  webpage: http://www.pdal.io/
+#  description: Point cloud I/O
+#  category: Input and Output
+#  starred: false
 
 - name: laspy
   webpage: https://github.com/grantbrown/laspy
@@ -48,11 +35,11 @@
   category: Input and Output
   starred: false
 
-- name: pyshp
-  webpage: https://github.com/GeospatialPython/pyshp
-  description: Shapefiles using only Python
-  category: Input and Output
-  starred: false
+#- name: pyshp
+#  webpage: https://github.com/GeospatialPython/pyshp
+#  description: Shapefiles using only Python
+#  category: Input and Output
+#  starred: false
 
 - name: Fiona
   webpage: https://github.com/Toblerity/Fiona
@@ -66,13 +53,11 @@
   category: Input and Output
   starred: true
 
-
-- name: Shapely
-  webpage: https://github.com/Toblerity/Shapely
-  description: Python bindings for GEOS
-  category: Geometric libraries
-  starred: true
-
+#- name: Shapely
+#  webpage: https://github.com/Toblerity/Shapely
+#  description: Python bindings for GEOS
+#  category: Geometric libraries
+#  starred: true
 
 - name: Boost.geometry
   webpage: https://github.com/boostorg/geometry
@@ -116,11 +101,6 @@
 #   category: Geometric libraries
 #   starred: false
 
-- name: GiST
-  webpage: http://gist.cs.berkeley.edu/
-  description: A template indexing structure to create your own spatial indexing
-  category: Spatial indexing
-  starred: false
 
 - name: GTS (GNU Triangulated Surface Library)
   webpage: http://gts.sourceforge.net/index.html
@@ -134,17 +114,11 @@
 #   category: Geometric libraries
 #   starred: false
 
-- name: JTS (Java Topology Suite)
-  webpage: http://sourceforge.net/projects/jts-topo-suite/
-  description: Spatial operations, including validation and topology functions
-  category: Geometric libraries
-  starred: false
-
-- name: LEDA
-  webpage: http://www.algorithmic-solutions.com/leda/index.htm
-  description: Robust computational geometry and combinatorial algorithms
-  category: Geometric libraries
-  starred: false
+#- name: JTS (Java Topology Suite)
+#  webpage: http://sourceforge.net/projects/jts-topo-suite/
+#  description: Spatial operations, including validation and topology functions
+#  category: Geometric libraries
+#  starred: false
 
 # - name: LIBICP (Library for Iterative Closest Point Fitting)
 #   webpage: http://www.cvlibs.net/software/libicp/
@@ -152,11 +126,6 @@
 #   category: Geometric libraries
 #   starred: false
 
-- name: libspatialindex
-  webpage: http://libspatialindex.github.com/
-  description: Different spatial indexing methods
-  category: Spatial indexing
-  starred: false
 
 # - name: MicMac
 #   webpage: http://logiciels.ign.fr/?-Micmac,3-
@@ -164,11 +133,6 @@
 #   category: Geometric libraries
 #   starred: false
 
-- name: Open CASCADE
-  webpage: http://www.opencascade.org
-  description: CAD engine that uses constructive solid geometry
-  category: Geometric libraries
-  starred: false
 
 # - name: OpenCV
 #   webpage: http://opencv.org
@@ -194,11 +158,11 @@
   category: Geometric libraries
   starred: true
 
-- name: PROJ.4
-  webpage: https://github.com/OSGeo/proj.4/
-  description: Projections
-  category: Geometric libraries
-  starred: true
+#- name: PROJ.4
+#  webpage: https://github.com/OSGeo/proj.4/
+#  description: Projections
+#  category: Geometric libraries
+#  starred: true
 
 # - name: Wykobi
 #   webpage: http://www.wykobi.com
@@ -206,12 +170,6 @@
 #   category: Geometric libraries
 #   starred: false
 
-
-- name: ANN (Approximate Nearest Neighbor Library)
-  webpage: http://www.cs.umd.edu/~mount/ANN/
-  description: Real and approximate nearest neighbors in n-D point clouds
-  category: Spatial indexing
-  starred: false
 
 # - name: cdd/cddplus
 #   webpage: http://www.cs.mcgill.ca/~fukuda/soft/cdd_home/cdd.html
@@ -243,11 +201,11 @@
   category: Computational geometry software
   starred: false
 
-- name: Miniball
-  webpage: http://miniball.sourceforge.net/
-  description: Smallest enclosing ball in n-D
-  category: Computational geometry software
-  starred: false
+#- name: Miniball
+#  webpage: http://miniball.sourceforge.net/
+#  description: Smallest enclosing ball in n-D
+#  category: Computational geometry software
+#  starred: false
 
 # - name: Netgen
 #   webpage: http://www.hpfem.jku.at/netgen/
@@ -316,25 +274,6 @@
   category: Databases
   starred: true
 
-- name: PostgreSQL
-  webpage: http://www.postgresql.org/
-  description: DBMS, use together with PostGIS
-  category: Databases
-  starred: false
-
-- name: SpatiaLite
-  webpage: http://www.gaia-gis.it/spatialite/
-  description: A complete Spatial DBMS in a nutshell (can work with shapefiles as external storage format)
-  category: Databases
-  starred: false
-
-
-- name: D3.js
-  webpage: http://d3js.org
-  description: Framework to create interactive maps and more
-  category: Visualisation
-  starred: false
-
 # - name: GD
 #   webpage: http://www.boutell.com/gd/
 #   description: Graphics library
@@ -346,12 +285,6 @@
 #   description: 3D visualiser
 #   category: Visualisation
 #   starred: false
-
-- name: GeoServer
-  webpage: http://geoserver.org/
-  description: Publish web maps
-  category: Visualisation
-  starred: false
 
 # - name: GMT
 #   webpage: http://gmt.soest.hawaii.edu/
@@ -400,18 +333,6 @@
   category: Visualisation
   starred: false
 
-- name: mapnik
-  webpage: http://mapnik.org
-  description: Toolkit for map applications
-  category: Visualisation
-  starred: false
-
-- name: MapServer
-  webpage: http://mapserver.org/
-  description: Publish web maps
-  category: Visualisation
-  starred: false
-
 - name: MeshLab
   webpage: http://meshlab.sourceforge.net/
   description: Process and view triangular meshes and point clouds
@@ -423,6 +344,7 @@
   description: 3D point cloud and mesh processing software
   category: Visualisation
   starred: false
+  
 # - name: OpenGL
 #   webpage: http://www.opengl.org
 #   description: The free standard for 3D computer graphics
@@ -435,12 +357,6 @@
 #   category: Visualisation
 #   starred: false
 
-- name: ParaView
-  webpage: http://www.paraview.org/
-  description: Visualiser for large data sets
-  category: Visualisation
-  starred: false
-
 - name: QGIS (Quantum GIS)
   webpage: http://www.qgis.org/
   description: GIS package
@@ -452,27 +368,3 @@
 #   description: Cartogram generator written in Java
 #   category: Visualisation
 #   starred: false
-
-- name: TileMill
-  webpage: https://www.mapbox.com/tilemill/
-  description: Simple map creator
-  category: Visualisation
-  starred: false
-
-- name: VTK (Visualization Toolkit)
-  webpage: http://www.vtk.org
-  description: Software that implements a wide variety of visualisation algorithms.
-  category: Visualisation
-  starred: false
-
-- name: graph-tool
-  webpage: http://graph-tool.skewed.de
-  description: Efficient Python module for manipulation and statistical analysis of graphs
-  category: Graphs
-  starred: false
-
-- name: pykdtree
-  webpage: https://github.com/storpipfugl/pykdtree
-  description: Fast kd-tree implementation in Python
-  category: Spatial indexing
-  starred: true

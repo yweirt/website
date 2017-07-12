@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Some GIS conferences relevant to us
+title: Some geoinformatics conferences relevant to us
 permalink: /conferences/
 ---
 
-<!-- Some GIS conferences that are relevant and interesting to the members of our group. 
+<!-- Some conferences that are relevant and interesting to the members of our group. 
 
-This is not meant to be an exhaustive list of all GIS conferences. -->
+This is not meant to be an exhaustive list of all conferences. -->
 
 
 {% assign today = 'now' | date: "%s" %}

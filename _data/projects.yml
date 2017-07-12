@@ -1,38 +1,10 @@
 
-- name: UMnD
-  description: Urban modelling in higher dimensions
-  webpage: /projects/umnd/
-  funding: ERC
-  fundingurl: https://erc.europa.eu/funding-and-grants/funding-schemes/starting-grants
-  image: umnd.jpg
-
-- name: Nederland in 3D
-  description: "Automatic reconstruction of the whole of the Netherlands: LOD0 buildings + terrain"
-  funding: Kadaster
-  fundingurl: https://www.kadaster.nl
-  webpage: https://github.com/tudelft3d/3dfier
-  image: 3dfier.jpg
-
 - name: 5D geo-modelling
   description: We integrate 3D geographic data with time and scale as extra dimensions
   webpage: /projects/geo5d/
   funding: STW
   fundingurl: http://www.stw.nl
   image: geo5d.png
-
-- name: SIMs3D
-  description: Smart 3D indoor models to support crisis management in large public buildings.
-  webpage: http://www.sims3d.net
-  image: SIMs3D.jpg
-  funding: STW
-  fundingurl: http://www.stw.nl
-
-- name: 3D4EM
-  description: Design and implementation of an SDI for integrated environmental modelling in 3D
-  webpage: http://www.3d4em.nl
-  funding: STW
-  fundingurl: http://www.stw.nl
-  image: 3d4em.jpg
 
 - name: 3DSM
   description: Point cloud modelling with the 3D Medial Axis Transform
@@ -41,24 +13,11 @@
   fundingurl: http://www.stw.nl
   image: 3dsm.jpg
 
-- name: Hidden Amsterdam
-  description: "We help find 'hidden parts' of Amsterdam with 3D city models"
-  webpage: http://www.ams-institute.org/solution/hidden-amsterdam/
-  funding: AMS
-  fundingurl: http://www.ams-institute.org
-  image: haf.png
-  finished: true
-
-- name: Quality control of 3D city models
-  description: "Validation and quality control of (coming soon: all features) in 3D city models"
-  webpage: http://geovalidation.bk.tudelft.nl/val3dity
-  image: val3dity.png
-
-- name: Navigation for first responders
-  description: Path planning for first responders among the moving obstacles caused by different types of disasters
-  webpage: /projects/navigation/
-  image: navigation.png
-  finished: true
+#- name: Navigation for first responders
+#  description: Path planning for first responders among the moving obstacles caused by different types of disasters
+#  webpage: /projects/navigation/
+#  image: navigation.png
+#  finished: true
 
 - name:  Big Data Analytics in the Geospatial Domain
   description: Project to develop voxel, point cloud data types, and spatial features of the MonetDB relational database
@@ -71,18 +30,6 @@
   webpage: /projects/indoor/
   image: INSM.jpg
   finished: true
-
-- name: 3D Cadastres
-  description: Working group to establish an operational framework for 3D Cadastres
-  webpage: http://www.gdmc.nl/3DCadastres/
-  image: 3dcadastres.png
-
-- name: Spying the underground
-  description: AR Visualisation of underground pipes
-  webpage: http://spyunderground.nl/
-  funding: 3TU lighthouse
-  fundingurl: https://erc.europa.eu/funding-and-grants/funding-schemes/starting-grants
-  image: spyunder.jpg
 
 - name: GeoBIM
   description: Bridging the gap between Geo and BIM

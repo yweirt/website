@@ -5,15 +5,15 @@ permalink: /education/
 ---
 
 <section id="courses"></section>
-<h2><a href="http://www.geomatics.tudelft.nl">MSc Geomatics</a> courses we are teaching in</h2>
+<h2><a href="http://www.lsgi.polyu.edu.hk/prospective-students/degrees-and-qualifications/master-of-science-in-geomatics/index.asp">BSc/MSc Geomatics</a> courses we are teaching in</h2>
 
-  * [GEO1002](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38465): Geographical information systems & cartography
-  * [GEO1004](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38430): 3D Modelling of the Built Environment
-  * [GEO1005](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38431): Spatial Decision Support for Planning and Crisis Management
-  * [GEO1008](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38469): Geo Datasets and Quality
+  * [LSGI1002](http://www.studiegids.tude): Geographical information systems
+  * [LSGI1004](http://www.studiegids.tudel): 3D Modelling of the Built Environment
+  * [LSGI1005](http://www.studiegids.tudel): Spatial Vision for Planning and Crisis Management
+  * [LSGI1008](http://www.studiegids.tudelft): Geo Datasets 
   <!-- * [GEO2001](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=30706): Synthesis Project -->
-  * [GEO2010](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38743): Graduation thesis preparation
-  * [GEO2020](http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=38742): Graduation thesis
+  * [LSGI2010](http://www.lsgi.polyu.edu.hk/prospective-students/degrees-and-qualifications/master-of-science-in-geomatics/index.asp): Graduation thesis preparation
+  * [LSGI2020](http://www.lsgi.polyu.edu.hk/prospective-students/degrees-and-qualifications/master-of-science-in-geomatics/index.asp): Graduation thesis
 
 - - -
 

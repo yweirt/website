@@ -1,98 +1,16 @@
-- name: GIS Ostrava 2017
-  url: http://gis.vsb.cz/gisostrava/
-  place: Ostrava, Czech Republic
-  start: 2017-03-22
-  end: 2017-03-24
-
-- name: 25th ACM SIGSPATIAL International Conference on Advances in GIS
-  url: http://sigspatial2017.sigspatial.org
-  place: Redondo Beach, USA
-  start: 2017-11-07
-  end: 2017-11-10
-
-- name: GeoBuzz 2017
-  url: http://geobuzz.nl
-  place: ’s-Hertogenbosch, the Netherlands
-  start: 2017-11-21
-  end: 2017-11-22
-
-- name: GIS Research UK 2018
-  url: http://www2.le.ac.uk/conference/gisruk2018?uol_r=8366ebfe
-  place: Leicester, UK
-  start: 2018-04-17 
-  end: 2018-04-20
-
-- name: Eurographics Workshop on Urban Data Modelling and Visualisation (UDMV) 2017
-  place: Fribourg, Switzerland
-  start: 2017-11-24
-  end: 2017-11-24
-  url: http://smartlivinglab.ch/index.php/en/home/events/189-udmv2017.html
-
-- name: 17th International Conference on Computational Science and Its Applications
-  url: http://iccsa.org
-  place: Trieste, Italy
-  start: 2017-07-03
-  end: 2017-07-06
-
-- name: "GeoAdvances 2017 : ISPRS Workshop on Multi-dimensional & Multi-scale Spatial Data Modeling"
-  url: http://geoadvances.org/
-  place: Karabuk, Turkey
-  start: 2017-10-14
-  end: 2017-10-15
-
-- name: 14th International Conference on Location Based Services
-  url: http://lbs18.ethz.ch/
-  place: Zurich, Switzerland
-  start: 2018-01-15
-  end: 2018-01-17
 
 - name: LS2017 ISPRS Workshop Laser Scanning 2017
   url: http://www2.ipf.kit.edu/laserscanning2017/index.html
   place: Wuhan, China
   start: 2017-09-18
-  end: 2017-09-22
-
-- name: GRASF Conference 2017
-  url: http://www.grasf.ae/
-  place: Dubai, United Arab Emirates
-  start: 2017-03-06
-  end: 2017-03-08
-
-- name: ISPRS Workshop on Modelling and Managing Cartographic Data
-  url: http://www2.isprs.org/commissions/comm4/wg7/isprs-workshop-on-modelling-and-managing-cartographic-data.html
-  place: Washington DC, USA
-  start: 2017-07-02
-  end: 2017-07-02
-
-- name: 28th International Cartographic Conference 2017
-  url: http://icc2017.org
-  place: Washington DC, USA
-  start: 2017-07-02
-  end: 2017-07-07
-
-- name: Indoor3D 2017
-  url: http://indoor3d.net/2017/
-  place: Wuhan, Hubei, China
-  start: 2017-09-19
   end: 2017-09-20
-
-- name: 12th 3D Geoinfo Conference 
-  url: http://3dgeoinfo2017.com
-  place: Melbourne, Australia
-  start: 2017-10-26
-  end: 2017-10-27
-
-- name: Web3D 2017
-  url: http://web3d2017.org
-  place: Brisbane, Australia
-  start: 2017-06-05
-  end: 2017-06-07
-
-- name: COSIT 2017
-  url: http://www.cosit2017.org
-  place: L'Aquila, Italy
-  start: 2017-09-04
-  end: 2017-09-08
+  
+- name: The International Workshop on Image and Data Fusion 2017(IWIDF 2017)
+  url: http://iwidf2017.csp.escience.cn/dct/page/1
+  place: Wuhan, China
+  start: 2017-09-20
+  end: 2017-09-22
+  
 
 - name: XXIVth ISPRS Congress
   url: http://www.isprs2020-nice.science
@@ -106,65 +24,11 @@
   start: 2017-09-18
   end: 2017-09-22
 
-- name: Agile 2017
-  url: https://agile-online.org/index.php/conference/conference-2017
-  place: Wageningen, the Netherlands
-  start: 2017-05-09 
-  end: 2017-05-12
-
-- name: Bridging space, time, and semantics in GIScience
-  url: http://geosem.ntua.gr
-  place: Wageningen, the Netherlands
-  start: 2017-05-09 
-  end: 2017-05-09
-
-- name: GIS Research UK 2017
-  url: http://manchester.gisruk.org
-  place: Manchester, UK
-  start: 2017-04-18 
-  end: 2017-04-21
-
-- name: 21st Annual International Conference on 3D Web Technology
-  url: http://web3d2016.web3d.org
-  place: Anaheim, California, USA
-  start: 2016-07-22 
-  end: 2016-07-24
-
-- name: FOSS4G
-  url: http://2016.foss4g.org
-  place: Bonn, Germany
-  start: 2016-08-24 
-  end: 2016-08-26
-
-- name: 1st International Conference on Smart Data and Smart Cities
-  url: http://www.udms.net
-  place: Split, Croatia
-  start: 2016-09-07 
-  end: 2016-09-09
-
 - name: XXIII ISPRS Congress 2016
   url: http://www.isprs2016-prague.com
   place: Prague, Czech Republic
   start: 2016-07-12
   end: 2016-07-19
-
-- name: GIS Ostrava 2016
-  url: http://gis.vsb.cz/gisostrava/
-  place: Ostrava, Czech Republic
-  start: 2016-03-16
-  end: 2016-03-18
-
-- name: GIScience 2016
-  url: http://giscience.geog.mcgill.ca
-  place: Montréal, Canada
-  start: 2016-09-27
-  end: 2016-09-30
-
-- name: 5th International FIG Workshop on 3D Cadastres
-  url: http://3dathens2016.gr/
-  place: Athens, Greece
-  start: 2016-10-18
-  end: 2016-10-20
 
 - name: Indoor 3D Workshop
   url: http://3dathens2016.gr/
@@ -172,56 +36,9 @@
   start: 2016-10-19
   end: 2016-10-19
 
-- name: 11th 3D Geoinfo Conference 
-  url: http://3dathens2016.gr/site/
-  place: Athens, Greece
-  start: 2016-10-20
-  end: 2016-10-21
-
-- name: 19th AGILE International Conference on Geographic Information Science
-  url: http://www.agile-online.org/index.php/conference/conference-2016?layout=edit&id=284
-  place: Helsinki, Finland
-  start: 2016-06-14
-  end: 2016-06-17
-
-- name: 3D Geoinfo Conference 2015
-  url: http://www.geoinfo.utm.my/jointgeoinfo2015/3dgeoinfo.html
-  place: Kuala Lumpur, Malaysia
-  start: 2015-10-28
-  end: 2015-10-29
-
-- name: GeoAdvances 2016 & ISPRS Workshop on Multi-dimensional & Multi-scale Spatial Data Modeling
-  url: http://geoadvances.org
-  place: Istanbul, Turkey
-  start: 2016-10-16
-  end: 2016-10-17
-
 - name: 24th ACM SIGSPATIAL International Conference on Advances in GIS
   url: http://sigspatial2016.sigspatial.org
   place: San Francisco, USA
   start: 2016-11-01
   end: 2016-11-04
 
-- name: 16th International Conference on Computational Science and Its Applications
-  url: http://iccsa.org
-  place: Beijing, China
-  start: 2016-07-04
-  end: 2016-07-07
-
-- name: 78th FIG Working Week 2016
-  url: http://www.fig.net/fig2016/
-  place: Christchurch, New Zealand
-  start: 2016-05-02
-  end: 2016-05-06
-
-- name: GeoBuzz 2016
-  url: http://geobuzz.nl
-  place: ’s-Hertogenbosch, the Netherlands
-  start: 2016-11-22
-  end: 2016-11-23
-
-- name: Eurographics Workshop on Urban Data Modelling and Visualisation (UDMV) 2016
-  place: Liège, Belgium
-  start: 2016-12-08
-  end: 2016-12-08
-  url: http://www.geo.ulg.ac.be/UDMV16/

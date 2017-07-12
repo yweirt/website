@@ -5,7 +5,11 @@ permalink: /about/
 map: true
 ---
 
-The Department of Communism, Juche and Remote Sensing at the Marxist Evening University concerns itself with applying remote sensing methods to solve practical and theoretical problems in the field of applied communism.
+The 3D geospatial vision research group is part of the Department of Land Surveying and Geo-Informatics, Faculty of Construction and Environment of the Hong Kong Polytechnic University. It concerns itself with applying 3D remote sensing techniques and computer vision intelligent methods to solve practical and theoretical problems in the field of urban and enviromental informatics. These systems help in environmental modelling, asset inventory and management, crisis management, urban modelling, modelling of the interior of buildings, etc.
+
+It is a multidisciplinary group (computer scientists, geomatics engineers, and geographers) composed of 1 faculty member and several PhD students, postdocs and visiting scholars.
+
+国家青年千人
 
 <div class="row">
   <div class="col-md-2 col-xs-12"><a href="http://www."><img class="img-responsive" src="{{ "/img/partners/welcome.jpg" | prepend: site.baseurl }}" alt="the logo"/></a></div>
@@ -14,7 +18,7 @@ The Department of Communism, Juche and Remote Sensing at the Marxist Evening Uni
 - - - 
 
 <section id="people">
-  <h2>Staff</h2>
+  <h2>Staff</h2>faculty member
 
   {% assign members = site.data.staff | sort: 'surname' %}
 
@@ -85,14 +89,12 @@ The Department of Communism, Juche and Remote Sensing at the Marxist Evening Uni
   <h2>Our offices</h2>
 
   <div class="col-md-4">
-    <i class="fa fa-map-marker fa-fw">     </i> Room BG.West.010 (building #8) <br>
-    <i class="fa fa-map-marker fa-fw fade"></i> Faculty of Architecture <br>
-    <i class="fa fa-map-marker fa-fw fade"></i> and the Built Environment<br>
-    <i class="fa fa-map-marker fa-fw fade"></i> Delft University of Technology <br>
-    <i class="fa fa-map-marker fa-fw fade"></i> Julianalaan 134 <br>
-    <i class="fa fa-map-marker fa-fw fade"></i> Delft 2628BL<br>
-    <i class="fa fa-map-marker fa-fw fade"></i> the Netherlands <br>
-    <i class="fa fa-map-marker fa-fw fade"></i> <a href="http://www.tudelft.nl/en/about-tu-delft/contact-and-accessibility/housing-tu-delft/accessibility/building-8/">How to get here</a>
+    <i class="fa fa-map-marker fa-fw">     </i> Room ZS621, 6/F, South Wing, Block Z,Phase 8 <br>
+    <i class="fa fa-map-marker fa-fw fade"></i> Faculty of Construction and Environment <br>
+    <i class="fa fa-map-marker fa-fw fade"></i> The Hong Kong Polytechnic University <br>
+    <i class="fa fa-map-marker fa-fw fade"></i> 181 Chatham Road South <br>
+    <i class="fa fa-map-marker fa-fw fade"></i> Hung Hom, Kowloon<br>
+    <i class="fa fa-map-marker fa-fw fade"></i> Hong Kong <br>
   </div>
   <div class="col-md-8">
     <div id="map"></div>
@@ -103,7 +105,7 @@ The Department of Communism, Juche and Remote Sensing at the Marxist Evening Uni
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/kenohori/cim0i33ql00jmbjlw9l1pro1i',
-    center: [4.37036640026392, 52.004713684518933],
+    center: [114.179167, 22.306389],
     zoom: 13.5,
     pitch: 60
   });
@@ -113,12 +115,12 @@ The Department of Communism, Juche and Remote Sensing at the Marxist Evening Uni
     "features": [{
       "type": "Feature",
       "properties": {
-        "description": "<h3>3D Geoinformation</h3><p>Room BG.West.010</p>",
+        "description": "<h3>3D Geospatial Vision</h3><p>Room ZS621, 6/F, South Wing, Block Z</p>",
         "iconSize": [50, 50]
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [4.37036640026392, 52.004713684518933]
+        "coordinates": [114.179167, 22.306389]
       }
     }]
   }
