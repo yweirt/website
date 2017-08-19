@@ -1,76 +1,30 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3D geospatial vision</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>https://yweirt.github.io/</link>
-    <atom:link href="https://yweirt.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 19 Aug 2017 10:56:19 +0800</pubDate>
-    <lastBuildDate>Sat, 19 Aug 2017 10:56:19 +0800</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
       <item>
-        <title>New PhD research assistants/Postdoctoral fellow: positions available in manipulation of multispectral 3D point clouds of both city and natural enviroment </title>
-        <description>&lt;p&gt;We are looking for new PhD students/research assistants and postdoctoral research fellows to join our group. 
-The project is in collaboration with the German company/research institutions including &lt;a href=&quot;http://www.cycldia.de&quot;&gt;3D Mapping&lt;/a&gt; and different partners around the world.&lt;/p&gt;
-
-&lt;p&gt;Deadline to apply is 2017-11-15, and &lt;a href=&quot;/jobs/phdrs2017/Letterhead_LSGI_int.pdf&quot;&gt;all details are available on that page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/146221307?color=ff9933&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://vimeo.com/146221307&quot;&gt;3D - Geoworld&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/cyclomedia&quot;&gt;CycloMedia&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Aug 2017 08:57:00 +0800</pubDate>
-        <link>https://yweirt.github.io/news/2017/08/17/phd-position.html</link>
-        <guid isPermaLink="true">https://yweirt.github.io/news/2017/08/17/phd-position.html</guid>
-        
-        
-        <category>news</category>
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
       </item>
-    
-      <item>
-        <title>Workshops at ISPRS Geospatial Week 2017 on Laser scanning and Data fusion</title>
-        <description>&lt;p&gt;On 18-20 September 2017 we have organised &lt;a href=&quot;http://www2.ipf.kit.edu/laserscanning2017/&quot;&gt;two workshops on Laser scanning and Data fusion&lt;/a&gt; at the &lt;a href=&quot;http://gsw2017.3snews.net/index.php?siteid=2&quot;&gt;ISPRS Geospatial Week 2017 (GSW2017)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The aim of the workshop was to bring experts on 3D data for urban applications together and explore potential collaborations. The workshop was organised in relation to the &lt;a href=&quot;http://www.b&quot;&gt;visiting professorship of Prof. Tho&lt;/a&gt;, and it involved presentations from academia, industry, and government.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://gsw2017.3snews.net/index.php?siteid=2&quot;&gt;GSW2017&lt;/a&gt; is an talent is educated and engineers, designers, digital engineers and natural/social scientists jointly develop and valorise interdisciplinary metropolitan solutions.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/2017/ams-.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/2017/ams-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/2017/am.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Aug 2017 08:00:00 +0800</pubDate>
-        <link>https://yweirt.github.io/news/2017/08/15/ISPRS-workshop.html</link>
-        <guid isPermaLink="true">https://yweirt.github.io/news/2017/08/15/ISPRS-workshop.html</guid>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Hello 3D geospatial world</title>
-        <description>&lt;p&gt;Since 1st of August 2017, our 3D geospatial vision group has started.&lt;/p&gt;
-
-&lt;p&gt;3D geoinformation and computer vision methodology are extremely important to manage, predict and interpret the complex reality. We study and develop techniques to acquire, extract, analyse and model 3D geoinformation. We develop solutions in close collaboration with users such as experts of forestry, smart city, disaster mitigation and ecological modelling. Our group is located within the &lt;a href=&quot;http://www.lsgi.polyu.edu.hk/home/index.asp&quot;&gt;Department of Land Surveying and Geo-Informatics&lt;/a&gt;, since 3D is a key aspect in the design and analysis of interactions in the urban and natual environment. We are therefore very close to the main users of urban and enviromental informatics who can advance in their own domain by using ours and vice versa.&lt;/p&gt;
-
-&lt;p&gt;Our group consists of one faculty member and  with different but completing expertise in the domain of 3D modeling: &lt;a href=&quot;https://yweirt.github.io&quot;&gt;Wei Yao&lt;/a&gt; (3D geospatial vision and intelligence), and several PhD students and research scientists/visitors permanently work on highly relevant topics as you can see on our &lt;a href=&quot;/about&quot;&gt;staff&lt;/a&gt; and &lt;a href=&quot;/projects&quot;&gt;projects&lt;/a&gt; pages.&lt;/p&gt;
-
-&lt;p&gt;We are looking forward to develop and provide solutions for a solid and sustainable 3D data and technical basis to support existing and new applications!&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 05 Aug 2017 00:00:00 +0800</pubDate>
-        <link>https://yweirt.github.io/news/2017/08/05/hello-3d-world.html</link>
-        <guid isPermaLink="true">https://yweirt.github.io/news/2017/08/05/hello-3d-world.html</guid>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
+    {% endfor %}
   </channel>
 </rss>

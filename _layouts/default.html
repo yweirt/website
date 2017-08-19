@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  {% if page.scrollspy %}
+  <body data-spy="scroll" data-target="#{{ page.scrollspy }}">
+  {% else %}
+  <body>
+  {% endif %}
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+  </body>
+</html>

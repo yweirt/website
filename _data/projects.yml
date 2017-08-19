@@ -1,0 +1,37 @@
+
+- name: 5D geo-modelling
+  description: We integrate 3D geographic data with time and scale as extra dimensions
+  webpage: /projects/geo5d/
+  funding: STW
+  fundingurl: http://www.stw
+  image: geo5d.png
+
+- name: 3DSM
+  description: Point cloud modelling with the 3D Medial Axis Transform
+  webpage: /projects/3dsm/
+  funding: STW
+  fundingurl: http://www.stw.nl
+  image: 3dsm.jpg
+
+#- name: Navigation for first responders
+#  description: Path planning for first responders among the moving obstacles caused by different types of disasters
+#  webpage: /projects/navigation/
+#  image: navigation.png
+#  finished: true
+
+- name:  Big Data Analytics in the Geospatial Domain
+  description: Project to develop voxel, point cloud data types, and spatial features of the MonetDB relational database
+  webpage: /projects/bigvoxels/
+  image: bigvoxels.png
+  finished: true
+
+- name: Indoor Semantic Modeling to Support Path-Finding
+  description: Modelling of building semantics for navigation purpose
+  webpage: /projects/indoor/
+  image: INSM.jpg
+  finished: true
+
+- name: GeoBIM
+  description: Bridging the gap between Geo and BIM
+  webpage: /projects/geobim/
+  image: geobim.jpg

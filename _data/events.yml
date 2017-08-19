@@ -1,0 +1,19 @@
+
+- name: LS2017
+  description: ISPRS Workshop Laser Scanning 2017 
+  image: ls2017.png
+  web: http://www2.ipf.kit.edu/laserscanning2017/
+  date: 18 September 2017
+  
+- name: IWIDF2017
+  description: 2017 International Workshop on Image and Data Fusion (IWIDF2017)
+  image: iwidf2017.png
+  web: http://iwidf2017.csp.escience.cn/dct/page/1
+  date: 20 September 2017
+  
+- name: 3DVMRS2014
+  description: 1st International Workshop 3D Vegetation Mapping using Advanced Remote Sensing -Implications for Seamless Modeling of Terrestrial Ecosystems
+  image: treePolygons.png
+  web: http://lidar-workshop.geo.hm.edu/workshop/?q=content/overview-0
+  date: 24-26 September 2014
+

@@ -1,0 +1,106 @@
+
+- name: Annals of the Association of American Geographers
+  webpage: http://www.tandfonline.com/loi/raag20
+  index: ISI
+  description: Covers major research articles and in-depth book reviews for all fields of geography.
+  scirev: https://scirev.sc/journal/annals-of-the-association-of-american-geographers/
+
+- name: Building and Environment
+  webpage: http://www.journals.elsevier.com/building-and-environment/
+  index: ISI
+  description: Building and Environment is an international journal that publishes original research papers and review articles related to building science and human interaction with the built environment.
+  scirev: https://scirev.sc/journal/building-and-environment/
+
+- name: Computers & Geosciences
+  webpage: http://www.elsevier.com/wps/find/journaldescription.cws_home/398/description#description
+  index: ISI 
+  description: Covers all aspects of the application of computers to the geosciences, including algorithms, programming, computational problem-solving techniques, as well as data processing and file maintenance concerns.
+  scirev: https://scirev.sc/journal/computers-and-geosciences/
+
+- name: Computers, Environment and Urban Systems
+  webpage: http://www.elsevier.com/locate/ceus
+  index: ISI
+  description: Focuses on the development, enhancement, and use of computer-based methodologies for understanding and improving environmental and urban systems.
+  scirev: https://scirev.sc/journal/computers-environment-and-urban-systems/
+
+- name: Environment and Planning B -- Planning & Design
+  webpage: http://www.envplan.com/B.html
+  index: ISI
+  description: Covers research in the application of formal methods, methods models, and theories to spatial problems which involve the built environment and the spatial structure of cities and regions.
+
+- name: Environmental Modelling & Software
+  webpage: http://www.journals.elsevier.com/environmental-modelling-and-software/
+  index: ISI
+  description: Environmental Modelling & Software publishes contributions, in the form of research articles, reviews and short communications, on recent advances in environmental modelling and/or software.
+  scirev: https://scirev.sc/journal/environmental-modelling-and-software/
+
+- name: GIScience & Remote Sensing
+  webpage: http://www.tandfonline.com/loi/tgrs20
+  index: ISI
+  description: GIScience & Remote Sensing publishes original, peer-reviewed articles associated with cartography, geographic information systems (GIS), remote sensing of the environment (including digital image processing), geocomputation, spatial data mining, spatial statistics, and geographic environmental modelling.
+  scirev: https://scirev.sc/journal/giscienceand-remote-sensing/
+
+- name: International Journal of Applied Earth Observation and Geoinformation (JAG)
+  webpage: http://www.elsevier.com/locate/jag
+  index: ISI
+  description: Covers applications of aerospace data-gathering techniques for development of natural resources.
+  scirev: https://scirev.sc/journal/international-journal-of-applied-earth-observation-and-geoinformation/
+
+- name: International Journal of Digital Earth (TJDE)
+  webpage: http://www.tandf.co.uk/journals/TJDE
+  index: ISI
+  description: Aimed at harnessing the world's data and information resources to develop a virtual 3-D model of the Earth in order to monitor, measure, and forecast natural and human activity on the planet.
+  scirev: https://scirev.sc/journal/international-journal-of-digital-earth/
+
+- name: International Journal of Geographical Information Science (IJGIS)
+  webpage: http://www.tandf.co.uk/journals/IJGIS
+  index: ISI
+  description: Provides a forum for the exchange of ideas, techniques, approaches and experiences in the rapidly growing field of geographical information systems.
+  scirev: https://scirev.sc/journal/international-journal-of-geographical-information-science/
+
+- name: ISPRS International Journal of Geo-Information (IJGI)
+  webpage: http://www.mdpi.com/journal/ijgi
+  index: ISI
+  description: ISPRS International Journal of Geo-Information (ISSN 2220-9964), an international scientific open access journal on geo-information, is jointly published by ISPRS and MDPI online quarterly.
+  scirev: https://scirev.sc/journal/isprs-international-journal-of-geo-information/
+
+- name: ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS)
+  webpage: http://www.isprs.org/isprsjournal/
+  index: ISI
+  description: Provides a channel of communication for specialists in all countries working in the disciplines that apply photogrammetry and remote sensing.
+  scirev: https://scirev.sc/journal/isprs-journal-of-photogrammetry-and-remote-sensing/
+
+- name: Journal of Photogrammetry, Remote Sensing and Geoinformation Processing (PFG)
+  website: http://www.schweizerbart.de/journals/pfg
+  index: ISI
+  description: Photogrammetrie, Fernerkundung, Geoinformation. Covers the progress and application of photogrammetric methods, remote sensing technology and the intricately connected field of geoinformation processing.
+
+- name: Landscape and Urban Planning (LUP)
+  webpage: http://www.sciencedirect.com/science/journal/01692046
+  index: ISI
+  description: Landscape and Urban Planning is an international journal aimed at advancing conceptual, scientific, and applied understandings of landscape in order to promote sustainable solutions for landscape change.
+  scirev: https://scirev.sc/reviews/landscape-and-urban-planning/
+
+- name: Lecture Notes in Computer Science (LNCS)
+  webpage: http://springerlink.com/content/105633/
+  index: Scopus
+  description: Reports on leading-edge research in artificial intelligence and other areas of computer science.
+
+- name: The Photogrammetric Record (TPR)
+  webpage: http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1477-9730
+  index: ISI
+  description: The Photogrammetric Record is an international journal containing original, independently and rapidly refereed articles that reflect modern advancements in photogrammetry, 3D imaging, computer vision, and other related non-contact fields.
+  scirev: https://scirev.sc/journal/photogrammetric-record/
+
+- name: PLOS ONE
+  webpage: http://www.plosone.org
+  index: ISI
+  description: The world’s first multidisciplinary Open Access journal, PLOS ONE accepts scientifically rigorous research, regardless of novelty. PLOS ONE’s broad scope provides a platform to publish primary research, including interdisciplinary and replication studies as well as negative results. The journal’s publication criteria are based on high ethical standards and the rigor of the methodology and conclusions reported.
+  scirev: https://scirev.sc/journal/plos-one/
+
+- name: Transactions in GIS 
+  webpage: http://www.wiley.com/bw/journal.asp?ref=1361-1682
+  index: ISI
+  description: Provides a forum for original research articles, review articles, short notes and book reviews.
+  scirev: https://scirev.sc/journal/transactions-in-gis/
+

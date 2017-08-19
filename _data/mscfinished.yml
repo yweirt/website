@@ -1,0 +1,33 @@
+
+- surname: Rk
+  name: Min
+  title: Automatic thematic and semantic labelling of 3D city models
+  image: mrook.png
+  year: 2016
+  link: http://resolver.tudelft.nl/uuid:61236178-3b72-4923-8d72-1d44446783df
+  paper: http://doi.org/10.5194/isprs-annals-IV-2-W1-23-2016
+
+- surname: Zo
+  name: Kaan
+  swapnames: true
+  title: Exploring Regularities for Improving Quality of Facade Reconstruction from Point Cloud
+  link: http://resolver.tudel
+  image: zhou.png
+  year: 2015
+
+- surname: Chn 
+  name: Cl
+  title: Edge-aware simplification of roof and facade point clouds into a uniformly dense point cloud
+  link: http://resolver.tudelf
+  image: carl.jpg
+  year: 2015
+
+
+- surname: Ala
+  name: Vint 
+  van: van
+  title: Improvement of automatic generalisation of manmade water networks for topographic maps by context-dependent pruning
+  link: https://3d.bk.tudelft.
+  image: vincent.png
+  year: 2014
+
