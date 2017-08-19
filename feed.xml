@@ -6,68 +6,66 @@
 </description>
     <link>https://yweirt.github.io/</link>
     <atom:link href="https://yweirt.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 19 Jun 2017 07:45:50 +0200</pubDate>
-    <lastBuildDate>Mon, 19 Jun 2017 07:45:50 +0200</lastBuildDate>
+    <pubDate>Fri, 18 Aug 2017 16:38:21 +0800</pubDate>
+    <lastBuildDate>Fri, 18 Aug 2017 16:38:21 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>New PhD research assistants/Postdoctoral fellow: positions available in manipulation of multispectral 3D point clouds of both city and natural enviroment </title>
+        <description>&lt;p&gt;We are looking for new PhD students/research assistants and postdoctoral research fellows to join our group. 
+The project is in collaboration with the German company/research institutions including &lt;a href=&quot;http://www.cycldia.de&quot;&gt;3D Mapping&lt;/a&gt; and different partners around the world.&lt;/p&gt;
+
+&lt;p&gt;Deadline to apply is 2017-11-15, and &lt;a href=&quot;/jobs/phdrs2017/Letterhead_LSGI_int.pdf&quot;&gt;all details are available on that page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/146221307?color=ff9933&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/146221307&quot;&gt;3D - Geoworld&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/cyclomedia&quot;&gt;CycloMedia&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Aug 2017 08:57:00 +0800</pubDate>
+        <link>https://yweirt.github.io/news/2017/08/17/phd-position.html</link>
+        <guid isPermaLink="true">https://yweirt.github.io/news/2017/08/17/phd-position.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Workshops at ISPRS Geospatial Week 2017 on Laser scanning and Data fusion</title>
+        <description>&lt;p&gt;On 18-20 September 2017 we have organised &lt;a href=&quot;http://www2.ipf.kit.edu/laserscanning2017/&quot;&gt;two workshops on Laser scanning and Data fusion&lt;/a&gt; at the &lt;a href=&quot;http://gsw2017.3snews.net/index.php?siteid=2&quot;&gt;ISPRS Geospatial Week 2017 (GSW2017)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The aim of the workshop was to bring experts on 3D data for urban applications together and explore potential collaborations. The workshop was organised in relation to the &lt;a href=&quot;http://www.b&quot;&gt;visiting professorship of Prof. Tho&lt;/a&gt;, and it involved presentations from academia, industry, and government.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://gsw2017.3snews.net/index.php?siteid=2&quot;&gt;GSW2017&lt;/a&gt; is an talent is educated and engineers, designers, digital engineers and natural/social scientists jointly develop and valorise interdisciplinary metropolitan solutions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2017/ams-.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/ams-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/2017/am.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Aug 2017 08:00:00 +0800</pubDate>
+        <link>https://yweirt.github.io/news/2017/08/15/ISPRS-workshop.html</link>
+        <guid isPermaLink="true">https://yweirt.github.io/news/2017/08/15/ISPRS-workshop.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Hello 3D geospatial world</title>
         <description>&lt;p&gt;Since 1st of August 2017, our 3D geospatial vision group has started.&lt;/p&gt;
 
-&lt;p&gt;Our vision is that the reality is complex and constantly changing and therefore 3D geoinformation (outdoor and indoor) is extremely important to manage, predict and maintain the complex reality. We study and develop techniques to model, maintain, analyse and disseminate 3D geoinformation. Serving the nowadays users’ needs is thereby extremely important and therefore we develop solutions in close collaboration with users such as experts of noise, air and evacuation simulations. We are happy that our group is located within the &lt;a href=&quot;http://www.lsgi.polyu.edu.hk/home/index.asp&quot;&gt;Department of Land Surveying and Geo-Informatics&lt;/a&gt;, since 3D is a key aspect in the design and planning of interventions in the urban environment. We are therefore very close to the main users of 3D geoinformation who can advance in their own domain by using ours and vice versa.&lt;/p&gt;
+&lt;p&gt;3D geoinformation and computer vision methodology are extremely important to manage, predict and interpret the complex reality. We study and develop techniques to acquire, extract, analyse and model 3D geoinformation. We develop solutions in close collaboration with users such as experts of forestry, smart city, disaster mitigation and ecological modelling. Our group is located within the &lt;a href=&quot;http://www.lsgi.polyu.edu.hk/home/index.asp&quot;&gt;Department of Land Surveying and Geo-Informatics&lt;/a&gt;, since 3D is a key aspect in the design and analysis of interactions in the urban and natual environment. We are therefore very close to the main users of urban and enviromental informatics who can advance in their own domain by using ours and vice versa.&lt;/p&gt;
 
-&lt;p&gt;Our group consists of one faculty members with different but completing expertise in the domain of 3D modeling: &lt;a href=&quot;https://yweirt.github.io&quot;&gt;Wei Yao&lt;/a&gt; (3D geospatial vision and intelligence). Besides ourselves, PhD students and research visitors permanently work on highly relevant topics as you can see on our &lt;a href=&quot;/about&quot;&gt;staff&lt;/a&gt; and &lt;a href=&quot;/projects&quot;&gt;projects&lt;/a&gt; pages.&lt;/p&gt;
+&lt;p&gt;Our group consists of one faculty member and  with different but completing expertise in the domain of 3D modeling: &lt;a href=&quot;https://yweirt.github.io&quot;&gt;Wei Yao&lt;/a&gt; (3D geospatial vision and intelligence), and several PhD students and research scientists/visitors permanently work on highly relevant topics as you can see on our &lt;a href=&quot;/about&quot;&gt;staff&lt;/a&gt; and &lt;a href=&quot;/projects&quot;&gt;projects&lt;/a&gt; pages.&lt;/p&gt;
 
-&lt;p&gt;We are looking forward to develop and provide solutions for a solid and sustainable 3D basis to support existing and new applications!&lt;/p&gt;
+&lt;p&gt;We are looking forward to develop and provide solutions for a solid and sustainable 3D data and technical basis to support existing and new applications!&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 15 Jun 2017 00:00:00 +0200</pubDate>
-        <link>https://yweirt.github.io/news/2017/06/15/hello-3d-world.html</link>
-        <guid isPermaLink="true">https://yweirt.github.io/news/2017/06/15/hello-3d-world.html</guid>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Workshop at AMS on 3D geoinformation for smart urban applications</title>
-        <description>&lt;p&gt;On 15 March 2017 we have organised &lt;a href=&quot;http://www.ams-institute.org/events/event/workshop-3d-geo-information-for-smart-urban-applications/&quot;&gt;a workshop on 3D geoinformation for smart urban applications&lt;/a&gt; at the &lt;a href=&quot;http://www.ams-institute.org/&quot;&gt;Amsterdam Institute for Advanced Metropolitan Solutions (AMS)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The aim of the workshop was to bring experts on 3D data for urban applications together and explore potential collaborations. The workshop was organised in relation to the &lt;a href=&quot;http://www.bk.tudelft.nl/en/about-faculty/visiting-professors/thomas-h-kolbe/&quot;&gt;visiting professorship of Prof. Thomas H. Kolbe at TU Delft&lt;/a&gt;, and it involved presentations from academia, industry, and government.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.ams-institute.org/institute/&quot;&gt;AMS&lt;/a&gt; is an Amsterdam based public-private institute where talent is educated and engineers, designers, digital engineers and natural/social scientists jointly develop and valorise interdisciplinary metropolitan solutions.
-TU Delft, together with Wageningen UR and MIT, is a core partner of AMS. Further partners are TNO, Amsterdam Smart City, The Waag Society, City of Boston, KPN, Accenture, Alliander, Cisco, ESA, IBM, Shell, Waternet and La Fabrique de la Cité.
-Our &lt;a href=&quot;https://3d.bk.tudelft.nl&quot;&gt;group&lt;/a&gt; is involved in AMS projects and our professor Jantien Stoter is a &lt;a href=&quot;http://www.ams-institute.org/category/pi/&quot;&gt;principal investigator at AMS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/2017/ams-seminar-0.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/2017/ams-seminar-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/2017/ams-seminar-2.JPG&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 03 Apr 2017 08:00:00 +0200</pubDate>
-        <link>https://yweirt.github.io/news/2017/04/03/ams-seminar.html</link>
-        <guid isPermaLink="true">https://yweirt.github.io/news/2017/04/03/ams-seminar.html</guid>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New PhD position available in manipulation of 3D textured meshes of a city</title>
-        <description>&lt;p&gt;We are looking for a new PhD student to join our group. 
-The project is in collaboration with the Dutch company &lt;a href=&quot;http://www.cyclomedia.com&quot;&gt;CycloMedia&lt;/a&gt; and different partners around the world.&lt;/p&gt;
-
-&lt;p&gt;Deadline to apply is 2017-05-15, and &lt;a href=&quot;/jobs/phdcmt2017/&quot;&gt;all details are available on that page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/146221307?color=ff9933&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://vimeo.com/146221307&quot;&gt;3D - Amsterdam&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/cyclomedia&quot;&gt;CycloMedia&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 30 Mar 2017 08:57:00 +0200</pubDate>
-        <link>https://yweirt.github.io/news/2017/03/30/phd-position.html</link>
-        <guid isPermaLink="true">https://yweirt.github.io/news/2017/03/30/phd-position.html</guid>
+        <pubDate>Sat, 05 Aug 2017 00:00:00 +0800</pubDate>
+        <link>https://yweirt.github.io/news/2017/08/05/hello-3d-world.html</link>
+        <guid isPermaLink="true">https://yweirt.github.io/news/2017/08/05/hello-3d-world.html</guid>
         
         
         <category>news</category>
