@@ -87,8 +87,8 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">about <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="/about/">the group</a></li>
-            <li><a href="/about/#people">our member</a></li>
-            <li><a href="/about/#where">our location</a></li>
+            <li><a href="/about/#people">member</a></li>
+            <li><a href="/about/#where">location</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -130,11 +130,11 @@
 
   <h1>About</h1>
   
-  <p>The 3D geospatial vision research group is part of the Department of Land Surveying and Geo-Informatics, Faculty of Construction and Environment of the Hong Kong Polytechnic University. It concerns itself with applying 3D multi-modality remote sensing techniques and computer vision based intelligent methods to solve practical and theoretical problems in the field of urban and enviromental informatics. These systems help in environmental monitoring, ecological modelling, asset inventory and management, crisis management, urban sensing, modelling of the interior of buildings, etc. We try to build up a multidisciplinary group (computer scientists, geomatics engineers, and geographers) consisting  of faculty members and several research assistants, PhD students, postdocs and visiting scholars. It aims to promote collaborations with the industry and the government.</p>
+  <p>The 3D geospatial vision research group is part of the Department of Land Surveying and Geo-Informatics, Faculty of Construction and Environment of the Hong Kong Polytechnic University. The aim is to apply 3D multi-modality remote sensing techniques and computer vision based intelligent methods to solve practical and theoretical problems in the field of urban and enviromental informatics. These systems help in environmental monitoring, ecological modelling, asset inventory and management, crisis management, urban sensing, modelling of the interior of buildings, etc. We try to build up a multidisciplinary group (computer scientists, geomatics engineers, and geographers) consisting  of faculty members and several research assistants, PhD students, postdocs and visiting scholars.</p>
 
-<p>The staff of the group is active in international organisations such as <a href="http://www.isprs.org">International Society for Photogrammetry and Remote Sensing</a>.</p>
+<p>Our research works are mostly funded by the following organisations:</p>
 
-<p>Our research funding mostly comes from the following organisations:</p>
+<hr />
 
 <div class="row">
   <div class="col-md-offset-2 col-md-2 col-xs-12"><a href="https://erc.europa.eu"><img class="img-responsive" src="/img/partners/ugc-logo.jpg" alt="UGC logo" /></a></div>
@@ -250,10 +250,6 @@
         .addTo(map);
     });
 
-    // add marker to map
-    new mapboxgl.Marker(el, {offset: [-marker.properties.iconSize[0] / 2, -marker.properties.iconSize[1] / 2]})
-      .setLngLat(markers.features[0].geometry.coordinates)
-      .addTo(map);
   });
 </script>
 

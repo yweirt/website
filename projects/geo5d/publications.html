@@ -1,7 +1,1392 @@
----
-layout: page
-title: Publications
-permalink: /projects/geo5d/publications.html
----
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="3D geospatial vision research group at PolyU">
+  <meta name="keywords" content="Geospatial intelligence, 3D Geospatial vision, PolyU, Point Cloud">
 
-{% imbiber projects/geo5d/5d-all.bib groupby:class %}
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"/>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="msapplication-TileColor" content="#2b5797"/>
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+  <meta name="theme-color" content="#ffffff"/>
+
+  <title>Publications</title>
+
+
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/syntax.css" rel="stylesheet" />
+  <link href="/assets/css/mine.css" rel="stylesheet" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101168242-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+  
+  <body>
+  
+  <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-xs hidden-sm" href="https://www.polyu.edu.hk/web/en/home/index.html">
+        <img class="logo" src="/img/logos/navbar-PolyU.png" onmouseover="this.src='/img/logos/navbar-PolyU.png'" onmouseout="this.src='/img/logos/navbar-PolyU.png'" />
+      </a>
+      <a class="navbar-brand hidden-xs" href="/">
+        <img class="logo" src="/img/logos/navbar-LSGI.png" onmouseover="this.src='/img/logos/navbar-LSGI.png'" onmouseout="this.src='/img/logos/navbar-LSGI.png'" />
+      </a>
+      <a class="navbar-brand visible-xs-block" href="/">
+        <img class="logo"  src="/img/logos/navbar-LSGI-short.png" onmouseover="this.src='/img/logos/navbar-LSGI-short.png'" onmouseout="this.src='/img/logos/navbar-LSGI-short.png'" />
+      </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">about <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/about/">the group</a></li>
+            <li><a href="/about/#people">member</a></li>
+            <li><a href="/about/#where">location</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">research <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/projects">projects</a></li>
+            <li><a href="/pubs">publications</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/education" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">education <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- <li><a href="/education/">education</a></li> -->
+            <li><a href="/education/#courses">MSc Geomatics</a></li>
+            <li><a href="/education/#theses">MSc theses</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="/download" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">download <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/code">open-source software</a></li>
+            <li><a href="/opendata">open data</a></li>
+          </ul>
+        </li>-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">etc <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/news">news</a></li>
+            <li><a href="/events">events</a></li>
+            <li><a href="/jobs">jobs</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+  <div class="container content">
+
+  <h1>Publications</h1>
+  
+  <h3>Books<span id="filteredcount"></span></h3>
+<div class="filteredelement"><strong>3D Pilot&mdash;eindrapport werkgroep 3D testbed</strong>. Edward Verbree, Theo Tijssen, Hugo Ledoux and Sisi Zlatanova. Nederlandse Commissie voor Geodesie, Delft, the Netherlands, 2012, pp. 35. ISBN: 978 90 6132 332 7. <br /> <a href="#bibVerbree12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibVerbree12" class="collapse" tabindex="-1"><pre class="bibtex">@book{Verbree12,
+	address = {Delft, the Netherlands},
+	author = {Edward Verbree and Theo Tijssen and Hugo Ledoux and Sisi Zlatanova},
+	note = {ISBN: 978 90 6132 332 7},
+	pages = {35},
+	publisher = {Nederlandse Commissie voor Geodesie},
+	title = {{3D Pilot}---Eindrapport werkgroep {3D} Testbed},
+	volume = {54},
+	year = {2012}
+}</pre></div></div>
+<h3>Journal articles<span id="filteredcount"></span></h3>
+<div class="filteredelement"><strong>Modelling and manipulating spacetime objects in a true 4D model</strong>. Ken Arroyo Ohori, Hugo Ledoux and Jantien Stoter. <em>Journal of Spatial Information Science</em> 14, 2017. ISSN: 1948–660X. <span class="text-danger"> In press</span>.<br /> <a href="https://3d.bk.tudelft.nl/ken/files/17_josis.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibArroyo-Ohori16" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori16" class="collapse" tabindex="-1"><pre class="bibtex">@article{Arroyo-Ohori16,
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Jantien Stoter},
+	journal = {Journal of Spatial Information Science},
+	note = {ISSN: 1948--660X},
+	title = {Modelling and manipulating spacetime objects in a true {4D} model},
+	volume = {14},
+	year = {2017}
+}</pre></div></div>
+<div class="filteredelement"><strong>Voxelization algorithms for geospatial applications: computational methods for voxelating spatial datasets of 3D city models containing 3D surface, curve and point data models</strong>. Pirouz Nourian, Romulo Gon&ccedil;alves, Sisi Zlatanova, Ken Arroyo Ohori and Anh Vu Vo. <em>MethodsX</em> 3, January 2016, pp. 69&ndash;86. ISSN: 2215–0161. <br /> <a href="https://3d.bk.tudelft.nl/ken/files/16_methodsx.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1016/j.mex.2016.01.001"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibNourian16" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibNourian16" class="collapse" tabindex="-1"><pre class="bibtex">@article{Nourian16,
+	author = {Pirouz Nourian and Romulo Gon\c{c}alves and Sisi Zlatanova and Ken {Arroyo Ohori} and Anh Vu Vo},
+	journal = {MethodsX},
+	month = {jan},
+	note = {ISSN: 2215--0161},
+	pages = {69--86},
+	title = {Voxelization Algorithms for Geospatial Applications: Computational methods for voxelating spatial datasets of {3D} city models containing {3D} surface, curve and point data models},
+	volume = {3},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>Population estimation using a 3D city model: a multi-scale country-wide study in the Netherlands</strong>. Filip Biljecki, Ken Arroyo Ohori, Hugo Ledoux, Ravi Peters and Jantien Stoter. <em>PLOS ONE</em> 11(6), 2016, pp. e0156808. <br /> <a href="http://journals.plos.org/plosone/article/asset?id=10.1371%2Fjournal.pone.0156808.PDF"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1371/journal.pone.0156808"><i class="fa fa-external-link"></i> DOI</a> <a href="http://dx.doi.org/10.1371%2Fjournal.pone.0156808"><i class="fa fa-external-link"></i> External link</a> <a href="#bibBiljecki16d" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki16d" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki16d,
+	author = {Biljecki, Filip and Arroyo Ohori, Ken and Ledoux, Hugo and Peters, Ravi and Stoter, Jantien},
+	journal = {PLOS ONE},
+	number = {6},
+	pages = {e0156808},
+	title = {Population Estimation Using a {3D} City Model: A Multi-Scale Country-Wide Study in the {Netherlands}},
+	volume = {11},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>An improved LOD specification for 3D building models</strong>. Filip Biljecki, Hugo Ledoux and Jantien Stoter. <em>Computers, Environment and Urban Systems</em> 59, 2016, pp. 25&ndash;37. <br /> <a href="http://filipbiljecki.com/publications/2016_ceus_improved_lod.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki16c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki16c" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki16c,
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien},
+	journal = {Computers, Environment and Urban Systems},
+	pages = {25--37},
+	title = {{An improved LOD specification for 3D building models}},
+	volume = {59},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>The variants of an LOD of a 3D building model and their influence on spatial analyses</strong>. Filip Biljecki, Hugo Ledoux, Jantien Stoter and George Vosselman. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 116, 2016, pp. 42&ndash;54. <br /> <a href="http://filipbiljecki.com/publications/2016_isprs_geometric_references.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://doi.org/10.1016/j.isprsjprs.2016.03.003"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki16b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki16b" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki16b,
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien and Vosselman, George},
+	journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+	pages = {42--54},
+	title = {{The variants of an LOD of a 3D building model and their influence on spatial analyses}},
+	volume = {116},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automatically enhancing CityGML LOD2 models with a corresponding indoor geometry</strong>. Roeland Boeters, Ken Arroyo Ohori, Filip Biljecki and Sisi Zlatanova. <em>International Journal of Geographical Information Science</em> 29(12), December 2015, pp. 2248&ndash;2268. ISSN: 1365–8816 (Print), 1362–3087 (Online). <br /> <a href="https://3d.bk.tudelft.nl/ken/files/15_ijgis_roeland.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1080/13658816.2015.1072201"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBoeters15" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBoeters15" class="collapse" tabindex="-1"><pre class="bibtex">@article{Boeters15,
+	author = {Roeland Boeters and Ken {Arroyo Ohori} and Filip Biljecki and Sisi Zlatanova},
+	journal = {International Journal of Geographical Information Science},
+	month = {dec},
+	note = {ISSN: 1365--8816 (Print), 1362--3087 (Online)},
+	number = {12},
+	pages = {2248--2268},
+	title = {Automatically enhancing {CityGML} {LOD2} models with a corresponding indoor geometry},
+	volume = {29},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>Applications of 3D City Models: State of the Art Review</strong>. Filip Biljecki, Jantien Stoter, Hugo Ledoux, Sisi Zlatanova and Arzu &Ccedil;&ouml;ltekin. <em>ISPRS International Journal of Geo-Information</em> 4(4), December 2015, pp. 2842&ndash;2889. <br /> <a href="http://www.mdpi.com/2220-9964/4/4/2842/pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://doi.org/10.3390/ijgi4042842"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki15c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki15c" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki15c,
+	author = {Biljecki, Filip and Stoter, Jantien and Ledoux, Hugo and Zlatanova, Sisi and \c{C}\"{o}ltekin, Arzu},
+	journal = {ISPRS International Journal of Geo-Information},
+	month = {dec},
+	number = {4},
+	pages = {2842--2889},
+	title = {{Applications of 3D City Models: State of the Art Review}},
+	volume = {4},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>Modelling a 3D city model and its levels of detail as a true 4D model</strong>. Ken Arroyo Ohori, Hugo Ledoux, Filip Biljecki and Jantien Stoter. <em>ISPRS International Journal of Geo-Information</em> 4(3), September 2015, pp. 1055&ndash;1075. ISSN: 2220–9964. <br /> <a href="https://3d.bk.tudelft.nl/ken/files/15_ijgi.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.3390/ijgi4031055"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori15b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori15b" class="collapse" tabindex="-1"><pre class="bibtex">@article{Arroyo-Ohori15b,
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Filip Biljecki and Jantien Stoter},
+	journal = {ISPRS International Journal of Geo-Information},
+	month = {sep},
+	note = {ISSN: 2220--9964},
+	number = {3},
+	pages = {1055--1075},
+	title = {Modelling a {3D} city model and its levels of detail as a true {4D} model},
+	volume = {4},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>Propagation of positional error in 3D GIS: estimation of the solar irradiation of building roofs</strong>. Filip Biljecki, Gerard B. M. Heuvelink, Hugo Ledoux and Jantien Stoter. <em>International Journal of Geographical Information Science</em> 29(12), 2015, pp. 2269-2294. <br /> <a href="http://filipbiljecki.com/publications/Biljecki2015iw.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://doi.org/10.1080/13658816.2015.1073292"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki15a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki15a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki15a,
+	author = {Biljecki, Filip and Heuvelink, Gerard B M and Ledoux, Hugo and Stoter, Jantien},
+	journal = {International Journal of Geographical Information Science},
+	number = {12},
+	pages = {2269-2294},
+	title = {{Propagation of positional error in 3D GIS: estimation of the solar irradiation of building roofs}},
+	volume = {29},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>An evaluation and classification of nD topological data structures for the representation of objects in a higher-dimensional GIS</strong>. Ken Arroyo Ohori, Hugo Ledoux and Jantien Stoter. <em>International Journal of Geographical Information Science</em>, 2015. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/15_ijgis_ndstructures.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1080/13658816.2014.999683"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori15a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori15a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Arroyo-Ohori15a,
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Jantien Stoter},
+	journal = {International Journal of Geographical Information Science},
+	title = {An evaluation and classification of {nD} topological data structures for the representation of objects in a higher-dimensional {GIS}},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>A dimension-independent extrusion algorithm using generalised maps</strong>. Ken Arroyo Ohori, Hugo Ledoux and Jantien Stoter. <em>International Journal of Geographical Information Science</em>, 2015. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/15_ijgis_extrusion.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1080/13658816.2015.1010535"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori15" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori15" class="collapse" tabindex="-1"><pre class="bibtex">@article{Arroyo-Ohori15,
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Jantien Stoter},
+	journal = {International Journal of Geographical Information Science},
+	title = {A dimension-independent extrusion algorithm using generalised maps},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>Redefining the Level of Detail for 3D models</strong>. Filip Biljecki, Hugo Ledoux and Jantien Stoter. <em>GIM International</em> 28(11), November 2014, pp. 21&ndash;23. <br /> <a href="#bibBiljecki14d" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki14d" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki14d,
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien},
+	journal = {GIM International},
+	month = {nov},
+	number = {11},
+	pages = {21--23},
+	title = {{Redefining the Level of Detail for 3D models}},
+	volume = {28},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Fully automated generalisation of a 1:50k map from 1:10k data</strong>. J. E. Stoter, M. Post, V. van Altena, R. Nijhuis and B. Bruns. <em>Cartography and Geographic Information Science</em> 41(1), January 2014, pp. 1-13. <br /> <a href="#bibStoter14f" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter14f" class="collapse" tabindex="-1"><pre class="bibtex">@article{Stoter14f,
+	author = {Stoter, J.E. and M. Post and V. van Altena and R. Nijhuis and B. Bruns},
+	journal = {Cartography and Geographic Information Science},
+	month = {jan},
+	number = {1},
+	pages = {1-13},
+	title = {Fully automated generalisation of a 1:50k map from 1:10k data},
+	volume = {41},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Data matching of building polygons at multiple map scales improved by contextual information and relaxation</strong>. Xiang Zhang, Tinghua Ai, Jantien Stoter and Xi Zhao. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 92, 2014, pp. 147-163. <br /> <a href="http://www.sciencedirect.com/science/article/pii/S0924271614000732"><i class="fa fa-external-link"></i> External link</a> <a href="#bibZhang14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZhang14" class="collapse" tabindex="-1"><pre class="bibtex">@article{Zhang14,
+	author = {Xiang Zhang and Tinghua Ai and Jantien Stoter and Xi Zhao},
+	journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+	pages = {147-163},
+	title = {Data matching of building polygons at multiple map scales improved by contextual information and relaxation},
+	volume = {92},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>CityGML implementation specifications for a countrywide 3D data set: the case of the Netherlands</strong>. Jantien Stoter, George Vosselman, Christian Dahmen, Sander Oude Elberink and Hugo Ledoux. <em>Photogrammetric Engineering &amp; Remote Sensing</em> 80(11), 2014, pp. 1069&ndash;1077. <br /> <a href="http://dx.doi.org/10.14358/PERS.80.11.1069"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibStoter14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter14" class="collapse" tabindex="-1"><pre class="bibtex">@article{Stoter14,
+	author = {Stoter, Jantien and Vosselman, George and Dahmen, Christian and Oude Elberink, Sander and Ledoux, Hugo},
+	journal = {Photogrammetric Engineering \& Remote Sensing},
+	number = {11},
+	pages = {1069--1077},
+	title = {{CityGML} implementation specifications for a countrywide {3D} data set: the case of the {Netherlands}},
+	volume = {80},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>A triangulation-based approach to automatically repair GIS polygons</strong>. Hugo Ledoux, Ken Arroyo Ohori and Martijn Meijers. <em>Computers &amp; Geosciences</em> 66, 2014, pp. 121&ndash;131. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/pdfs/Ledoux14a.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1016/j.cageo.2014.01.009"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibLedoux14a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux14a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Ledoux14a,
+	author = {Hugo Ledoux and Ken {Arroyo Ohori} and Martijn Meijers},
+	journal = {Computers \& Geosciences},
+	pages = {121--131},
+	title = {A triangulation-based approach to automatically repair {GIS} polygons},
+	volume = {66},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Linking spatial data: automated conversion of geo-information models and gml data to rdf</strong>. Linda van den Brink, Paul Janssen, Wilko Quak and Jantien Stoter. <em>International Journal of Spatial Data Infrastructures Research</em> 9, 2014, pp. 59-85. <br /> <a href="http://ijsdir.jrc.ec.europa.eu/index.php/ijsdir/article/view/351/359"><i class="fa fa-external-link"></i> External link</a> <a href="#bibBrink14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBrink14" class="collapse" tabindex="-1"><pre class="bibtex">@article{Brink14,
+	author = {Linda van den Brink and Paul Janssen and Wilko Quak and Jantien Stoter},
+	journal = {International Journal of Spatial Data Infrastructures Research},
+	pages = {59-85},
+	title = {Linking spatial data: automated conversion of geo-information models and GML data to RDF},
+	volume = {9},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Formalisation of the level of detail in 3D city modelling</strong>. Filip Biljecki, Hugo Ledoux, Jantien Stoter and Junqiao Zhao. <em>Computers, Environment and Urban Systems</em> 48, 2014, pp. 1&ndash;15. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/14ceus_lod.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1016/j.compenvurbsys.2014.05.004"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki14" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki14,
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien and Zhao, Junqiao},
+	journal = {Computers, Environment and Urban Systems},
+	pages = {1--15},
+	title = {Formalisation of the level of detail in {3D} city modelling},
+	volume = {48},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automated evaluation of building alignments in generalized maps</strong>. Zhang , Xiang; Stoter , Jantien; Ai , Tinghua; Kraak , Menno-Jan; Molenaar , Martien. <em>International Journal of Geographical Information Science</em> 27(8), 2013, pp. 1550-1571. <br /> <a href="http://dx.doi.org/DOI:10.1080/13658816.2012.758264"><i class="fa fa-external-link"></i> DOI</a> <a href="http://www.tandfonline.com/doi/abs/10.1080/13658816.2012.758264?queryID=%24%7BresultBean.queryID%7D&#.VG8BgFfF_hM"><i class="fa fa-external-link"></i> External link</a> <a href="#bibZhang13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZhang13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Zhang13,
+	author = {Zhang, Xiang; Stoter, Jantien; Ai, Tinghua; Kraak, Menno-Jan; Molenaar, Martien},
+	journal = {International Journal of Geographical Information Science},
+	number = {8},
+	pages = {1550-1571},
+	title = {Automated evaluation of building alignments in generalized maps},
+	volume = {27},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Building pattern recognition in topographic data : examples on collinear and curvilinear alignments : open access</strong>. Xiang Zhang , Ai , T. , Stoter , J. E. , Kraak , M. J. and M. Molenaar. <em>Geoinformatica : an international journal on advances of computer science for geographic information systems</em> 17(1), 2013, pp. 1-33. <br /> <a href="#bibXiang-Zhang13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibXiang-Zhang13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Xiang-Zhang13,
+	author = {Xiang Zhang, Ai, T., Stoter, J.E., Kraak, M.J. and Molenaar, M.},
+	journal = {Geoinformatica : an international journal on advances of computer science for geographic information systems},
+	number = {1},
+	pages = {1-33},
+	title = {Building pattern recognition in topographic data : examples on collinear and curvilinear alignments : open access},
+	volume = {17},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Three-dimensional modeling with national coverage: case of the Netherlands</strong>. Jantien Stoter, Linda van den Brink, Jakob Beetz, Hugo Ledoux, Marcel Reuvers, Paul Janssen, Friso Penninga, George Vosselman and Sander Oude Elberink. <em>Geo-spatial Information Science</em> 16(4), 2013, pp. 267&ndash;276. <br /> <a href="http://dx.doi.org/10.1080/10095020.2013.866619"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibStoter13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Stoter13a,
+	author = {Jantien Stoter and van den Brink, Linda and Jakob Beetz and Hugo Ledoux and Marcel Reuvers and Paul Janssen and Friso Penninga and George Vosselman and Oude Elberink, Sander},
+	journal = {Geo-spatial Information Science},
+	number = {4},
+	pages = {267--276},
+	title = {Three-dimensional modeling with national coverage: Case of the {Netherlands}},
+	volume = {16},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Establishing and implementing a national 3D standard in the Netherlands</strong>. J. E. Stoter, H. Ledoux, M. Reuvers, L. van den Brink, R. Klooster, P. Janssen, J. Beetz, F. Penninga and G. Vosselman. <em>Photogrammetrie, Fernerkundung, Geoinformation</em> 4, 2013, pp. 381&ndash;392. <br /> <a href="http://dx.doi.org/10.1127/1432-8364/2013/0184"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibStoter13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Stoter13,
+	author = {Stoter, J. E. and Ledoux, H. and Reuvers, M. and van den Brink, L. and Klooster, R. and Janssen, P. and Beetz, J. and Penninga, F. and Vosselman, G.},
+	journal = {Photogrammetrie, Fernerkundung, Geoinformation},
+	number = {4},
+	pages = {381--392},
+	title = {Establishing and implementing a national {3D} standard in the {Netherlands}},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Legal barriers to 3d cadaster implementation: what is the issue?</strong>. Serene Ho , Abbas Rajabifard , Jantien Stoter and Mohsen Kalantari. <em>Journal of Land Use Policy</em> 35, September 2013, pp. 379-387. <br /> <a href="http://dx.doi.org/10.1016/j.landusepol.2013.06.010"><i class="fa fa-external-link"></i> DOI</a> <a href="http://www.sciencedirect.com/science/article/pii/S0264837713001257"><i class="fa fa-external-link"></i> External link</a> <a href="#bibSerene-Ho13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibSerene-Ho13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Serene-Ho13,
+	author = {Serene Ho, Abbas Rajabifard, Jantien Stoter and Mohsen Kalantari},
+	journal = {Journal of Land Use Policy},
+	month = {September},
+	pages = {379-387},
+	title = {Legal barriers to 3D cadaster implementation: what is the issue?},
+	volume = {35},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Generation and dissemination of a national virtual 3D city and landscape model for the Netherlands</strong>. Sander Oude Elberink, Jantien Stoter, Hugo Ledoux and Tom Commandeur. <em>Photogrammetric Engineering &amp; Remote Sensing</em> 79(2), 2013, pp. 147&ndash;158. <br /> <a href="http://digital.ipcprintservices.com/publication/?i=144145&p=41"><i class="fa fa-external-link"></i> External link</a> <a href="#bibOude-Elberink13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOude-Elberink13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Oude-Elberink13,
+	author = {Oude Elberink, Sander and Stoter, Jantien and Ledoux, Hugo and Commandeur, Tom},
+	journal = {Photogrammetric Engineering \& Remote Sensing},
+	number = {2},
+	pages = {147--158},
+	title = {Generation and dissemination of a national virtual {3D} city and landscape model for the {N}etherlands},
+	volume = {79},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>On the validation of solids represented with the international standards for geographic information</strong>. Hugo Ledoux. <em>Computer-Aided Civil and Infrastructure Engineering</em> 28(9), 2013, pp. 693&ndash;706. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/_13cacaie.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1111/mice.12043"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibLedoux13b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux13b" class="collapse" tabindex="-1"><pre class="bibtex">@article{Ledoux13b,
+	author = {Ledoux, Hugo},
+	journal = {Computer-Aided Civil and Infrastructure Engineering},
+	number = {9},
+	pages = {693--706},
+	title = {On the validation of solids represented with the international standards for geographic information},
+	volume = {28},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>A star-based data structure to store efficiently 3D topography in a database</strong>. Hugo Ledoux and Martijn Meijers. <em>Geo-spatial Information Science</em> 16(4), 2013, pp. 256&ndash;266. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/_13gsis_pgtet.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1080/10095020.2013.866618"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibLedoux13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Ledoux13,
+	author = {Ledoux, Hugo and Meijers, Martijn},
+	journal = {Geo-spatial Information Science},
+	number = {4},
+	pages = {256--266},
+	title = {A star-based data structure to store efficiently {3D} topography in a database},
+	volume = {16},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Watershed delineation from the medial axis of river networks</strong>. Farid Karimipour, Mehran Ghandehari and Hugo Ledoux. <em>Computers &amp; Geosciences</em> 59, 2013, pp. 132&ndash;147. <br /> <a href="http://dx.doi.org/10.1016/j.cageo.2013.06.004"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibKarimipour13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibKarimipour13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Karimipour13,
+	author = {Karimipour, Farid and Ghandehari, Mehran and Ledoux, Hugo},
+	journal = {Computers \& Geosciences},
+	pages = {132--147},
+	title = {Watershed delineation from the medial axis of river networks},
+	volume = {59},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>3d cadastre in the netherlands: developments and international applicability</strong>. Hendrik Ploeger Jantien Stoter and Peter van Oosterom. <em>Computers, Environment and Urban Systems</em> 36, 2013, pp. 12. <br /> <a href="#bibJantien-Stoter13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibJantien-Stoter13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Jantien-Stoter13,
+	author = {Jantien Stoter, Hendrik Ploeger and Peter van Oosterom},
+	journal = {Computers, Environment and Urban Systems},
+	pages = {12},
+	title = {3D cadastre in the Netherlands: Developments and international applicability},
+	volume = {36},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Uml-based approach to developing a citygml application domain</strong>. Linda van den Brink, Jantien Stoter and Sisi Zlatanova. <em>Transactions in GIS</em> 17(6), 2013, pp. 920&ndash;942. <br /> <a href="http://www.gdmc.nl/publications/2013/CityGML_Application_Domain_Extension.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1111/tgis.12026"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBrink13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBrink13a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Brink13a,
+	author = {Linda van den Brink and Jantien Stoter and Sisi Zlatanova},
+	journal = {Transactions in GIS},
+	number = {6},
+	pages = {920--942},
+	title = {UML-Based Approach to Developing a CityGML Application Domain},
+	volume = {17},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Establishing a national standard for 3d topographic data compliant to citygml</strong>. Linda van de Brink, Jantien Stoter and Sisi Zlatanova. <em>International Journal of Geographical Information Science</em> 27(1), 2013, pp. 92&ndash;113. <br /> <a href="http://www.gdmc.nl/pubs/files/2013/Establishing_a_national_standard_for_3D_topographic_data_compliant_to_CityGML.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1080/13658816.2012.667105"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBrink13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBrink13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Brink13,
+	author = {Linda van de Brink and Jantien Stoter and Sisi Zlatanova},
+	journal = {International Journal of Geographical Information Science},
+	number = {1},
+	pages = {92--113},
+	title = {Establishing a national standard for 3D topographic data compliant to CityGML},
+	volume = {27},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Transportation mode-based segmentation and classification of movement trajectories</strong>. Filip Biljecki, Hugo Ledoux and Peter van Oosterom. <em>International Journal of Geographical Information Science</em> 27(2), 2013, pp. 385&ndash;407. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/_12ijgis_gps.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1080/13658816.2012.692791"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki13" class="collapse" tabindex="-1"><pre class="bibtex">@article{Biljecki13,
+	author = {Biljecki, Filip and Ledoux, Hugo and van Oosterom, Peter},
+	journal = {International Journal of Geographical Information Science},
+	number = {2},
+	pages = {385--407},
+	title = {Transportation mode-based segmentation and classification of movement trajectories},
+	volume = {27},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Validation and automatic repair of planar partitions using a constrained triangulation</strong>. Ken Arroyo Ohori, Hugo Ledoux and Martijn Meijers. <em>Photogrammetrie, Fernerkundung, Geoinformation</em> 5, October 2012, pp. 613&ndash;630. ISSN: 1432-8364. <br /> <a href="http://www.gdmc.nl/ken/files/12_pfg.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1127/1432-8364/2012/0143"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori12b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori12b" class="collapse" tabindex="-1"><pre class="bibtex">@article{Arroyo-Ohori12b,
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Martijn Meijers},
+	journal = {Photogrammetrie, Fernerkundung, Geoinformation},
+	month = {oct},
+	note = {ISSN: 1432-8364},
+	pages = {613--630},
+	title = {Validation and Automatic Repair of Planar Partitions Using a Constrained Triangulation},
+	volume = {5},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Een landsdekkende BGT, zonder gaten en overlap</strong>. Ken Arroyo Ohori, Hugo Ledoux, Martijn Meijers and Jantien Stoter. <em>Geo-Info</em> 9(8), October 2012, pp. 4&ndash;8. ISSN: 1572-5464 (print) 2211-0739 (online). <br /> <a href="http://www.gdmc.nl/ken/files/12_geoinfo.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibArroyo-Ohori12a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori12a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Arroyo-Ohori12a,
+	author = {Arroyo Ohori, Ken and Ledoux, Hugo and Meijers, Martijn and Stoter, Jantien},
+	journal = {Geo-Info},
+	month = {oct},
+	note = {ISSN: 1572-5464 (print) 2211-0739 (online)},
+	number = {8},
+	pages = {4--8},
+	title = {Een landsdekkende {BGT}, zonder gaten en overlap},
+	volume = {9},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Advancing open 3D modelling standards in natinal spatial information policy</strong>. Athina Trakas, Paul Janssen and Jantien Stoter. <em>European Journal of ePractice</em>, 2012, pp. 68&ndash;79. <br /> <a href="http://www.gdmc.nl/publications/2012/Open_3D_Modelling_Standards.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibTrakas12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibTrakas12" class="collapse" tabindex="-1"><pre class="bibtex">@article{Trakas12,
+	author = {Trakas, Athina and Janssen, Paul and Stoter, Jantien},
+	journal = {European Journal of ePractice},
+	pages = {68--79},
+	title = {Advancing open {3D} modelling standards in natinal spatial information policy},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Towards a national 3D spatial data infrastructure: case of the Netherlands</strong>. JE Stoter, G. Vosselman, J. Goos, S. Zlatanova, E. Verbree, R. Klooster and M. Reuvers. <em>Organ der Deutschen Gesellschaft f&uuml;r Photogrammetrie und Fernerkundung</em> 6, 2011, pp. 405&ndash;420. <br /> <a href="http://www.gdmc.nl/publications/2011/National_3D_Spatial_Data_Infrastructure.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Stoter11a,
+	author = {Stoter, JE and Vosselman, G and Goos, J and Zlatanova, S and Verbree, E and Klooster, R and Reuvers, M},
+	journal = {Organ der Deutschen Gesellschaft f\"ur Photogrammetrie und Fernerkundung},
+	pages = {405--420},
+	title = {Towards a national {3D} spatial data infrastructure: case of the {N}etherlands},
+	volume = {6},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>A semantic-rich multi-scale information model for topography</strong>. Jantien E. Stoter, Thomas Visser, Peter van Oosterom, Wilko Quak and Nico Bakker. <em>International Journal of Geographical Information Science</em> 25(5), 2011, pp. 739&ndash;763. <br /> <a href="http://www.gdmc.nl/publications/2011/Multi-scale_information_model_topography.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11" class="collapse" tabindex="-1"><pre class="bibtex">@article{Stoter11,
+	author = {Jantien E. Stoter and Thomas Visser and Peter van Oosterom and Wilko Quak and Nico Bakker},
+	journal = {International Journal of Geographical Information Science},
+	number = {5},
+	pages = {739--763},
+	title = {A semantic-rich multi-scale information model for topography},
+	volume = {25},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Topologically consistent 3D city models obtained by extrusion</strong>. Hugo Ledoux and Martijn Meijers. <em>International Journal of Geographical Information Science</em> 25(4), 2011, pp. 557&ndash;574. <br /> <a href="http://homepage.tudelft.nl/23t4p/pdfs/_10ijgisextrusion.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibLedoux11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux11" class="collapse" tabindex="-1"><pre class="bibtex">@article{Ledoux11,
+	author = {Ledoux, Hugo and Meijers, Martijn},
+	journal = {International Journal of Geographical Information Science},
+	number = {4},
+	pages = {557--574},
+	title = {Topologically consistent {3D} city models obtained by extrusion},
+	volume = {25},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Solutions for 4D cadastre - with a case study on utility networks</strong>. F. D&ouml;ner, RJ Thompson, JE Stoter, CHJ Lemmen, HD Ploeger, PJM van Oosterom and S. Zlatanova. <em>International Journal of Geographical Information Science</em> 25(7), 2011, pp. 1173&ndash;1189. <br /> <a href="http://www.gdmc.nl/publications/2011/Solutions_for_4D_cadastre.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibDoner11a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibDoner11a" class="collapse" tabindex="-1"><pre class="bibtex">@article{Doner11a,
+	author = {D\"oner, F and Thompson, RJ and Stoter, JE and Lemmen, CHJ and Ploeger, HD and Oosterom, PJM van and Zlatanova, S},
+	journal = {International Journal of Geographical Information Science},
+	number = {7},
+	pages = {1173--1189},
+	title = {Solutions for {4D} cadastre - with a case study on utility networks},
+	volume = {25},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>4D cadastres: first analysis of legal, organizational, and technical impact - with a case study on utility networks</strong>. F. D&ouml;ner, R. Thompson, J. E. Stoter, C. Lemmen, H. Ploeger, P. van Oosterom and S. Zlatanova. <em>Land Use Policy</em>, 2011, pp. 1068&ndash;1081. <br /> <a href="http://www.gdmc.nl/publications/2010/4D_Cadastres.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibDoner11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibDoner11" class="collapse" tabindex="-1"><pre class="bibtex">@article{Doner11,
+	author = {D\"oner,F. and R. Thompson and J.E. Stoter and C. Lemmen and H. Ploeger and P. van Oosterom and S. Zlatanova},
+	journal = {Land Use Policy},
+	pages = {1068--1081},
+	title = {{4D} cadastres: First analysis of Legal, organizational, and technical impact - With a case study on utility networks},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Conceptualizing SDI implementation through an inventory of experiences, successes and headaches of European national mapping agencies</strong>. W. De Vries, J. Crompvoets, J. Stoter and Vanden Berghe. <em>International Journal of SDI Research</em> 6, 2011, pp. 97&ndash;125. <br /> <a href="#bibDe-Vries11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibDe-Vries11" class="collapse" tabindex="-1"><pre class="bibtex">@article{De-Vries11,
+	author = {De Vries, W. and Crompvoets, J. and Stoter, J. and Vanden Berghe},
+	journal = {International Journal of SDI Research},
+	pages = {97--125},
+	title = {Conceptualizing {SDI} implementation through an inventory of experiences, successes and headaches of {E}uropean national mapping agencies},
+	volume = {6},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Modelling and analysing 3D buildings with a primal/dual data structure</strong>. Pawel Boguslawski, Christopher M. Gold and Hugo Ledoux. <em>ISPRS Journal of Photogrammetry &amp; Remote Sensing</em> 66, 2011, pp. 188&ndash;197. <span class="text-danger"> Won the ISPRS best paper award in 2011</span>.<br /> <a href="http://homepage.tudelft.nl/23t4p/pdfs/_11isprs.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibBoguslawski11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBoguslawski11" class="collapse" tabindex="-1"><pre class="bibtex">@article{Boguslawski11,
+	author = {Pawel Boguslawski and Christopher M. Gold and Hugo Ledoux},
+	journal = {ISPRS Journal of Photogrammetry \& Remote Sensing},
+	pages = {188--197},
+	title = {Modelling and analysing {3D} buildings with a primal/dual data structure},
+	volume = {66},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Designing three dimensional property right database for Turkey</strong>. Ismail Ercument Ayazli, Cuneyd Helvaci, Fatmagul Batuk and Jantien Stoter. <em>African Journal of Business Management</em> 5(22), 2011, pp. 9440&ndash;9447. <br /> <a href="http://www.gdmc.nl/publications/2011/3D_property_right_databasel.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibAyazli11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibAyazli11" class="collapse" tabindex="-1"><pre class="bibtex">@article{Ayazli11,
+	author = {Ismail Ercument Ayazli and Cuneyd Helvaci and Fatmagul Batuk and Jantien Stoter},
+	journal = {African Journal of Business Management},
+	number = {22},
+	pages = {9440--9447},
+	title = {Designing three dimensional property right database for {T}urkey},
+	volume = {5},
+	year = {2011}
+}</pre></div></div>
+<h3>Book chapters<span id="filteredcount"></span></h3>
+<div class="filteredelement"><strong>Abstracting geographic information in a data rich world: methodologies and applications of map generalisation</strong>. Jantien Stoter, Xiang Zhang, Hanna Stigmar and Lars Harrie.  Burghardt,  Dirk,  Duchene,  C&eacute;cile,  Mackaness and  William (eds.), Chapter Evaluation in Generalisation, Springer-Verlag GmbH, 2014, pp. 259-298. <br /> <a href="#bibStoter14e" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter14e" class="collapse" tabindex="-1"><pre class="bibtex">@inbook{Stoter14e,
+	author = {Jantien Stoter and Xiang Zhang and Hanna Stigmar and Lars Harrie},
+	booktitle = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	chapter = {Evaluation in Generalisation},
+	editor = {Burghardt and Dirk and Duchene and C\'ecile and Mackaness and William},
+	number = {9},
+	pages = {259-298},
+	publisher = {Springer-Verlag GmbH},
+	title = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Abstracting geographic information in a data rich world: methodologies and applications of map generalisation</strong>. P. van Oosterom, M. Meijers, R. Suba and J. E. Stoter.  Burghardt,  Dirk,  Duchene,  C&eacute;cile,  Mackaness and  William (eds.), Chapter Data structures for continuous generalisation: tGAP and SSC, Springer-Verlag GmbH, 2014, pp. 83-118. <br /> <a href="#bibOosterom14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOosterom14" class="collapse" tabindex="-1"><pre class="bibtex">@inbook{Oosterom14,
+	author = {P. van Oosterom and M. Meijers and R. Suba and J.E. Stoter},
+	booktitle = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	chapter = {Data structures for continuous generalisation: tGAP and SSC},
+	editor = {Burghardt and Dirk and Duchene and C\'ecile and Mackaness and William},
+	number = {4},
+	pages = {83-118},
+	publisher = {Springer-Verlag GmbH},
+	title = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Abstracting geographic information in a data rich world: methodologies and applications of map generalisation</strong>. C&eacute;cile Duch&ecirc;ne, Blanca Baella, Cynthia Brewer, Dirk Burghardt, Barbara Buttenfield, Julien Gaffuri, Dominik K&auml;uferle, Fran&ccedil;ois Lecordix, Emmanuel Maugeais, Ron Nijhuis, Maria Pla, Marc Post, Nicolas Regnauld, Larry Stanislawski, Jantien Stoter, Katalin T&oacute;th, Sabine Urbanke, Vincent van Altena and Antje Wiedemann.  Burghardt,  Dirk,  Duchene,  C&eacute;cile,  Mackaness and  William (eds.), Chapter Generalisation in Practice within national mapping agencies, Springer-Verlag GmbH, 2014, pp. 329-392. <br /> <a href="#bibDuchene14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibDuchene14" class="collapse" tabindex="-1"><pre class="bibtex">@inbook{Duchene14,
+	author = {C\'ecile Duch\^ene and Blanca Baella and Cynthia Brewer and Dirk Burghardt and Barbara Buttenfield and Julien Gaffuri and Dominik K{\"a}uferle and Fran\c{c}ois Lecordix and Emmanuel Maugeais and Ron Nijhuis and Maria Pla and Marc Post and Nicolas Regnauld and Larry Stanislawski and Jantien Stoter and Katalin T{\'o}th and Sabine Urbanke and Vincent van Altena and Antje Wiedemann},
+	booktitle = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	chapter = {Generalisation in Practice within national mapping agencies},
+	editor = {Burghardt and Dirk and Duchene and C\'ecile and Mackaness and William},
+	number = {11},
+	pages = {329-392},
+	publisher = {Springer-Verlag GmbH},
+	title = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Abstracting geographic information in a data rich world: methodologies and applications of map generalisation</strong>. Sandrine Balley, Blanca Baella, Sidonie Christophe, Maria Pla, Nicolas Regnauld and Jantien Stoter.  Burghardt,  Dirk,  Duchene,  C&eacute;cile,  Mackaness and  William (eds.), Chapter Map specifications and User requirements, Springer-Verlag GmbH, 2014, pp. 17-52. <br /> <a href="#bibBalley14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBalley14" class="collapse" tabindex="-1"><pre class="bibtex">@inbook{Balley14,
+	author = {Sandrine Balley and Blanca Baella and Sidonie Christophe and Maria Pla and Nicolas Regnauld and Jantien Stoter},
+	booktitle = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	chapter = {Map specifications and User requirements},
+	editor = {Burghardt and Dirk and Duchene and C\'ecile and Mackaness and William},
+	number = {2},
+	pages = {17-52},
+	publisher = {Springer-Verlag GmbH},
+	title = {Abstracting Geographic Information in a Data Rich World: Methodologies and Applications of Map Generalisation},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Progress and new trends in 3d geoinformation sciences</strong>. Jantien Stoter, Jacob Beetz, Hugo Ledoux, Marcel Reuvers, Rick Klooster, Paul Janssen, Friso Penninga, Sisi Zlatanova and Linda van den Brink. Chapter Implementation of a National 3D Standard: Case of the Netherlands, Lecture Notes in Geoinformation and Cartography, Springer Verlag, 2013, pp. 277&ndash;298. <br /> <a href="http://www.gdmc.nl/publications/2013/Implementation_National_3D_Standard.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1007/978-3-642-29793-9_16"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibStoter13c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13c" class="collapse" tabindex="-1"><pre class="bibtex">@inbook{Stoter13c,
+	author = {Jantien Stoter and Jacob Beetz and Hugo Ledoux and Marcel Reuvers and Rick Klooster and Paul Janssen and Friso Penninga and Sisi Zlatanova and Linda van den Brink},
+	chapter = {Implementation of a National 3D Standard: Case of the Netherlands},
+	pages = {277--298},
+	publisher = {Springer Verlag},
+	series = {Lecture Notes in Geoinformation and Cartography},
+	title = {Progress and New Trends in 3D Geoinformation Sciences},
+	year = {2013}
+}</pre></div></div>
+<h3>Conference articles (in book)<span id="filteredcount"></span></h3>
+<div class="filteredelement"><strong>Does a Finer Level of Detail of a 3D City Model Bring an Improvement for Estimating Shadows?</strong>. Filip Biljecki, Hugo Ledoux and Jantien Stoter. <em>Advances in 3D Geoinformation</em>, Chapter 2, Springer International Publishing, Cham, 2017, pp. 31&ndash;47. <br /> <a href="http://filipbiljecki.com/publications/2017_3dgeoinfo_shadows.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1007/978-3-319-25691-7_2"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki17" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki17" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Biljecki17,
+	address = {Cham},
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien},
+	booktitle = {Advances in 3D Geoinformation},
+	chapter = {2},
+	pages = {31--47},
+	publisher = {Springer International Publishing},
+	title = {{Does a Finer Level of Detail of a 3D City Model Bring an Improvement for Estimating Shadows?}},
+	year = {2017}
+}</pre></div></div>
+<div class="filteredelement"><strong>Improving the consistency of multi-LOD CityGML datasets by removing redundancy</strong>. Filip Biljecki, Hugo Ledoux and Jantien Stoter. In Martin Breunig, Mulhim Al-Doori, Edgar Butwilowski, Paul V. Kuper, Joachim Benner and Karl Heinz Haefele (eds.), <em>3D Geoinformation Science&mdash;The Selected Papers of the 3D GeoInfo 2014</em>, Lecture Notes in Geoinformation and Cartography, Springer, 2015, pp. 1&ndash;17. <br /> <a href="http://dx.doi.org/10.1007/978-3-319-12181-9_1"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki15" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki15" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Biljecki15,
+	author = {Filip Biljecki and Hugo Ledoux and Jantien Stoter},
+	booktitle = {3D Geoinformation Science---The Selected Papers of the 3D GeoInfo 2014},
+	editor = {Breunig, Martin and Al-Doori, Mulhim and Butwilowski, Edgar and Kuper, Paul V. and Benner, Joachim and Haefele, Karl Heinz},
+	pages = {1--17},
+	publisher = {Springer},
+	series = {Lecture Notes in Geoinformation and Cartography},
+	title = {Improving the consistency of {multi-LOD} {CityGML} datasets by removing redundancy},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>Constructing an n-dimensional cell complex from a soup of (n-1)-dimensional faces</strong>. Ken Arroyo Ohori, Guillaume Damiand and Hugo Ledoux. In Prosenjit Gupta and Christos Zaroliagis (eds.), <em>Applied Algorithms. First International Conference, ICAA 2014, Kolkata, India, January 13-15, 2014. Proceedings</em>, Lecture Notes in Computer Science 8321, Springer International Publishing Switzerland, Kolkata, India, January 2014, pp. 37&ndash;48. ISBN: 978-3-319-04125-4 (Print) 978-3-319-04126-1 (Online) ISSN: 0302-9743. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/14_icaa.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/14_icaa_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="http://dx.doi.org/10.1007/978-3-319-04126-1_4"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori14" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Arroyo-Ohori14,
+	address = {Kolkata, India},
+	author = {Ken {Arroyo Ohori} and Guillaume Damiand and Hugo Ledoux},
+	booktitle = {Applied Algorithms. First International Conference, ICAA 2014, Kolkata, India, January 13-15, 2014. Proceedings},
+	editor = {Prosenjit Gupta and Christos Zaroliagis},
+	month = {jan},
+	note = {ISBN: 978-3-319-04125-4 (Print) 978-3-319-04126-1 (Online) ISSN: 0302-9743},
+	pages = {37--48},
+	publisher = {Springer International Publishing Switzerland},
+	series = {Lecture Notes in Computer Science},
+	title = {Constructing an n-dimensional cell complex from a soup of (n-1)-dimensional faces},
+	volume = {8321},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>A framework for the automatic geometric repair of CityGML models</strong>. Junqiao Zhao, Jantien Stoter and Hugo Ledoux. In Manfred Buchroithner, Nikolas Prechtel and Dirk Burghardt (eds.), <em>Cartography from Pole to Pole</em>, Lecture Notes in Geoinformation and Cartography, Springer Berlin Heidelberg, 2014, pp. 187&ndash;202. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/14zhao_citygmlrepair.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1007/978-3-642-32618-9_14"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibZhao14a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZhao14a" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Zhao14a,
+	author = {Junqiao Zhao and Jantien Stoter and Hugo Ledoux},
+	booktitle = {Cartography from Pole to Pole},
+	editor = {Manfred Buchroithner and Nikolas Prechtel and Dirk Burghardt},
+	pages = {187--202},
+	publisher = {Springer Berlin Heidelberg},
+	series = {Lecture Notes in Geoinformation and Cartography},
+	title = {A Framework for the Automatic Geometric Repair of {CityGML} Models},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Using extrusion to generate higher-dimensional GIS datasets</strong>. Ken Arroyo Ohori and Hugo Ledoux. In Craig Knoblock, Peer Kr&ouml;ger, John Krumm, Markus Schneider and Peter Widmayer (eds.), <em>SIGSPATIAL&rsquo;13: Proceedings of the 21st ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems</em>, ACM, Orlando, United States, November 2013, pp. 398&ndash;401. ISBN: 978-1-4503-2521-9. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/13_acmsigspatial.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/13_acmsigspatial_poster.pdf"><i class="fa fa-file-pdf-o"></i> Poster</a> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/13_acmsigspatial_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="http://dx.doi.org/10.1145/2525314.2525447"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori13" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Arroyo-Ohori13,
+	address = {Orlando, United States},
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux},
+	booktitle = {SIGSPATIAL'13: Proceedings of the 21st ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems},
+	editor = {Craig Knoblock and Peer Kr\"oger and John Krumm and Markus Schneider and Peter Widmayer},
+	month = {nov},
+	note = {ISBN: 978-1-4503-2521-9},
+	pages = {398--401},
+	publisher = {ACM},
+	title = {Using extrusion to generate higher-dimensional {GIS} datasets},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Modelling higher dimensional data for GIS using generalised maps</strong>. Ken Arroyo Ohori, Hugo Ledoux and Jantien Stoter. In B. Murgante, S. Misra, M. Carlini, C. Torre, H. Q. Nguyen, D. Taniar, B. Apduhan and O. Gervasi (eds.), <em>Computational Science and Its Applications &mdash; ICCSA 2013. 13th International Conference, Ho Chi Minh City, Vietnam, June 24&ndash;27, 2013, Proceedings, Part I</em>, Lecture Notes in Computer Science 7971, Springer Berlin Heidelberg, Ho Chi Minh City, Vietnam, June 2013, pp. 526&ndash;539. ISBN: 978-3-642-39636-6 (Print) 978-3-642-39637-3 (Online) ISSN: 0302-9743 (Print) 1611-3349 (Online). <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/13_iccsa.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/13_iccsa_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="http://dx.doi.org/10.1007/978-3-642-39637-3_41"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori13a" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Arroyo-Ohori13a,
+	address = {Ho Chi Minh City, Vietnam},
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Jantien Stoter},
+	booktitle = {Computational Science and Its Applications --- ICCSA 2013. 13th International Conference, Ho Chi Minh City, Vietnam, June 24--27, 2013, Proceedings, Part I},
+	editor = {B. Murgante and S. Misra and M. Carlini and C. Torre and H.Q. Nguyen and D. Taniar and B. Apduhan and O. Gervasi},
+	month = {jun},
+	note = {ISBN: 978-3-642-39636-6 (Print) 978-3-642-39637-3 (Online) ISSN: 0302-9743 (Print) 1611-3349 (Online)},
+	pages = {526--539},
+	publisher = {Springer Berlin Heidelberg},
+	series = {Lecture Notes in Computer Science},
+	title = {Modelling Higher Dimensional Data for {GIS} Using Generalised Maps},
+	volume = {7971},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Representing the dual of objects in a four-dimensional GIS</strong>. Ken Arroyo Ohori, Pawel Boguslawski and Hugo Ledoux. In A. Abdul Rahman, P. Boguslawski, C. Gold and M. N. Said (eds.), <em>Developments in Multidimensional Spatial Data Models</em>, Lecture Notes in Geoinformation and Cartography, Springer Berlin Heidelberg, Johor Bahru, Malaysia, May 2013, pp. 17&ndash;31. ISBN: 978-3-642-36378-8 (Print) 978-3-642-36379-5 (Online) ISSN: 1863-2246 (Print) 1863-2351 (Online). <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/12_geoadvances.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1007/978-3-642-36379-5_2"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori13b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori13b" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Arroyo-Ohori13b,
+	address = {Johor Bahru, Malaysia},
+	author = {Ken {Arroyo Ohori} and Pawel Boguslawski and Hugo Ledoux},
+	booktitle = {Developments in Multidimensional Spatial Data Models},
+	editor = {Abdul Rahman, A. and Boguslawski, P. and Gold, C. and Said, M.N.},
+	month = {may},
+	note = {ISBN: 978-3-642-36378-8 (Print) 978-3-642-36379-5 (Online) ISSN: 1863-2246 (Print) 1863-2351 (Online)},
+	pages = {17--31},
+	publisher = {Springer Berlin Heidelberg},
+	series = {Lecture Notes in Geoinformation and Cartography},
+	title = {Representing the dual of objects in a four-dimensional {GIS}},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Implementation of a national 3D standard: case of the Netherlands</strong>. Jantien Stoter, Jacob Beetz, Hugo Ledoux, Marcel Reuvers, Rick Klooster, Paul Janssen, Friso Penninga, Sisi Zlatanova and Linda den Brink. In Jacynthe Pouliot, Sylvie Daniel, Fr&eacute;d&eacute;ric Hubert and Alborz Zamyadi (eds.), <em>Progress and New Trends in 3D Geoinformation Sciences</em>, Lecture Notes in Geoinformation and Cartography, Springer Berlin Heidelberg, 2013, pp. 277&ndash;298. <br /> <a href="http://dx.doi.org/10.1007/978-3-642-29793-9_16"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibStoter13b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13b" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Stoter13b,
+	author = {Stoter, Jantien and Beetz, Jacob and Ledoux, Hugo and Reuvers, Marcel and Klooster, Rick and Janssen, Paul and Penninga, Friso and Zlatanova, Sisi and den Brink, Linda},
+	booktitle = {Progress and New Trends in 3D Geoinformation Sciences},
+	editor = {Pouliot, Jacynthe and Daniel, Sylvie and Hubert, Fr{\'e}d{\'e}ric and Zamyadi, Alborz},
+	pages = {277--298},
+	publisher = {Springer Berlin Heidelberg},
+	series = {Lecture Notes in Geoinformation and Cartography},
+	title = {Implementation of a National {3D} Standard: Case of the {N}etherlands},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Generation of a national virtual 3D city and landscape model for the netherlands</strong>. Sander Oude Elberink, Jantien Stoter, Hugo Ledoux and Tom Commandeur. <em>Jaarverslag 2012 Nederlandse Commissie voor Geodesie</em>, NCG KNAW, 2013, pp. 41&ndash;56. <br /> <a href="#bibOude-Elberink13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOude-Elberink13a" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Oude-Elberink13a,
+	author = {Oude Elberink, Sander and Stoter, Jantien and Ledoux, Hugo and Commandeur, Tom},
+	booktitle = {Jaarverslag 2012 Nederlandse Commissie voor Geodesie},
+	pages = {41--56},
+	publisher = {NCG KNAW},
+	title = {Generation of a National Virtual {3D} City and Landscape Model for the Netherlands},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>EdgeCrack: a parallel divide-and-conquer algorithm for building a topological data structure</strong>. Martijn Meijers and Hugo Ledoux. In C. Ellul, S. Zlatanova, M. Rumor and R. Laurini (eds.), <em>Urban and Regional Data Management: UDMS Annual 2013</em>, CRC Press, 2013, pp. 107&ndash;116. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/_13udms.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibMeijers13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibMeijers13" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Meijers13,
+	author = {Meijers, Martijn and Ledoux, Hugo},
+	booktitle = {Urban and Regional Data Management: UDMS Annual 2013},
+	editor = {C. Ellul and S. Zlatanova and M. Rumor and R. Laurini},
+	pages = {107--116},
+	publisher = {CRC Press},
+	title = {{EdgeCrack}: A parallel divide-and-conquer algorithm for building a topological data structure},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Representing three-dimensional topography in a DBMS with a star-based data structure</strong>. Hugo Ledoux and Martijn Meijers. In Jacynthe Pouliot, Sylvie Daniel, Fr&eacute;d&eacute;ric Hubert and Alborz Zamyadi (eds.), <em>Progress and New Trends in 3D Geoinformation Sciences</em>, Lecture Notes in Geoinformation and Cartography, Springer Berlin Heidelberg, 2013, pp. 119&ndash;132. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/_123dgeoinfo_pgtet.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.1007/978-3-642-29793-9_7"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibLedoux13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux13a" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Ledoux13a,
+	author = {Ledoux, Hugo and Meijers, Martijn},
+	booktitle = {Progress and New Trends in 3D Geoinformation Sciences},
+	editor = {Pouliot, Jacynthe and Daniel, Sylvie and Hubert, Fr{\'e}d{\'e}ric and Zamyadi, Alborz},
+	pages = {119--132},
+	publisher = {Springer Berlin Heidelberg},
+	series = {Lecture Notes in Geoinformation and Cartography},
+	title = {Representing Three-Dimensional Topography in a {DBMS} With a Star-Based Data Structure},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Medial axis approximation of river networks for catchment area delineation</strong>. Farid Karimipour, Mehran Ghandehari and Hugo Ledoux. In Alias Abdul Rahman, Pawel Boguslawski, Christopher Gold and Mohamad Nor Said (eds.), <em>Developments in Multidimensional Spatial Data Models</em>, Lecture Notes in Geoinformation and Cartography, Springer Berlin Heidelberg, 2013, pp. 1&ndash;15. ISBN: 978-3-642-36378-8. <br /> <a href="http://dx.doi.org/10.1007/978-3-642-36379-5_1"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibKarimipour13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibKarimipour13a" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Karimipour13a,
+	author = {Karimipour, Farid and Ghandehari, Mehran and Ledoux, Hugo},
+	booktitle = {Developments in Multidimensional Spatial Data Models},
+	editor = {Abdul Rahman, Alias and Boguslawski, Pawel and Gold, Christopher and Said, Mohamad Nor},
+	note = {ISBN: 978-3-642-36378-8},
+	pages = {1--15},
+	publisher = {Springer Berlin Heidelberg},
+	series = {Lecture Notes in Geoinformation and Cartography},
+	title = {Medial Axis Approximation of River Networks for Catchment Area Delineation},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Characterization and detection of building patterns in cartographic data: two algorithms</strong>. M. Zhang, T. Ai and J. E. Stoter. <em>Advances in Spatial Data Handling and GIS - 14th Internaitnal Symposium on Spatial Data Handling - Lecture Notes in Geoinformation and Cartography</em>, Springer-Verlag, Heidelberg, 2012, pp. 93&ndash;107. <br /> <a href="http://www.gdmc.nl/publications/2010/Characterization_detection_building_patterns.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibZhang12a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZhang12a" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Zhang12a,
+	author = {Zhang, M. and Ai, T. and Stoter, J.E.},
+	booktitle = {Advances in Spatial Data Handling and GIS - 14th Internaitnal Symposium on Spatial Data Handling - Lecture Notes in Geoinformation and Cartography},
+	pages = {93--107},
+	publisher = {Springer-Verlag, Heidelberg},
+	title = {Characterization and detection of building patterns in cartographic data: two algorithms},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Formalization and data enrichment for automated evaluation of building patters preservation</strong>. M. Zhang, J. E. Stoter, T. Ai and Kraak M. J.. <em>Advances in Spatial Data Handling and GIS - 14th Internaitnal Symposium on Spatial Data Handling - Lecture Notes in Geoinformation and Cartography</em>, Springer-Verlag, Heidelberg, 2012, pp. 109&ndash;125. <br /> <a href="http://www.gdmc.nl/publications/2010/Automated_evaluation_building_pattern.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibZhang12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZhang12" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Zhang12,
+	author = {Zhang, M. and Stoter, J.E. and Ai, T. and Kraak M.J.},
+	booktitle = {Advances in Spatial Data Handling and GIS - 14th Internaitnal Symposium on Spatial Data Handling - Lecture Notes in Geoinformation and Cartography},
+	pages = {109--125},
+	publisher = {Springer-Verlag, Heidelberg},
+	title = {Formalization and data enrichment for automated evaluation of building patters preservation},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Fully automated generalisation of topographic data in current geo-information environments</strong>. J. E. Stoter, J. van Smaalen, R. Nijhuis, A. Dortland, J. Bulder and B. Bruns. <em>Urban and Regional Data Management - UDMS Annual 2011</em>, Taylor and Francis, 2012, pp. 109&ndash;120. <br /> <a href="#bibStoter12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12" class="collapse" tabindex="-1"><pre class="bibtex">@incollection{Stoter12,
+	author = {Stoter, J.E. and Smaalen, J. van and Nijhuis,R. and Dortland, A. and Bulder, J. and Bruns, B.},
+	booktitle = {Urban and Regional Data Management - UDMS Annual 2011},
+	pages = {109--120},
+	publisher = {Taylor and Francis},
+	title = {Fully automated generalisation of topographic data in current geo-information environments},
+	year = {2012}
+}</pre></div></div>
+<h3>Conference articles<span id="filteredcount"></span></h3>
+<div class="filteredelement"><strong>Defining simple nD operations based on prismatic nD objects</strong>. Ken Arroyo Ohori, Hugo Ledoux and Jantien Stoter. In E. Dimopoulou and P. van Oosterom (eds.), <em>11th 3D Geoinfo Conference</em>, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences IV&ndash;2/W1, ISPRS, Athens, Greece, October 2016, pp. 155&ndash;162. ISSN: 2194–9042 (Print), 2194–9050 (Internet and USB). <br /> <a href="https://3d.bk.tudelft.nl/ken/files/16_3dgeoinfo.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="https://3d.bk.tudelft.nl/ken/files/16_3dgeoinfo_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="http://dx.doi.org/10.5194/isprs-annals-IV-2-W1-155-2016"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori16a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori16a" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Arroyo-Ohori16a,
+	address = {Athens, Greece},
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Jantien Stoter},
+	booktitle = {11th 3D Geoinfo Conference},
+	editor = {E. Dimopoulou and P. {van Oosterom}},
+	month = {oct},
+	note = {ISSN: 2194--9042 (Print), 2194--9050 (Internet and USB)},
+	pages = {155--162},
+	publisher = {ISPRS},
+	series = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+	title = {Defining simple n{D} operations based on prismatic n{D} objects},
+	volume = {IV--2/W1},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>Proposal for a new LOD and multi-representation concept for CityGML</strong>. M. O. L&ouml;wner, G. Gr&ouml;ger, J. Benner, F. Biljecki and C. Nagel. <em>ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.</em>, 2016, pp. 3&ndash;12. <br /> <a href="http://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W1/3/2016/isprs-annals-IV-2-W1-3-2016.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.5194/isprs-annals-IV-2-W1-3-2016"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibLowner16" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLowner16" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Lowner16,
+	author = {L{\"o}wner, M O and Gr{\"o}ger, G and Benner, J and Biljecki, F and Nagel, C},
+	booktitle = {ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.},
+	pages = {3--12},
+	title = {{Proposal for a new LOD and multi-representation concept for CityGML}},
+	volume = {IV-2/W1},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>The most common geometric and semantic errors in CityGML datasets</strong>. F. Biljecki, H. Ledoux, X. Du, J. Stoter, K. H. Soon and V. H. S. Khoo. <em>ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.</em>, 2016, pp. 13&ndash;22. <br /> <a href="http://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W1/13/2016/isprs-annals-IV-2-W1-13-2016.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.5194/isprs-annals-IV-2-W1-13-2016"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki16f" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki16f" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki16f,
+	author = {Biljecki, F and Ledoux, H and Du, X and Stoter, J and Soon, K H and Khoo, V H S},
+	booktitle = {ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.},
+	pages = {13--22},
+	title = {{The most common geometric and semantic errors in CityGML datasets}},
+	volume = {IV-2/W1},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>Generation of multi-LOD 3D city models in CityGML with the procedural modelling engine Random3Dcity</strong>. Filip Biljecki, Hugo Ledoux and Jantien Stoter. <em>ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.</em>, 2016, pp. 51&ndash;59. <br /> <a href="http://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-4-W1/51/2016/isprs-annals-III-4-W1-51-2016.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.5194/isprs-annals-IV-4-W1-51-2016"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki16e" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki16e" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki16e,
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien},
+	booktitle = {ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.},
+	pages = {51--59},
+	title = {{Generation of multi-LOD 3D city models in CityGML with the procedural modelling engine Random3Dcity}},
+	year = {2016}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automatic Semantic-preserving Conversion Between OBJ and CityGML</strong>. Filip Biljecki and Ken Arroyo Ohori. <em>Eurographics Workshop on Urban Data Modelling and Visualisation 2015</em>, Delft, Netherlands, November 2015, pp. 25&ndash;30. <br /> <a href="http://filipbiljecki.com/publications/2015_udmv_citygml_obj.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://doi.org/10.2312/udmv.20151345"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki15b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki15b" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki15b,
+	address = {Delft, Netherlands},
+	author = {Biljecki, Filip and Arroyo Ohori, Ken},
+	booktitle = {Eurographics Workshop on Urban Data Modelling and Visualisation 2015},
+	month = {nov},
+	pages = {25--30},
+	title = {{Automatic Semantic-preserving Conversion Between OBJ and CityGML}},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>Storing a 3D city model, its levels of detail and the correspondences between objects as a 4D combinatorial map</strong>. Ken Arroyo Ohori, Hugo Ledoux and Jantien Stoter. In Alias Abdul Rahman, Umit Isikdag and Francesc Ant&oacute;n Castro (eds.), <em>ISPRS Joint International Geoinformation Conference 2015</em>, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences II&ndash;2/W2, ISPRS, Kuala Lumpur, Malaysia, October 2015, pp. 1&ndash;8. ISSN: 2194–9042 (Print), 2194–9050 (Internet and USB). <br /> <a href="https://3d.bk.tudelft.nl/ken/files/15_isprs.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="https://3d.bk.tudelft.nl/ken/files/15_isprs_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="http://dx.doi.org/10.5194/isprsannals-II-2-W2-1-2015"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibArroyo-Ohori15c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori15c" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Arroyo-Ohori15c,
+	address = {Kuala Lumpur, Malaysia},
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Jantien Stoter},
+	booktitle = {ISPRS Joint International Geoinformation Conference 2015},
+	editor = {Alias Abdul Rahman and Umit Isikdag and Francesc Ant\'on Castro},
+	month = {oct},
+	note = {ISSN: 2194--9042 (Print), 2194--9050 (Internet and USB)},
+	pages = {1--8},
+	publisher = {ISPRS},
+	series = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+	title = {Storing a {3D} city model, its levels of detail and the correspondences between objects as a {4D} combinatorial map},
+	volume = {II--2/W2},
+	year = {2015}
+}</pre></div></div>
+<div class="filteredelement"><strong>Generalisation of a 1:10k map from municipal data</strong>. Jantien Stoter, Vincent van Altena, Jan Bakermans, Peter Lentjes, Ron Nijhuis, Marc Post and Marcel Reuvers. <em>17th ICA generalisation Workshop</em>, Vienna, Austria, September 2014. <br /> <a href="http://generalisation.icaci.org/images/files/workshop/workshop2014/genemr2014_submission_9.pdf"><i class="fa fa-external-link"></i> External link</a> <a href="#bibStoter14c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter14c" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Stoter14c,
+	author = {Jantien Stoter and Vincent van Altena and Jan Bakermans and Peter Lentjes and Ron Nijhuis and Marc Post and Marcel Reuvers},
+	booktitle = {17th ICA generalisation Workshop},
+	month = {sep},
+	organization = {Vienna, Austria},
+	title = {Generalisation of a 1:10k map from municipal data},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Initial analysis of the second fig 3d cadastres questionnaire: status in 2014 and expectations for 2018</strong>. Peter van Oosterom , Jantien Stoter , Hendrik Ploeger , Christiaan Lemmen , Rod Thompson and Sudarshan Karki. <em>4th International FIG 3D Cadastre Workshop, 9-11 November 2014 , Dubai, United Arab Emirates</em>, 2014. <br /> <a href="#bibPeter-van-Oosterom14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibPeter-van-Oosterom14" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Peter-van-Oosterom14,
+	author = {Peter van Oosterom, Jantien Stoter, Hendrik Ploeger, Christiaan Lemmen, Rod Thompson and Sudarshan Karki},
+	booktitle = {4th International FIG 3D Cadastre Workshop, 9-11 November 2014 , Dubai, United Arab Emirates},
+	title = {Initial Analysis of the Second FIG 3D Cadastres Questionnaire: Status in 2014 and Expectations for 2018},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>3d modelling with national coverage bridging the gap between research and practice</strong>. Jantien Stoter , Carsten Roensdorf , Rollo Home , David Capstick , Andre Streilein , Tobias Kellenberger , Eric Bayers , Paul Kane , Josef Dorsch , Piotr Woźniak , Gunnar Lysell , Thomas Lithen , Benedicte Bucher , Nicolas Paparoditis and Risto Ilves. <em>9th International 3DGeoInfo 2014</em>, November 2014. <br /> <a href="#bibJantien-Stoter14a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibJantien-Stoter14a" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Jantien-Stoter14a,
+	author = {Jantien Stoter, Carsten Roensdorf, Rollo Home, David Capstick, Andre Streilein, Tobias Kellenberger, Eric Bayers, Paul Kane, Josef Dorsch, Piotr Wo{\'z}niak, Gunnar Lysell, Thomas Lithen, Benedicte Bucher, Nicolas Paparoditis and Risto Ilves},
+	booktitle = {9th International 3DGeoInfo 2014},
+	month = {November},
+	title = {3D modelling with national coverage bridging the gap between research and practice},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Integration of land administration domain model with citygml for 3d cadastre</strong>. Debbie Wilson Carsten R&ouml;nsdorf and Jantien Stoter. <em>4th International FIG 3D Cadastre Workshop, 9-11 November 2014 , Dubai, United Arab Emirates</em>, 2014. <br /> <a href="#bibCarsten-Ronsdorf14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibCarsten-Ronsdorf14" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Carsten-Ronsdorf14,
+	author = {Carsten R{\"o}nsdorf, Debbie Wilson and Jantien Stoter},
+	booktitle = {4th International FIG 3D Cadastre Workshop, 9-11 November 2014 , Dubai, United Arab Emirates},
+	title = {Integration of Land Administration Domain Model with CityGML for 3D Cadastre},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Height references of CityGML LOD1 buildings and their influence on applications</strong>. Filip Biljecki, Hugo Ledoux and Jantien Stoter. In Martin Breunig, Al-Doori Mulhim, Edgar Butwilowski, Paul Vincent Kuper, Joachim Benner and Karl-Heinz H&auml;fele (eds.), <em>Proceedings of the 9th 3DGeoInfo Conference 2014</em>, Dubai, UAE, 2014. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/14_3dgi_references.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://dx.doi.org/10.4233/uuid:09d030b5-67d3-467b-babb-5e5ec10f1b38"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki14c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki14c" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki14c,
+	address = {Dubai, UAE},
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien},
+	booktitle = {Proceedings of the 9th 3DGeoInfo Conference 2014},
+	editor = {Breunig, Martin and Mulhim, Al-Doori and Butwilowski, Edgar and Kuper, Paul Vincent and Benner, Joachim and H{\"a}fele, Karl-Heinz},
+	title = {Height references of {CityGML LOD1} buildings and their influence on applications},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Error propagation in the computation of volumes in 3D city models with the Monte Carlo method</strong>. F. Biljecki, H. Ledoux and J. Stoter. <em>ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, Toronto, Canada, 2014, pp. 31&ndash;39. <br /> <a href="http://dx.doi.org/10.5194/isprsannals-ii-2-31-2014"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki14b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki14b" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki14b,
+	address = {Toronto, Canada},
+	author = {F. Biljecki and H. Ledoux and J. Stoter},
+	booktitle = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+	pages = {31--39},
+	title = {Error propagation in the computation of volumes in {3D} city models with the {Monte Carlo} method},
+	volume = {II-2},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Manipulating higher dimensional spatial information</strong>. Ken Arroyo Ohori, Filip Biljecki, Jantien Stoter and Hugo Ledoux. <em>Geographic Information Science at the Heart of Europe. Proceedings of the 16th AGILE International Conference on Geographic Information Science</em>, Leuven, Belgium, May 2013. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/13_agile.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://3dgeoinfo.bk.tudelft.nl/ken/files/13_agile_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="#bibArroyo-Ohori13c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori13c" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Arroyo-Ohori13c,
+	address = {Leuven, Belgium},
+	author = {Ken {Arroyo Ohori} and Filip Biljecki and Jantien Stoter and Hugo Ledoux},
+	booktitle = {Geographic Information Science at the Heart of Europe. Proceedings of the 16th AGILE International Conference on Geographic Information Science},
+	month = {may},
+	title = {Manipulating higher dimensional spatial information},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automatic repair of CityGML LOD2 buildings using shrink-wrapping</strong>. Junqiao Zhao, Hugo Ledoux and Jantien Stoter. In Umit Isikdag (eds.), <em>ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences. Proceedings of the ISPRS 8th 3DGeoInfo Conference &amp; WG II/2 Workshop</em>, Istanbul, Turkey, 2013, pp. 309&ndash;317. <br /> <a href="http://dx.doi.org/doi:10.5194/isprsannals-II-2-W1-309-2013"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibZhao13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZhao13" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Zhao13,
+	address = {Istanbul, Turkey},
+	author = {Zhao, Junqiao and Ledoux, Hugo and Stoter, Jantien},
+	booktitle = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences. Proceedings of the ISPRS 8th 3DGeoInfo Conference {\&} WG II/2 Workshop},
+	editor = {Isikdag, Umit},
+	pages = {309--317},
+	title = {Automatic Repair Of {CityGML} {LOD2} Buildings Using Shrink-Wrapping},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Generalisation of 1:50k roads centrelines from 1:10k road polygons in an automated workflow</strong>. V. van Altena , M. Post , R. Nijhuis and J. Stoter. <em>16th ICA Generalisation Workshop</em>, Dresden, August 2013. <br /> <a href="http://generalisation.icaci.org/images/files/workshop/workshop2013/genemappro2013_submission_18.pdf"><i class="fa fa-external-link"></i> External link</a> <a href="#bibV.-van-Altena13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibV.-van-Altena13" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{V.-van-Altena13,
+	address = {Dresden},
+	author = {V. van Altena, M. Post, R. Nijhuis and J. Stoter},
+	booktitle = {16th ICA Generalisation Workshop},
+	month = {August},
+	title = {Generalisation of 1:50k roads centrelines from 1:10k road polygons in an automated workflow},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Toward GIS-compliant data structures for traffic and transportation models</strong>. GF Tamminga, L. Brink, JWC van Lint, JE Stoter and SP Hoogendoorn. <em>Proceedings of the Transportation research board, Januari 2013</em>, 2013. <br /> <a href="#bibTamminga13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibTamminga13" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Tamminga13,
+	author = {Tamminga, GF and Brink, L and Lint, JWC van and Stoter, JE and Hoogendoorn, SP},
+	booktitle = {Proceedings of the Transportation research board, Januari 2013},
+	title = {Toward {GIS}-compliant data structures for traffic and transportation models},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>First attempts to automize generalisation of electronic navigational charts - specifying requirements and methods</strong>. W. Socha and J. Stoter. <em>16th ICA Generalisation Workshop,</em>, Dresden, August 2013. <br /> <a href="http://generalisation.icaci.org/images/files/workshop/workshop2013/genemappro2013_submission_12.pdf"><i class="fa fa-external-link"></i> External link</a> <a href="#bibSocha13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibSocha13" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Socha13,
+	address = {Dresden},
+	author = {W. Socha and J. Stoter},
+	booktitle = {16th ICA Generalisation Workshop,},
+	month = {August},
+	title = {First attempts to automize generalisation of electronic navigational charts - specifying requirements and methods},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Generation and generalization of safe depth-contours for hydrographic charts using a surface-based approach</strong>. Ravi Peters, Hugo Ledoux and Martijn Meijers. In D. Burghardt (eds.), <em>Proceedings 16th ICA Generalisation Workshop</em>, Dresden, Germany, 2013. <br /> <a href="http://3dgeoinfo.bk.tudelft.nl/hledoux/pdfs/_13icagenz.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibPeters13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibPeters13" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Peters13,
+	address = {Dresden, Germany},
+	author = {Peters, Ravi and Ledoux, Hugo and Meijers, Martijn},
+	booktitle = {Proceedings 16th ICA Generalisation Workshop},
+	editor = {D. Burghardt},
+	title = {Generation and generalization of safe depth-contours for hydrographic charts using a surface-based approach},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Experiment for integrating dutch 3d spatial planning and bim for checking building permits</strong>. L. van Berlo , T. Dijkmans , and J. Stoter. <em>3DGeoInfo - 8th 3D GeoInfo Conference</em>, Istanbul, Turkey, November 2013. <br /> <a href="#bibL.-van-Berlo13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibL.-van-Berlo13" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{L.-van-Berlo13,
+	address = {Istanbul, Turkey},
+	author = {L. van Berlo, T. Dijkmans, and J. Stoter},
+	booktitle = {3DGeoInfo - 8th 3D GeoInfo Conference},
+	month = {November},
+	title = {Experiment for integrating Dutch 3D spatial planning and BIM for checking building permits},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Approaches of national 3d mapping: research results and standardisation in practice</strong>. J. E. Stoter , A. Streilein , M. Pla , B. Baella , D. Capstick , R. Home , and J. P. Lagrange. <em>3DGeoInfo - 8th 3D GeoInfo Conference</em>, Istanbul, Turkey, November 2013. <br /> <a href="#bibJ.E.-Stoter13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibJ.E.-Stoter13" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{J.E.-Stoter13,
+	address = {Istanbul, Turkey},
+	author = {J.E. Stoter, A. Streilein, M. Pla, B. Baella, D. Capstick, R. Home, and J.P. Lagrange},
+	booktitle = {3DGeoInfo - 8th 3D GeoInfo Conference},
+	month = {November},
+	title = {Approaches of national 3D mapping: research results and standardisation in practice},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>The concept of level of detail in 3D city modelling</strong>. Filip Biljecki and Jantien Stoter. <em>Proceedings of the OGC/EuroSDR Workshop CityGML in national mapping</em>, Institut national de l&rsquo;information g&eacute;ographique et foresti&egrave;re (IGN), Paris, France, January 2013. <br /> <a href="http://www.gdmc.nl/publications/2013/LOD_in_3D_City_Modelling.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibBiljecki13c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki13c" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki13c,
+	address = {Paris, France},
+	author = {Filip Biljecki and Jantien Stoter},
+	booktitle = {Proceedings of the OGC/EuroSDR Workshop CityGML in national mapping},
+	month = {January},
+	organization = {Institut national de l'information g{\'e}ographique et foresti{\`e}re (IGN)},
+	title = {The concept of level of detail in {3D} city modelling},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Overview of the phd research: the concept of level of detail in 3d city modelling</strong>. Biljecki , F. &amp;. Stoter , JE. <em>EuroSDR/OGC Workshop City GML in national mapping</em>, Paris, France, January 2013. <br /> <a href="#bibBiljecki13b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki13b" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki13b,
+	address = {Paris, France},
+	author = {Biljecki, F & Stoter, JE},
+	booktitle = {EuroSDR/OGC Workshop City GML in national mapping},
+	month = {January},
+	title = {Overview of the PhD research: the concept of level of detail in 3D city modelling},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Revisiting the concept of level of detail in 3D city modelling</strong>. Filip Biljecki, Junqiao Zhao, Jantien Stoter and Hugo Ledoux. In Umit Isikdag (eds.), <em>ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences. Proceedings of the ISPRS 8th 3DGeoInfo Conference &amp; WG II/2 Workshop</em>, Istanbul, Turkey, 2013, pp. 63&ndash;74. <br /> <a href="http://dx.doi.org/10.5194/isprsannals-II-2-W1-63-2013"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki13a" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Biljecki13a,
+	address = {Istanbul, Turkey},
+	author = {Biljecki, Filip and Zhao, Junqiao and Stoter, Jantien and Ledoux, Hugo},
+	booktitle = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences. Proceedings of the ISPRS 8th 3DGeoInfo Conference {\&} WG II/2 Workshop},
+	editor = {Isikdag, Umit},
+	pages = {63--74},
+	title = {{Revisiting the concept of level of detail in {3D} city modelling}},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Developing 5D spatial models for GIS</strong>. Ken Arroyo Ohori. <em>GIN Symposium</em>, Apeldoorn, The Netherlands, November 2012. <br /> <a href="http://www.gdmc.nl/ken/files/12_gin.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://www.gdmc.nl/ken/files/12_gin_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="#bibArroyo-Ohori12c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori12c" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Arroyo-Ohori12c,
+	address = {Apeldoorn, The Netherlands},
+	author = {Ken {Arroyo Ohori}},
+	booktitle = {GIN Symposium},
+	month = {nov},
+	title = {Developing {5D} spatial models for {GIS}},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automatically repairing polygons and planar partitions with prepair and pprepair</strong>. Ken Arroyo Ohori, Hugo Ledoux and Martijn Meijers. <em>Proceedings of the 4th Open Source GIS UK Conference</em>, Nottingham, United Kingdom, September 2012. <span class="text-danger"> Best paper/presentation award</span>.<br /> <a href="http://www.gdmc.nl/ken/files/12_osgis.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://www.gdmc.nl/ken/files/12_osgis_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="#bibArroyo-Ohori12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Arroyo-Ohori12,
+	address = {Nottingham, United Kingdom},
+	author = {Ken {Arroyo Ohori} and Hugo Ledoux and Martijn Meijers},
+	booktitle = {Proceedings of the 4th Open Source GIS UK Conference},
+	month = {sep},
+	title = {Automatically repairing polygons and planar partitions with prepair and pprepair},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Integrating scale and space in 3D city models</strong>. Jantien Stoter, Hugo Ledoux, Martijn Meijers and Ken Arroyo Ohori. In Jacynthe Pouliot, Sylvie Daniel, Fr&eacute;d&eacute;ric Hubert and Alborz Zamyadi (eds.), <em>Proceedings of the 7th International 3D GeoInfo Conference</em>, International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences XXXVIII-4/C26, Qu&eacute;bec City, Canada, May 2012, pp. 7&ndash;10. <br /> <a href="http://www.gdmc.nl/ken/files/12_3dgeoinfo.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://www.gdmc.nl/ken/files/12_3dgeoinfo_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="#bibStoter12j" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12j" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Stoter12j,
+	address = {Qu\'ebec City, Canada},
+	author = {Jantien Stoter and Hugo Ledoux and Martijn Meijers and Ken {Arroyo Ohori}},
+	booktitle = {Proceedings of the 7th International 3D GeoInfo Conference},
+	editor = {Jacynthe Pouliot and Sylvie Daniel and Fr{\'e}d{\'e}ric Hubert and Alborz Zamyadi},
+	month = {may},
+	pages = {7--10},
+	series = {International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+	title = {Integrating Scale and Space in {3D} City Models},
+	volume = {XXXVIII-4/C26},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>5D modeling - applications and advantages</strong>. Jantien Stoter, Hugo Ledoux, Martijn Meijers, Ken Arroyo Ohori and Peter van Oosterom. <em>Geospatial World Forum 2012</em>, Amsterdam, The Netherlands, April 2012. <br /> <a href="http://www.gdmc.nl/ken/files/12_gwf.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter12i" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12i" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Stoter12i,
+	address = {Amsterdam, The Netherlands},
+	author = {Stoter, Jantien and Ledoux, Hugo and Meijers, Martijn and Arroyo Ohori, Ken and van Oosterom, Peter},
+	booktitle = {Geospatial World Forum 2012},
+	month = {apr},
+	title = {{5D} Modeling - applications and advantages},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automatically repairing invalid polygons with a constrained triangulation</strong>. Hugo Ledoux, Ken Arroyo Ohori and Martijn Meijers. In J&eacute;r&ocirc;me Gensel, Didier Josselin and Danny Vandenbroucke (eds.), <em>Multidisciplinary Research on Geographical Information in Europe and Beyond. Proceedings of the 15th AGILE International Conference on Geographic Information Science</em>, Avignon, France, April 2012, pp. 13&ndash;18. <br /> <a href="http://www.gdmc.nl/ken/files/12_agile.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://www.gdmc.nl/ken/files/12_agile_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="#bibLedoux12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Ledoux12,
+	address = {Avignon, France},
+	author = {Hugo Ledoux and Ken {Arroyo Ohori} and Martijn Meijers},
+	booktitle = {Multidisciplinary Research on Geographical Information in Europe and Beyond. Proceedings of the 15th AGILE International Conference on Geographic Information Science},
+	editor = {J\'er\^ome Gensel and Didier Josselin and Danny Vandenbroucke},
+	month = {apr},
+	pages = {13--18},
+	title = {Automatically repairing invalid polygons with a constrained triangulation},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Standards for exchange and storage of 3D information: challenges and opportunities for emergency response</strong>. S. Zlatanova, J. E. Stoter and U. Isikdag. <em>Proceedings of the 4th International Conference on Cartography &amp; GIS, Volume 2</em>, 2012, pp. 17&ndash;28. <br /> <a href="http://www.gdmc.nl/publications/2012/Standards_Exchange_Storage_3D_Information.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibZlatanova12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZlatanova12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Zlatanova12,
+	author = {Zlatanova, S. and Stoter, J.E. and Isikdag, U.},
+	booktitle = {Proceedings of the 4th International Conference on Cartography \& GIS, Volume 2},
+	pages = {17--28},
+	title = {Standards for exchange and storage of {3D} information: challenges and opportunities for emergency response},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Pattern classification approaches to matching building polygons at multiple sclae</strong>. M. Zhang, J. Zhoa, M. Molenaar, J. E. Stoter, M. J. Kraak and T. Ai. <em>International Archives of the Photogrammetry, Remote Sesning and Spatial Information Sciences, Vol. I-2</em>, 2012, pp. 19&ndash;24. <br /> <a href="http://www.gdmc.nl/publications/2012/Pattern_classification_approaches.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibZhang12b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibZhang12b" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Zhang12b,
+	author = {Zhang, M. and Zhoa, J. and Molenaar, M. and Stoter, J.E. and Kraak,M.J. and Ai, T.},
+	booktitle = {International Archives of the Photogrammetry, Remote Sesning and Spatial Information Sciences, Vol. I-2},
+	pages = {19--24},
+	title = {Pattern classification approaches to matching building polygons at multiple sclae},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>The phased 3D cadastre implementation in the Netherlands</strong>. J. E. Stoter, P. J. M. van Oosterom and H. D. Ploeger. <em>Proceedings of the 3rd International Workshop on 3D Cadastres: Developments and practices</em>, 2012, pp. 203&ndash;216. <br /> <a href="http://www.gdmc.nl/publications/2012/Phased_3D_Cadastre_Netherlands.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter12a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12a" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Stoter12a,
+	author = {Stoter, J.E. and Oosterom, P.J.M. van and Ploeger, H.D.},
+	booktitle = {Proceedings of the 3rd International Workshop on 3D Cadastres: Developments and practices},
+	pages = {203--216},
+	title = {The phased {3D} Cadastre implementation in the {N}etherlands},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Principles of 5D modelling, full integration of 3D space, time and scale</strong>. P. M. J. van Oosterom and J. E. Stoter. <em>On-line proceedings GWF12</em>, 2012, pp. 1&ndash;8. <br /> <a href="#bibOosterom12a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOosterom12a" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Oosterom12a,
+	author = {Oosterom, P.M.J. van and Stoter, J.E.},
+	booktitle = {On-line proceedings GWF12},
+	pages = {1--8},
+	title = {Principles of {5D} modelling, full integration of {3D} space, time and scale},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>3D cadastre in the Netherlands</strong>. P. J. M. van Oosterom, J. E. Stoter and H. D. Ploeger. <em>Proceedings ISG 2012</em>, 2012, pp. 1&ndash;12. <br /> <a href="#bibOosterom12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOosterom12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Oosterom12,
+	author = {Oosterom, P.J.M. van and Stoter, J.E. and Ploeger, H.D.},
+	booktitle = {Proceedings ISG 2012},
+	pages = {1--12},
+	title = {{3D} cadastre in the {N}etherlands},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Comparing the vario-scale approach with a discrete multi-representation based approach for automated generalisation of topographic data</strong>. M. Meijers, J. E. Stoter and P. J. M. van Oosterom. <em>Proceedings of the ICA / EuroSDR Generalisation Workshop</em>, 2012, pp. 1&ndash;10. <br /> <a href="#bibMeijers12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibMeijers12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Meijers12,
+	author = {Meijers, M. and J.E. Stoter and P.J.M. van Oosterom},
+	booktitle = {Proceedings of the ICA / EuroSDR Generalisation Workshop},
+	pages = {1--10},
+	title = {Comparing the vario-scale approach with a discrete multi-representation based approach for automated generalisation of topographic data},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Repair and generalization of hand-made 3D building models</strong>. Junqiao Zhao , Jantien Stoter , Hugo Ledoux and Qing Zhu. <em>Proceedings of the 15th Workshop of the ICA Commission on Generalisation and Multiple Representation</em>, Istanbul, Turkey, 2012. <br /> <a href="#bibJunqiao-Zhao12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibJunqiao-Zhao12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Junqiao-Zhao12,
+	address = {Istanbul, Turkey},
+	author = {Junqiao Zhao, Jantien Stoter, Hugo Ledoux and Qing Zhu},
+	booktitle = {Proceedings of the 15th Workshop of the ICA Commission on Generalisation and Multiple Representation},
+	title = {Repair and generalization of hand-made {3D} building models},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Russian-dutch project &ldquo;3d cadastre modelling in russia&rdquo;</strong>. G. Elizarova, S. Sapelnikov, N. Vandysheva, S. Pakhomov, P. J. M. van Oosterom, M. E. de Vries, J. E. Stoter, H. D. Ploeger, B. Spiering, R. Wouters, A. Hoogeveen and V. Penkov. <em>Proceedings of the 3rd International Workshop on 3D Cadastres: Developments and practices</em>, 2012, pp. 87&ndash;102. <br /> <a href="http://www.gdmc.nl/publications/2012/Russian-Dutch_Project_3D_Cadastre_Modelling.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibElizarova12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibElizarova12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Elizarova12,
+	author = {Elizarova, G. and Sapelnikov, S. and Vandysheva, N. and Pakhomov, S. and Oosterom, P.J.M. van and Vries, M.E. de and Stoter, J.E. and Ploeger, H.D. and Spiering, B. and Wouters, R. and Hoogeveen, A. and Penkov, V.},
+	booktitle = {Proceedings of the 3rd International Workshop on 3D Cadastres: Developments and practices},
+	pages = {87--102},
+	title = {Russian-Dutch project ``3D cadastre modelling in Russia''},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Modelling an application domain extension of CityGML in UML</strong>. L. van den Brink, J. E. Stoter and S. Zlatanova. <em>International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XXXVIII-4, Part C26</em>, 2012, pp. 11&ndash;14. <br /> <a href="http://www.gdmc.nl/publications/2012/Application_Domain_Extension_CityGML_UML.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibBrink12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBrink12" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Brink12,
+	author = {Brink, L. van den and Stoter, J.E and Zlatanova, S.},
+	booktitle = {International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XXXVIII-4, Part C26},
+	pages = {11--14},
+	title = {Modelling an application domain extension of {CityGML} in {UML}},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Edge-matching polygons with a constrained triangulation</strong>. Hugo Ledoux and Ken Arroyo Ohori. <em>Proceedings of GIS Ostrava 2011</em>, Ostrava, Czech Republic, January 2011, pp. 377&ndash;390. ISBN: 978-80-248-2366-9 ISSN: 1213-239X. <br /> <a href="http://www.gdmc.nl/ken/files/11_ostrava.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://www.gdmc.nl/Ken/files/11_ostrava_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="#bibLedoux11a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux11a" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Ledoux11a,
+	address = {Ostrava, Czech Republic},
+	author = {Ledoux, Hugo and Arroyo Ohori, Ken},
+	booktitle = {Proceedings of GIS Ostrava 2011},
+	month = {jan},
+	note = {ISBN: 978-80-248-2366-9 ISSN: 1213-239X},
+	pages = {377--390},
+	title = {Edge-matching polygons with a constrained triangulation},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Design and development of a 3D cadastral prototype based on the LADM and 3D topology</strong>. S. Ying, R. Guo, L. Li, P. J. M. van Oosterom, H. Ledoux and J. E. Stoter. In P. J. M. van Oosterom, E. M. Fendel, J. E. Stoter and A. Streilein (eds.), <em>Proceedings 2nd International Workshop on 3D Cadastres</em>, Copenhagen: International Federation of Surveyors (FIG), 2011, pp. 167&ndash;188. <br /> <a href="http://www.gdmc.nl/publications/2011/3D_Cadastral_System_Prototype.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibYing11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibYing11" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Ying11,
+	author = {Ying, S. and Guo, R. and Li, L. and van Oosterom, P. J. M. and Ledoux, H. and Stoter, J. E.},
+	booktitle = {Proceedings 2nd International Workshop on 3D Cadastres},
+	editor = {van Oosterom, P. J. M and Fendel, E. M. and Stoter, J. E. and Streilein, A.},
+	pages = {167--188},
+	publisher = {Copenhagen: International Federation of Surveyors (FIG)},
+	title = {Design and development of a {3D} cadastral prototype based on the {LADM} and {3D} topology},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>3D cadastre modelling in Russia</strong>. N. Vandysheva, V. Tikhonov, PJM van Oosterom, JE Stoter, HD Ploeger, R. Wouters and V. Penkov. <em>Proceedings of the FIG Working Week 2011 &amp; 6th National Congress of ONIGT</em>, 2011. <br /> <a href="http://www.gdmc.nl/publications/2011/3D_Cadastre_Modelling_Russia.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibVandysheva11a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibVandysheva11a" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Vandysheva11a,
+	author = {Vandysheva, N and Tikhonov, V and Oosterom, PJM van and Stoter, JE and Ploeger, HD and Wouters, R and Penkov, V},
+	booktitle = {Proceedings of the FIG Working Week 2011 & 6th National Congress of ONIGT},
+	title = {{3D} Cadastre modelling in {R}ussia},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Design of the 3D cadastre model and development of the prototype in the Russian Federation</strong>. N. Vandysheva, A. Ivanov, S. Pakhomov, B. Spiering, JE Stoter, S. Zlatanova and PJM van Oosterom. <em>Proceedings of the 2nd International Workshop on 3D Cadastres</em>, 2011, pp. 355&ndash;367. <br /> <a href="http://www.gdmc.nl/publications/2011/3D_Cadastre_Model_Russian_Federation.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibVandysheva11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibVandysheva11" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Vandysheva11,
+	author = {Vandysheva, N and Ivanov, A and Pakhomov, S and Spiering, B and Stoter, JE and Zlatanova, S and Oosterom, PJM van},
+	booktitle = {Proceedings of the 2nd International Workshop on 3D Cadastres},
+	pages = {355--367},
+	title = {Design of the {3D} cadastre model and development of the prototype in the {R}ussian {F}ederation},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Current developments in 3D-cadastre with examples from the Netherlands and the Russian Federation</strong>. Jantien Stoter, Peter van Oosterom, Rik Wouters and Louisa J. M. Jansen. <em>Proceedings of the First Serbian Geodetic Congress</em>, 2011. <br /> <a href="http://www.gdmc.nl/publications/2011/Current_developments_3D-cadastre.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11d" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11d" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Stoter11d,
+	author = {Jantien Stoter and Peter van Oosterom and Rik Wouters and Louisa J.M. Jansen},
+	booktitle = {Proceedings of the First Serbian Geodetic Congress},
+	title = {Current developments in {3D}-cadastre with examples from the {N}etherlands and the {R}ussian {F}ederation},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Registration of 3D situations in land administration in the Netherlands</strong>. JE Stoter, HD Ploeger, W. Louwman, PJM van Oosterom and  Wuensch. <em>Proceedings of the 2nd International Workshop on 3D Cadastres</em>, 2011, pp. 149&ndash;166. <br /> <a href="http://www.gdmc.nl/publications/2011/3D_Land_Administration_Netherlands.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11c" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Stoter11c,
+	author = {Stoter, JE and Ploeger, HD and Louwman, W and Oosterom, PJM van and Wuensch},
+	booktitle = {Proceedings of the 2nd International Workshop on 3D Cadastres},
+	pages = {149--166},
+	title = {Registration of {3D} situations in land administration in the {N}etherlands},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Feasibility study on an automated generalisation production line for multiscale topographic products</strong>. Jantien Stoter, Ron Nijhuis, Marc Post, Vincent van Altena, Jan Bulder, Ben Bruns and John Van Smaalen. <em>Proceedings of the 14th Workshop of the ICA commission on Generalisation and Multiple Representation, June, 2011, Paris</em>, 2011. <br /> <a href="http://www.gdmc.nl/publications/2011/Automated_generalisation_production_line.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11b" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Stoter11b,
+	author = {Jantien Stoter and Ron Nijhuis and Marc Post and Vincent van Altena and Jan Bulder and Ben Bruns and John Van Smaalen},
+	booktitle = {Proceedings of the 14th Workshop of the ICA commission on Generalisation and Multiple Representation, June, 2011, Paris},
+	title = {Feasibility study on an automated generalisation production line for multiscale topographic products},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automated generalisation of land cover data in a planar topographic map</strong>. John van Smaalen, Ron Nijhuis and Jantien Stoter. <em>Proceedings of the 14th Workshop of the ICA commission on Generalisation and Multiple Representation, June, 2011, Paris</em>, 2011. <br /> <a href="http://www.gdmc.nl/publications/2011/Automated_generalisation_land_cover_data.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibSmaalen11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibSmaalen11" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Smaalen11,
+	author = {John van Smaalen and Ron Nijhuis and Jantien Stoter},
+	booktitle = {Proceedings of the 14th Workshop of the ICA commission on Generalisation and Multiple Representation, June, 2011, Paris},
+	title = {Automated generalisation of land cover data in a planar topographic map},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>World-wide inventory of the status of 3D-cadastres in 2010 and expectations for 2014.</strong>. PJM van Oosterom, JE Stoter, HD Ploeger, RJ Thompson and S. Karki. <em>Proceedings of the FIG Working Week 2011 &amp; 6th National Congress of ONIGT</em>, 2011. <br /> <a href="http://www.gdmc.nl/publications/2011/Inventory_status_3D_Cadastres.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibOosterom11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOosterom11" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Oosterom11,
+	author = {Oosterom, PJM van and Stoter, JE and Ploeger, HD and Thompson, RJ and Karki, S},
+	booktitle = {Proceedings of the FIG Working Week 2011 \& 6th National Congress of ONIGT},
+	title = {World-wide inventory of the status of {3D}-cadastres in 2010 and expectations for 2014.},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automated generalisation of 1:10k topographic data from municipal data</strong>. Dogan Altundag and Jantien Stoter. <em>Proceedings of the 14th Workshop of the ICA commission on Generalisation and Multiple Representation, June, 2011, Paris</em>, 2011. <br /> <a href="http://www.gdmc.nl/publications/2011/Automated_generalisation_topographic_data.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibAltundag11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibAltundag11" class="collapse" tabindex="-1"><pre class="bibtex">@inproceedings{Altundag11,
+	author = {Dogan Altundag and Jantien Stoter},
+	booktitle = {Proceedings of the 14th Workshop of the ICA commission on Generalisation and Multiple Representation, June, 2011, Paris},
+	title = {Automated generalisation of 1:10k topographic data from municipal data},
+	year = {2011}
+}</pre></div></div>
+<h3>Technical reports<span id="filteredcount"></span></h3>
+<div class="filteredelement"><strong>Advies rd/etrs89</strong>. Jantien Stoter, Lennard Huisman, Rogier Broekman and Leendert Dorst. Technical report, Geonovum, 2014. <br /> <a href="http://www.geonovum.nl/sites/default/files/RDETRS89_Advies_GI_BeraadJuni2014.pdf"><i class="fa fa-external-link"></i> External link</a> <a href="#bibStoter14d" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter14d" class="collapse" tabindex="-1"><pre class="bibtex">@techreport{Stoter14d,
+	author = {Jantien Stoter and Lennard Huisman and Rogier Broekman and Leendert Dorst},
+	institution = {Geonovum},
+	title = {Advies RD/ETRS89},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>The concept of level of detail in 3D city models - PhD research proposal</strong>. F. Biljecki. PhD Proposal 62, OTB Research Institute for the Built Environment, Delft University of Technology, 2013. <br /> <a href="http://www.gdmc.nl/publications/reports/GISt62.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibBiljecki13d" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki13d" class="collapse" tabindex="-1"><pre class="bibtex">@techreport{Biljecki13d,
+	author = {Biljecki, F.},
+	institution = {OTB Research Institute for the Built Environment, Delft University of Technology},
+	number = {62},
+	title = {The concept of level of detail in {3D} city models - {PhD} Research Proposal},
+	type = {PhD Proposal},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>3d pilot. eindrapport werkgroep 3d testbed</strong>. J. E. Stoter, J. Goos, R. Klooster, M. Reuvers, E. Verbree, G. Vestjens and G. Vosselman. Green Series NCG-KNAW 54, NCG-KNAW, 2012. <br /> <a href="http://www.gdmc.nl/publications/reports/NCG_54.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter12h" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12h" class="collapse" tabindex="-1"><pre class="bibtex">@techreport{Stoter12h,
+	author = {Stoter, J.E. and Goos, J. and Klooster, R. and Reuvers, M. and Verbree, E. and Vestjens, G. and Vosselman, G.},
+	institution = {NCG-KNAW},
+	title = {3D Pilot. Eindrapport werkgroep 3D Testbed},
+	type = {Green Series NCG-KNAW 54},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>3D pilot. eindrapport werkgroep 3D use cases</strong>. M. Berntssen, M. Danes, J. Goos, R. Klooster, J. Kooijman, L. Noordegraaf, J. E. Stoter, C. Veldhuis and G. Vosselman. Green Series NCG-KNAW 56, NCG-KNAW, 2012. <br /> <a href="http://www.gdmc.nl/publications/reports/NCG_56.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibBerntssen12" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBerntssen12" class="collapse" tabindex="-1"><pre class="bibtex">@techreport{Berntssen12,
+	author = {Berntssen, M. and Danes, M. and Goos, J. and Klooster, R. and Kooijman, J. and Noordegraaf, L. and Stoter, J.E. and Veldhuis, C. and Vosselman, G.},
+	institution = {NCG-KNAW},
+	title = {{3D} Pilot. Eindrapport werkgroep {3D} use cases},
+	type = {Green Series NCG-KNAW 56},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Realising the foundations of a higher dimensional GIS: a study of higher dimensional spatial data models, data structures and operations</strong>. Ken Arroyo Ohori. PhD Proposal 57, OTB Research Institute for the Built Environment, Delft University of Technology, December 2011. ISBN: 978-90-77029-29-9 ISSN: 1560-0245. <br /> <a href="http://www.gdmc.nl/ken/files/11_phd_proposal.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="http://www.gdmc.nl/ken/files/11_phd_proposal_presentation.pdf"><i class="fa fa-file-pdf-o"></i> Slides</a> <a href="#bibArroyo-Ohori11" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibArroyo-Ohori11" class="collapse" tabindex="-1"><pre class="bibtex">@techreport{Arroyo-Ohori11,
+	author = {Ken {Arroyo Ohori}},
+	institution = {OTB Research Institute for the Built Environment, Delft University of Technology},
+	month = {dec},
+	note = {ISBN: 978-90-77029-29-9 ISSN: 1560-0245},
+	number = {57},
+	title = {Realising the Foundations of a Higher Dimensional {GIS}: A Study of Higher Dimensional Spatial Data Models, Data Structures and Operations},
+	type = {PhD Proposal},
+	year = {2011}
+}</pre></div></div>
+<h3>Others<span id="filteredcount"></span></h3>
+<div class="filteredelement"><strong>Geo-informatie in 3d: wat moet je ermee?</strong>. Jantien Stoter. <em>Geo-Info</em> 2014(5), September 2014, pp. 4-9. <br /> <a href="#bibStoter14b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter14b" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter14b,
+	author = {Jantien Stoter},
+	journal = {Geo-Info},
+	month = {sep},
+	number = {5},
+	pages = {4-9},
+	title = {Geo-informatie in 3D: wat moet je ermee?},
+	volume = {2014},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Naar een eenduidig, internationaal gangbaar co&ouml;rdinatenreferentiestelsel voor horizontale positie op land en zee</strong>. Rogier Broekman, Leendert Dorst, Lennard Huisman and Jantien Stoter. <em>Geo-Info</em> 2014(5), September 2014, pp. 14-15. <br /> <a href="#bibBroekman14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBroekman14" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Broekman14,
+	author = {Rogier Broekman and Leendert Dorst and Lennard Huisman and Jantien Stoter},
+	journal = {Geo-Info},
+	month = {sep},
+	number = {5},
+	pages = {14-15},
+	title = {Naar een eenduidig, internationaal gangbaar co\"ordinatenreferentiestelsel voor horizontale positie op land en zee},
+	volume = {2014},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>MATAHN: a seamless AHN2 download service</strong>. Ravi Peters and Hugo Ledoux. Presentation at the 3D BGT dag (June 19th in Amersfoort, the Netherlands), 2014. <br /> <a href="http://3dsm.bk.tudelft.nl/pdfs/matahn_3dbgt-dag_2014.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibPeters14a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibPeters14a" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Peters14a,
+	author = {Ravi Peters and Hugo Ledoux},
+	howpublished = {Presentation at the 3D BGT dag (June 19th in Amersfoort, the Netherlands)},
+	title = {{MATAHN:} A seamless {AHN2} download service},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Een veiliger nederland door virtual reality</strong>. Jantien Stoter Marian Luursema. <em>Magazine nationale veiligheid en crisisbeheersing</em>, December 2014, pp. 44-45. <br /> <a href="https://www.nctv.nl/Images/magazine-nationale-veiligheid-en-crisisbeheersing-2014-6_tcm126-575059.pdf?cp=126&cs=73791"><i class="fa fa-external-link"></i> External link</a> <a href="#bibMarian-Luursema14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibMarian-Luursema14" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Marian-Luursema14,
+	author = {Marian Luursema, Jantien Stoter},
+	journal = {Magazine nationale veiligheid en crisisbeheersing},
+	month = {December},
+	pages = {44-45},
+	title = {Een veiliger Nederland door virtual reality},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Val3dity: an online and open-source validator for 3D geometries</strong>. Hugo Ledoux and Jantien Stoter. Presentation at the 3D BGT dag (June 19th in Amersfoort, the Netherlands), 2014. <br /> <a href="#bibLedoux14b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibLedoux14b" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Ledoux14b,
+	author = {Hugo Ledoux and Jantien Stoter},
+	howpublished = {Presentation at the {3D BGT} dag (June 19th in Amersfoort, the Netherlands)},
+	title = {{val3dity}: an online and open-source validator for {3D} geometries},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automated map generalisation</strong>. Vincent van Altena Jantien Stoter and Marc Post. <em>GIM International Mapping the world</em>, Volume 28, Number 9, September 2014. <br /> <a href="http://www.gim-international.com/issues/articles/id2140-Automated_Map_Generalisation.html"><i class="fa fa-external-link"></i> External link</a> <a href="#bibJantien-Stoter14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibJantien-Stoter14" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Jantien-Stoter14,
+	author = {Jantien Stoter, Vincent van Altena and Marc Post},
+	howpublished = {Volume 28, Number 9},
+	journal = {GIM International Mapping the world},
+	month = {September},
+	title = {Automated Map Generalisation},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Improvement of the LOD concept for 3D city models</strong>. Filip Biljecki, Hugo Ledoux and Jantien Stoter. GIM International, November 2014, pp. 21&ndash;23. <br /> <a href="http://www.gim-international.com/issues/articles/id2167-Redefining_the_Level_of_Detail_for_D_Models.html"><i class="fa fa-external-link"></i> DOI</a> <a href="#bibBiljecki14a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBiljecki14a" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Biljecki14a,
+	author = {Biljecki, Filip and Ledoux, Hugo and Stoter, Jantien},
+	howpublished = {GIM International},
+	month = {November},
+	pages = {21--23},
+	title = {Improvement of the {LOD} concept for {3D} city models},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Interview jantien stoter</strong>. 10 2014, pp. 7. De Volkskrant, Rubriek “Nieuw Gezicht”. <br /> <a href="http://www.volkskrant.nl/media/jantien-stoter-binnen-tien-jaar-gaat-stedelijke-ontwikkeling-in-3d~a3775206/"><i class="fa fa-external-link"></i> External link</a> <a href="#bib14" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bib14" class="collapse" tabindex="-1"><pre class="bibtex">@misc{14,
+	month = {10},
+	note = {De Volkskrant, Rubriek ``Nieuw Gezicht''},
+	pages = {7},
+	title = {Interview Jantien Stoter},
+	year = {2014}
+}</pre></div></div>
+<div class="filteredelement"><strong>Naar een loepzuivere digitale kaart</strong>. Tamminga , G. , Brink , L. van den , Stoter , JE &amp;. Lint , H. van. <em>Verkeerskunde: vaktijdschrift over verkeer en vervoer</em> maart 2013(2), June 2013, pp. 18-19. <br /> <a href="#bibTamminga13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibTamminga13a" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Tamminga13a,
+	author = {Tamminga, G, Brink, L van den, Stoter, JE & Lint, H van},
+	journal = {Verkeerskunde: vaktijdschrift over verkeer en vervoer},
+	month = {June},
+	number = {maart 2013(2)},
+	pages = {18-19},
+	title = {Naar een loepzuivere digitale kaart},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Slotdag 3d pilot nl - bgt naar de derde dimensie</strong>. Jantien Stoter. <em>GIS-Magazine</em> 2013-1, januari 2013, pp. 46-47. <br /> <a href="#bibStoter13h" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13h" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter13h,
+	author = {Jantien Stoter},
+	journal = {{GIS}-Magazine},
+	month = {januari},
+	number = {2013-1},
+	pages = {46-47},
+	title = {Slotdag 3D Pilot NL - BGT naar de derde dimensie},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Levendige slotdag 3d pilot nl: aan de slag met de derde dimensie van de bgt</strong>. Jantien Stoter. <em>Geo-Info</em> 10(1), Januari 2013, pp. 14-18. <br /> <a href="#bibStoter13g" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13g" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter13g,
+	author = {Jantien Stoter},
+	journal = {Geo-Info},
+	month = {Januari},
+	number = {10(1)},
+	pages = {14-18},
+	title = {Levendige slotdag 3D Pilot NL: Aan de slag met de derde dimensie van de BGT},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>3D Pilot NL - BGT naar de derde dimensie</strong>. J. E. Stoter. <em>GIS-Magazine</em>, 2013, pp. 46&ndash;47. <br /> <a href="#bibStoter13f" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13f" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter13f,
+	author = {Stoter, J.E.},
+	journal = {GIS-Magazine},
+	pages = {46--47},
+	title = {{3D} {P}ilot {NL} - {BGT} naar de derde dimensie},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Specificaties voor de opbouw van 3D IMGEO data - uitbreiding van de BGT naar 3D</strong>. J. E. Stoter. <em>Geo-Info</em> 10(2), 2013, pp. 4&ndash;9. <br /> <a href="#bibStoter13e" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13e" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter13e,
+	author = {Stoter, J.E.},
+	journal = {Geo-Info},
+	number = {2},
+	pages = {4--9},
+	title = {Specificaties voor de opbouw van {3D} {IMGEO} data - Uitbreiding van de {BGT} naar {3D}},
+	volume = {10},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Verkenningsstudie naar semantische afstemming tussen imgeo en domein informatiemodellen</strong>. Jantien Stoter. 2013. <br /> <a href="http://www.geonovum.nl/onderwerpen/informatiemodellen/documenten/rapport-verkenningsstudie-naar-semantische-afstemming"><i class="fa fa-external-link"></i> External link</a> <a href="#bibStoter13d" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter13d" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter13d,
+	author = {Jantien Stoter},
+	title = {Verkenningsstudie naar semantische afstemming tussen IMGeo en domein informatiemodellen},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Specificaties voor de opbouw van 3d imgeo data</strong>. Goos , J. , Penninga , F. , Reuvers , M. , Stoter , J. E. &amp;. Vosselman , G.. Geo-Info, 10(2), 4-9., February 2013. <br /> <a href="#bibGoos13a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibGoos13a" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Goos13a,
+	author = {Goos, J.,Penninga, F., Reuvers, M., Stoter, J.E. & Vosselman, G},
+	howpublished = {Geo-Info, 10(2), 4-9.},
+	month = {February},
+	title = {Specificaties voor de opbouw van 3D IMGeo Data},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Specificaties voor de opbouw van 3D IMGEO data - uitbreiding van de BGT naar 3D - 3D brondata en eisen aan textuurinformatie</strong>. J. Goos, F. Penninga, M. Reuvers, J. E. Stoter and G. Vosselman. <em>Geo-Info</em> 10(3), 2013, pp. 7&ndash;12. <br /> <a href="#bibGoos13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibGoos13" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Goos13,
+	author = {Goos, J. and Penninga, F. and Reuvers, M. and Stoter, J.E. and Vosselman, G.},
+	journal = {Geo-Info},
+	number = {3},
+	pages = {7--12},
+	title = {Specificaties voor de opbouw van {3D} {IMGEO} data - Uitbreiding van de {BGT} naar {3D} - {3D} brondata en eisen aan textuurinformatie},
+	volume = {10},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>Overstap van rd naar etrs89 - kans of dreiging?</strong>. Broekman , R. , Dorst , L. , Huisman &amp;. Stoter , JE. <em>GIS Magazine</em> 11(5), November 2013, pp. 14-15. <br /> <a href="#bibBroekman13" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibBroekman13" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Broekman13,
+	author = {Broekman, R, Dorst, L., Huisman & Stoter, JE},
+	journal = {GIS Magazine},
+	month = {November},
+	pages = {14-15},
+	title = {Overstap van RD naar ETRS89 - Kans of dreiging?},
+	volume = {11(5)},
+	year = {2013}
+}</pre></div></div>
+<div class="filteredelement"><strong>3D en de BGT</strong>. J. E. Stoter and L. van den Brink. <em>Geo-Info</em> 9(6), 2012, pp. 30&ndash;34. <br /> <a href="#bibStoter12g" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12g" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter12g,
+	author = {Stoter, J.E. and Brink, L. van den},
+	journal = {Geo-Info},
+	number = {6},
+	pages = {30--34},
+	title = {{3D} en de {BGT}},
+	volume = {9},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automatische generalisatie voor nieuwe BRT-productielijn Kadaster</strong>. Jantien Stoter, Ron Nijhuis, Jan Bulder and Ben Burns. <em>Geo-Info</em> 9(2), 2012, pp. 14&ndash;15. <br /> <a href="http://www.gdmc.nl/publications/2012/Automatische_generalisatie_2.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter12f" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12f" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter12f,
+	author = {Stoter, Jantien and Nijhuis, Ron and Bulder, Jan and Burns, Ben},
+	journal = {Geo-Info},
+	number = {2},
+	pages = {14--15},
+	title = {Automatische generalisatie voor nieuwe {BRT}-productielijn {K}adaster},
+	volume = {9},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Automatische generalisatie voor nieuwe productielijn Kadaster</strong>. Jantien Stoter, Ron Nijhuis, Jan Bulder and Ben Burns. <em>Geo-Info</em> 9(2), 2012, pp. 14&ndash;15. <br /> <a href="http://www.gdmc.nl/publications/2012/Automatische_generalisatie.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter12e" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12e" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter12e,
+	author = {Stoter, Jantien and Nijhuis, Ron and Bulder, Jan and Burns, Ben},
+	journal = {Geo-Info},
+	number = {2},
+	pages = {14--15},
+	title = {Automatische generalisatie voor nieuwe productielijn {K}adaster},
+	volume = {9},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Vervolg op 3D pilot focust op toepassing 3D in de praktijk</strong>. Jantien Stoter. <em>BGT nieuwsbrief</em> 3(13), 2012, pp. 4&ndash;5. <br /> <a href="http://www.gdmc.nl/publications/2012/Vervolg_3D_Pilot.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter12d" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12d" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter12d,
+	author = {Stoter, Jantien},
+	journal = {BGT nieuwsbrief},
+	number = {13},
+	pages = {4--5},
+	title = {Vervolg op {3D} pilot focust op toepassing {3D} in de praktijk},
+	volume = {3},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Kadaster start nieuwe productielijn op basis van automatische generalisatie</strong>. Jantien Stoter, Ron Nijhuis and John van Smaalen. <em>ArcGIS Actueel</em> 2, 2012, pp. 22&ndash;25. <br /> <a href="#bibStoter12c" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12c" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter12c,
+	author = {Stoter, Jantien and Ron Nijhuis and John van Smaalen},
+	journal = {ArcGIS Actueel},
+	pages = {22--25},
+	title = {{K}adaster start nieuwe productielijn op basis van automatische generalisatie},
+	volume = {2},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>CityGML and the Netherlands&rsquo; open 3D modelling standard: building the open 3D information infratructure for flat land</strong>. Jantien Stoter, Joris Goos and Athina Trakas. <em>Direction Magazine</em>, 2012, pp. 1&ndash;4. <br /> <a href="#bibStoter12b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter12b" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter12b,
+	author = {Stoter, Jantien and Goos, Joris and Trakas, Athina},
+	journal = {Direction Magazine},
+	pages = {1--4},
+	title = {{CityGML} and the {N}etherlands' open {3D} modelling standard: building the open {3D} information infratructure for flat land},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Design of 3D cadastre model in the Russian Federation</strong>. Peter van Oosterom, Natalia Vandysheva, Antoly Ivanov, Sergey Pakhomov, Boudewijn Spiering, Jantien Stoter and Sisi Zlatanova. <em>Geospatial World Weekly</em> 8(10), 2012. <br /> <a href="http://www.gdmc.nl/publications/2012/3D_cadastre_model_Russian_Federation.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibOosterom12b" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOosterom12b" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Oosterom12b,
+	author = {Oosterom, Peter van and Vandysheva, Natalia and Ivanov, Antoly and Pakhomov, Sergey and Spiering, Boudewijn and Stoter, Jantien and Zlatanova, Sisi},
+	journal = {Geospatial World Weekly},
+	number = {10},
+	title = {Design of {3D} cadastre model in the {R}ussian {F}ederation},
+	volume = {8},
+	year = {2012}
+}</pre></div></div>
+<div class="filteredelement"><strong>Het 3D-testbed van de 3D-pilot: ceci n&rsquo; est past CityGML</strong>. JE Stoter, TPM Tijssen, E. Verbree and S. Zlatanova. <em>GeoInfo</em> 8(5), 2011, pp. 19&ndash;22. <br /> <a href="http://www.gdmc.nl/publications/2011/3D-Pilot_testbed.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11h" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11h" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter11h,
+	author = {Stoter, JE and Tijssen, TPM and Verbree, E and Zlatanova, S},
+	journal = {GeoInfo},
+	number = {5},
+	pages = {19--22},
+	title = {Het {3D}-testbed van de {3D}-pilot: ceci n' est past {CityGML}},
+	volume = {8},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>De impact van 3D voor gemeenten</strong>. JE Stoter, J. Goos, C. Veldhuis and R. Klooster. <em>GIS Magazine</em> 9(3), 2011, pp. 16&ndash;21. <br /> <a href="http://www.gdmc.nl/publications/2011/Impact_3D_gemeenten.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11g" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11g" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter11g,
+	author = {Stoter, JE and Goos, J and Veldhuis, C and Klooster, R},
+	journal = {GIS Magazine},
+	number = {3},
+	pages = {16--21},
+	title = {De impact van {3D} voor gemeenten},
+	volume = {9},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>CityGML wordt standaard voor Nederlandse 3D geodata</strong>. JE Stoter, R. Vestjens, G. Vosselman, J. Goos, E. Verbree and R. Klooster. <em>GeoInside</em> 19(2), 2011, pp. 26&ndash;31. <br /> <a href="http://www.gdmc.nl/publications/2011/CityGML_standaard_Nederlandse_geodata.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11f" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11f" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter11f,
+	author = {Stoter, JE and Vestjens, R and Vosselman, G and Goos, J and Verbree, E and Klooster, R},
+	journal = {GeoInside},
+	number = {2},
+	pages = {26--31},
+	title = {{CityGML} wordt standaard voor {N}ederlandse {3D} geodata},
+	volume = {19},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>3D-kadaster in Rusland</strong>. JE Stoter, W. Louwman, HD Ploeger and PJM van Oosterom. <em>Geo-Info</em> 8(3), 2011, pp. 4&ndash;11. <br /> <a href="http://www.gdmc.nl/publications/2011/3D-kadaster_Rusland.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibStoter11e" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibStoter11e" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Stoter11e,
+	author = {Stoter, JE and Louwman, W and Ploeger, HD and Oosterom, PJM van},
+	journal = {Geo-Info},
+	number = {3},
+	pages = {4--11},
+	title = {{3D}-kadaster in {R}usland},
+	volume = {8},
+	year = {2011}
+}</pre></div></div>
+<div class="filteredelement"><strong>3D-kadaster: status en ontwikkelingen wereldwijd</strong>. PJM van Oosterom, JE Stoter and H. D. Ploeger. <em>Geo-Info</em> 8(2), 2011, pp. 4&ndash;9. <br /> <a href="http://www.gdmc.nl/publications/2011/3D-kadaster_wereldwijd.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a> <a href="#bibOosterom11a" data-toggle="collapse"><i class="fa fa-caret-square-o-down"></i> BibTeX</a><div id="bibOosterom11a" class="collapse" tabindex="-1"><pre class="bibtex">@misc{Oosterom11a,
+	author = {Oosterom, PJM van and Stoter, JE and Ploeger, H.D.},
+	journal = {Geo-Info},
+	number = {2},
+	pages = {4--9},
+	title = {{3D}-kadaster: status en ontwikkelingen wereldwijd},
+	volume = {8},
+	year = {2011}
+}</pre></div></div>
+
+
+</div>
+
+
+  <hr>
+
+<footer>
+	<!-- <a href="/feed.xml"><i class="fa fa-rss"></i></a> -->
+	<!-- <a href="https://twitter.com/tudelft3d"><i class="fa fa-twitter"></i></a> 
+  <a href="https://github.com/tudelft3d"><i class="fa fa-github"></i></a> -->
+	<a href="/about/#where"><i class="fa fa-map-marker"></i></a>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+<!-- <script src="/assets/js/holder.js"></script> -->
+<script src="/assets/js/jquery.eqheight.js"></script>
+<script src="/assets/js/jquery.mark.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $(".row").eqHeight(".column");
+
+
+  });
+</script>
+  </body>
+</html>
