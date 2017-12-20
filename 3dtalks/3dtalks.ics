@@ -1,4 +1,7 @@
-
+---
+layout: null
+---
+{% assign talks = site.data.3dtalks | sort: 'date' %}
 BEGIN:VCALENDAR
 PRODID:-//3D geospatial vision group at PolyU //NONSGML 3D talks calendar version 1.0//EN
 VERSION:2.0
@@ -19,47 +22,19 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 TZNAME:CET
 END:STANDARD
 END:VTIMEZONE
-
+{% for i in talks %}
 BEGIN:VEVENT
 SUMMARY:3D talk
-DTSTAMP;TZID=Asia/Hong Kong:20161212T110000
-DTSTART;TZID=Asia/Hong Kong:20161212T110000
-DTEND;TZID=Asia/Hong Kong:20161212T120000
-DESCRIPTION:Lucío : Indoor navigation from point clouds: 3D modelling and obstacle detection
-LOCATION:Z.S.610
+DTSTAMP;TZID=Asia/Hong Kong:{{ i.date | date: '%Y%m%d' }}T{{ i.time | slice: 0, 2 }}{{ i.time | slice: 3, 2 }}00
+DTSTART;TZID=Asia/Hong Kong:{{ i.date | date: '%Y%m%d' }}T{{ i.time | slice: 0, 2 }}{{ i.time | slice: 3, 2 }}00
+DTEND;TZID=Asia/Hong Kong:{{ i.date | date: '%Y%m%d' }}T{{ i.time | slice: 6, 2 }}{{ i.time | slice: 9, 2 }}00
+DESCRIPTION:{{ i.name }}: {{ i.title }}
+LOCATION:{{ i.room }}
 BEGIN:VALARM
 TRIGGER:-PT3H
 ACTION:DISPLAY
 DESCRIPTION:3D talk
 END:VALARM
 END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:3D talk
-DTSTAMP;TZID=Asia/Hong Kong:20170505T110000
-DTSTART;TZID=Asia/Hong Kong:20170505T110000
-DTEND;TZID=Asia/Hong Kong:20170505T113000
-DESCRIPTION:Ken Oi: 4D visualisation and GIS-BIM integration
-LOCATION:Z.S.509
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:3D talk
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:3D talk
-DTSTAMP;TZID=Asia/Hong Kong:20170616T110000
-DTSTART;TZID=Asia/Hong Kong:20170616T110000
-DTEND;TZID=Asia/Hong Kong:20170616T120000
-DESCRIPTION:Kavia: Overview of PhD activities
-LOCATION:Z.S.509
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:3D talk
-END:VALARM
-END:VEVENT
-
+{% endfor %}
 END:VCALENDAR

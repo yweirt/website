@@ -1,0 +1,27 @@
+
+- name: 5D geo-modelling using 3D multimodality remote sensing
+  description: We integrate 3D point cloud data with spectral data to enrich urban modeling
+  webpage: /projects/ged/
+  funding: STW
+  fundingurl: http://www.stw
+  image: roofDetection.jpg
+
+- name: 3D geospatial intelligence - data manipulation and mining
+  description: Point cloud manipulation and modelling with the advanced 3D computer vision and machine learning methods
+  webpage: /projects/3dm/
+  funding: STW
+  fundingurl: http://www.st
+  image: overview.jpg
+
+#-name: Navigation for first responders
+#  description: Path planning for first responders among the moving obstacles caused by different types of disasters
+#  webpage: /projects/navigation/
+#  image: navigation.png
+#  finished: true
+
+- name: Big Data Analytics in 3D Geospatial Domain
+  description: Project to develop intelligent methods for extracting spatial features for voxel and point cloud data
+  webpage: /projects/bigvoxels/
+  image: ls2017.png
+
+

@@ -1,0 +1,24 @@
+
+- surname: Wei  
+  name: Yuzhang
+  title: Automatic
+  image: mro.png
+  year: 2012
+  link: http
+  paper: http://doi.
+
+- surname: Steinsick
+  name: Moritz
+  swapnames: true
+  title: Exploriation of LiDAR and CRF classification 
+  link: http://reso
+  image: zh.png
+  year: 2016
+
+- surname: Chen
+  name: C.K
+  title: LiDAR in urban sensing 
+  link: http://re
+  image: ca.jpg
+  year: 2017
+
