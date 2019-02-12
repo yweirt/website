@@ -6,9 +6,25 @@
 </description>
     <link>https://yweirt.github.io/</link>
     <atom:link href="https://yweirt.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 25 May 2018 11:30:31 +0800</pubDate>
-    <lastBuildDate>Fri, 25 May 2018 11:30:31 +0800</lastBuildDate>
+    <pubDate>Tue, 12 Feb 2019 17:08:37 +0800</pubDate>
+    <lastBuildDate>Tue, 12 Feb 2019 17:08:37 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Call for paper @ Point Cloud Processing in Remote Sensing </title>
+        <description>&lt;p&gt;You are welcome to submit contributions to Special Issue “Point Cloud Processing in Remote Sensing”, which is a special issue of Remote Sensing (ISSN 2072-4292). This special issue belongs to the section “Remote Sensing Image Processing”.&lt;/p&gt;
+
+&lt;p&gt;Deadline for manuscript submissions: 31 March 2020, &lt;a href=&quot;https://www.mdpi.com/journal/remotesensing/special_issues/Point_Cloud_RS&quot;&gt;Details can be referred to that page&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 12 Feb 2019 15:55:00 +0800</pubDate>
+        <link>https://yweirt.github.io/news/2019/02/12/RS-SI.html</link>
+        <guid isPermaLink="true">https://yweirt.github.io/news/2019/02/12/RS-SI.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Our LiDAR based regeneration mapping paper has won the ITC Publication Award</title>
