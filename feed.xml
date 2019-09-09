@@ -6,9 +6,27 @@
 </description>
     <link>https://yweirt.github.io/</link>
     <atom:link href="https://yweirt.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 12 Feb 2019 17:08:37 +0800</pubDate>
-    <lastBuildDate>Tue, 12 Feb 2019 17:08:37 +0800</lastBuildDate>
+    <pubDate>Mon, 09 Sep 2019 17:17:57 +0800</pubDate>
+    <lastBuildDate>Mon, 09 Sep 2019 17:17:57 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Multimodal aerial data set for line-based co-registration has been released</title>
+        <description>&lt;p&gt;Yao, Wei; Polewski, Przemyslaw (2018), “Multimodal aerial data for line-based co-registration”, Mendeley Data, v2, http://dx.doi.org/10.17632/dmp7tkn8kc.2. &lt;a href=&quot;https://doi.org/10.17632/dmp7tkn8kc.2&quot;&gt;Details can be referred to that page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You are welcome to adopt above-mentioned dataset for verifying and testing your own developed algorithms with respect to Line-based coregistration and report the comparison with our baseline results by citing following paper:&lt;/p&gt;
+
+&lt;p&gt;Polewski, P., &amp;amp; Yao, W. (2019). Scale invariant line-based co-registration of multimodal aerial data using L1 minimization of spatial and angular deviations. ISPRS Journal of Photogrammetry and Remote Sensing, 152, 79-93. &lt;a href=&quot;https://doi.org/10.1016/j.isprsjprs.2019.04.004&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 15 Jun 2019 09:20:00 +0800</pubDate>
+        <link>https://yweirt.github.io/news/2019/06/15/MM-Data-Line-Intergration.html</link>
+        <guid isPermaLink="true">https://yweirt.github.io/news/2019/06/15/MM-Data-Line-Intergration.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Call for paper @ Point Cloud Processing in Remote Sensing </title>
